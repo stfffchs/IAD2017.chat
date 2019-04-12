@@ -1,0 +1,29 @@
+.Conversation {
+  background-color: lightgoldenrodyellow;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.Conversation__Placeholder {
+  flex: 1 1 auto;
+  background-color: red;
+}
+
+.Conversation__PostItems {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+.Conversation__Form {
+  height: 5rem;
+  background-color: green;
+}
+
+.Conversation__Writing {
+  width: 3rem;
+  height: 3rem;
+  background-color: pink;
+}

@@ -1,0 +1,24 @@
+.PostItem {
+}
+
+.PostItem__Post {
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.PostItem__Post--me {
+  margin-left: 40%;
+  background-color: red;
+}
+
+.PostItem__Post--other {
+  margin-right: 40%;
+  background-color: blue;
+}
+
+.PostItem__Time {
+  display: inline-block;
+  padding: 0.2rem;
+  background-color: white;
+  font-size: 0.6rem;
+}
