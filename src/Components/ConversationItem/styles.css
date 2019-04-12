@@ -1,0 +1,16 @@
+.ConversationItem {
+  background-color: gray;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: block;
+}
+
+.ConversationItem--active {
+  background-color: yellow;
+}
+
+.ConversationItem__Writing {
+  width: 3rem;
+  height: 3rem;
+  background-color: pink;
+}
