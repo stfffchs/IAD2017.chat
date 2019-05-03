@@ -1,12 +1,50 @@
 .ConversationItem {
-  background-color: gray;
-  border-bottom: 1px solid black;
+  background-color: #393350;
+  color: white;
   width: 100%;
-  display: block;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ConversationItem__Avatar {
+  padding: 1rem;
+  display: flex;
+}
+
+.ConversationItem__Infos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  /*ev no en schöneri lösig mache*/
+  margin-top: -40px;
+}
+
+.ConversationItem__Name {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ConversationItem__Time {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+}
+
+.ConversationItem__AvatarImage {
+  border-radius: 50px;
+  height: 4rem;
+}
+
+.ConversationItem__Preview {
+
 }
 
 .ConversationItem--active {
-  background-color: yellow;
+  background-color: #574E7B;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .ConversationItem__Writing {
@@ -20,3 +58,5 @@
   height: 3rem;
   background-color: yellow;
 }
+
+
