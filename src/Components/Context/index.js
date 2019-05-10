@@ -31,14 +31,15 @@ export class UIProvider extends Component {
       isWriting: this.state.isWriting.filter(item => item !== id)
     });
   };
-  appendPostItem = ({ id, type, from, text }) => {
+  appendPostItem = ({ id, type, from, text, unread }) => {
     let newConversations = this.state.conversations.map(conversation => {
       let newConversation = { ...conversation };
       if (newConversation.id === id) {
         newConversation.conversation.push({
           type,
           from,
-          text
+          text,
+          unread: this.state.activeConversation === from ? false : unread
         });
       }
       return newConversation;
@@ -51,8 +52,26 @@ export class UIProvider extends Component {
   };
 
   setActiveConversation = id => {
+    let newConversations = [];
+
+    this.state.conversations.forEach(conversation => {
+      let newConversation = { ...conversation };
+
+      if (conversation.id === id) {
+        newConversation.conversation = conversation.conversation.map(post => ({
+          ...post,
+          unread: false
+        }));
+      }
+
+      newConversations.push(newConversation);
+    });
+
+    console.log("newConversations ", newConversations[3]);
+
     this.setState({
       ...this.state,
+      conversations: newConversations,
       menuOpen: false,
       activeConversation: id
     });

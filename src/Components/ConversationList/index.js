@@ -6,16 +6,11 @@ import "./styles.css";
 
 class ConversationList extends Component {
   render() {
-    const { conversations } = this.props;
     return (
       <UIConsumer>
         {context => (
           <div className="ConversationList">
-            {conversations.map(item => {
-              console.log(
-                "writing",
-                context.isWriting.filter(writer => writer === item.id)
-              );
+            {context.conversations.map(item => {
               return (
                 <ConversationItem
                   key={item.id}
@@ -26,6 +21,10 @@ class ConversationList extends Component {
                   writing={
                     context.isWriting.filter(writer => writer === item.id)
                       .length > 0
+                  }
+                  unread={
+                    item.conversation.filter(post => post.unread === true)
+                      .length
                   }
                 />
               );
