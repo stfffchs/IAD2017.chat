@@ -102,7 +102,11 @@ class Conversation extends Component {
                 <div className="Conversation__PostItems" ref={this.ref}>
                   {currentConversation.conversation.map(item => {
                     return (
-                      <div className="Conversation__PostItem">
+                      <div
+                        className={`Conversation__PostItem Conversation__PostItem--${
+                          item.from === "me" ? "me" : "other"
+                        }`}
+                      >
                         <PostItem
                           type={item.type}
                           from={item.from}
