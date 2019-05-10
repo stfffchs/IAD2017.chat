@@ -9,7 +9,7 @@
 }
 
 .App--MenuOpen .App__ConversationList {
-  width: 30%;
+  width: 100%;
 }
 .App--MenuClosed .App__ConversationList {
   width: 0%;
@@ -17,7 +17,7 @@
 }
 
 .App--MenuOpen .App__Conversation {
-  width: 70%;
+  width: 0%;
 }
 
 .App--MenuClosed .App__Conversation {

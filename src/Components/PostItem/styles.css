@@ -1,24 +1,45 @@
-.PostItem {
+.PostItem__Text {
+  color: #2e2e2e;
 }
 
 .PostItem__Post {
   margin-top: 2rem;
   padding: 0.5rem;
+  margin-left: 2rem;
 }
 
 .PostItem__Post--me {
-  margin-left: 40%;
-  background-color: red;
+  margin-right: 40%;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b7b7b7;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-weight: 300;
 }
 
 .PostItem__Post--other {
   margin-right: 40%;
-  background-color: blue;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-color: #b7b7b7;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-weight: 300;
 }
 
 .PostItem__Time {
   display: inline-block;
   padding: 0.2rem;
-  background-color: white;
-  font-size: 0.6rem;
+  color: #9a978d;
+  font-size: 0.9rem;
+  font-weight: 200;
 }

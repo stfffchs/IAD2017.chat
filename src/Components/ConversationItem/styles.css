@@ -1,16 +1,65 @@
 .ConversationItem {
   background-color: gray;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffffff;
   width: 100%;
   display: block;
 }
 
+.ConversationItem__Preview {
+  color: grey;
+}
+
 .ConversationItem--active {
-  background-color: yellow;
+background-color: #ffffff;
+border-color: #4bda2f;
+border-width: 10px;
+border-top-style: none;
+border-right-style: none;
+border-bottom-style: none;
+border-left-style: none;
+}
+
+.ConversationItem--active h3 {
+  font-weight: 900;
+  color: #ea7d5b;
+}
+
+
+.ConversationItem--inactive {
+  background-color: #ffffff;
 }
 
 .ConversationItem__Writing {
+  background-image: url(../image/Chat_Writing.svg);
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
+
+.ConversationItem__AvatarImage {
+  margin-top: 1rem;
   width: 3rem;
   height: 3rem;
-  background-color: pink;
+  border-radius: 50%;
+}
+
+.ConversationItem__Avatar {
+  text-align: left;
+}
+
+.ConversationItem__Name {
+  color: #000000;
+  text-align: left;
+  font-weight: 100;
+}
+
+.ConversationItem__Time {
+  color: #000000;
+  text-align: left;
+}
+
+.ConversationItem__Preview {
+  color: #898989;
+  font-weight: 100;
+  text-align: left;
 }

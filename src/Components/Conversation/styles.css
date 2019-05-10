@@ -1,5 +1,5 @@
 .Conversation {
-  background-color: lightgoldenrodyellow;
+  background-color: #ffffff;
   height: 100%;
 
   display: flex;
@@ -9,21 +9,56 @@
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
-  background-color: red;
+  background-color: #e3dfd1;
+}
+
+.Conversation__PlaceholderText {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #2e2e2e;
+  margin: 2rem;
+
 }
 
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
+  background-color: #ffffff;
 }
 
 .Conversation__Form {
   height: 5rem;
-  background-color: green;
+  background-color: #ffffff;
+  margin: 2rem;
 }
 
 .Conversation__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: pink;
+  background-image: url(../image/Chat_Writing.svg);
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.Conversation__WriteTextarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #e3dfd1;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.Conversation__Send {
+  font-size: 1rem;
+  line-height: 1.9rem;
+  color: #ffffff;
+  background-color: #2e2e2e;
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  align-items: center;
+  margin-top: 1rem;
 }

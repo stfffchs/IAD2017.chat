@@ -1,14 +1,19 @@
 .Menu {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background-color: green;
 }
 
 .Menu--Open {
-  background-color: blue;
+  background-image: url(../image/Chat_MenuClose.svg);
+  background-repeat: no-repeat;
+}
+
+.Menu--Closed {
+  background-image: url(../image/Chat_Menu.svg);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 650px) {
