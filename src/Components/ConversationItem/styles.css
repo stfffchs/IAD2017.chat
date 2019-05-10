@@ -1,5 +1,5 @@
 .ConversationItem {
-  background-color: #0F1C25;
+  background-color: #1B2730;
   border-bottom: 1px solid black;
   width: 100%;
   display: block;
@@ -21,4 +21,8 @@
   left: 5rem;
   top: 5rem;
   border-radius: 0% 50% 50% 50%;
+}
+
+.ConversationItem ConversationItem--inactive{
+  color: #1B2730;
 }
