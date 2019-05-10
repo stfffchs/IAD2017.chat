@@ -14,3 +14,11 @@
   height: 3rem;
   background-color: #418FB0;
 }
+
+.ConversationItem__AvatarImage{
+  width: 5rem;
+  height: 5rem;
+  left: 5rem;
+  top: 5rem;
+  border-radius: 0% 50% 50% 50%;
+}
