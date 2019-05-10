@@ -1,14 +1,13 @@
 .ConversationItem {
-  background-color: #373635;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  background-color: #ffffff;
+  border-right: 1px solid black;
   width: 100%;
   display: block;
-  color: white;
+  color: #000000;
 }
 
 .ConversationItem--active {
-  background-color: #377cea;
+  background-color: #D8D8D8;
 }
 
 .ConversationItem__Writing {

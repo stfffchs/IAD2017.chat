@@ -2,19 +2,27 @@
 }
 
 .PostItem__Post {
-  color: white;
+  color: #000000;
   margin-top: 2rem;
+  margin-left: 4rem;
   padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 15px 15px 15px 0px;
 }
 
 .PostItem__Post--me {
   margin-left: 40%;
-  background-color: #377cea;
+  margin-right: 4rem;
+  background-color: #D6D6D6;
+  border-radius: 15px 15px 0px 15px;
+  border: 0;
 }
 
 .PostItem__Post--other {
   margin-right: 40%;
-  background-color: #98989d;
+  background-color: #ffffff;
+  color: #000000;
+
 }
 
 .PostItem__Time {
