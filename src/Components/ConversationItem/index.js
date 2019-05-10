@@ -21,7 +21,7 @@ class ConversationItem extends Component {
                 <img
                   className="ConversationItem__AvatarImage"
                   alt="avatar"
-                  src={`//lorempixel.com/75/75/${
+                  src={`//lorempixel.com/175/175/${
                     ["people", "nature", "sports"][id % 3]
                   }/${id % 8}`}
                 />

@@ -9,7 +9,7 @@
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
-  background-color: red;
+  background-color: white;
 }
 
 .Conversation__PostItems {
@@ -19,7 +19,7 @@
 
 .Conversation__Form {
   height: 5rem;
-  background-color: green;
+  background-color: grey;
 }
 
 .Conversation__Writing {
