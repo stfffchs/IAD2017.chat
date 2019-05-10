@@ -4,7 +4,7 @@ import "./styles.css";
 
 class ConversationItem extends Component {
   render() {
-    const { id, name, active, text, writing } = this.props;
+    const { id, name, active, text, writing, unread } = this.props;
     return (
       <UIConsumer>
         {context => {
@@ -38,6 +38,9 @@ class ConversationItem extends Component {
               </div>
 
               {writing && <div className="ConversationItem__Writing" />}
+              {unread > 0 && (
+                <div className="ConversationItem__UnreadCount">{unread}</div>
+              )}
             </button>
           );
         }}
