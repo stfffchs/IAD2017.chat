@@ -8,17 +8,16 @@
 
 .PostItem__Post--me {
   margin-left: 40%;
-  background-color: red;
+  background-color: var(--purple-light);
 }
 
 .PostItem__Post--other {
   margin-right: 40%;
-  background-color: blue;
+  background-color: var(--blue-light);
 }
 
 .PostItem__Time {
   display: inline-block;
   padding: 0.2rem;
-  background-color: white;
   font-size: 0.6rem;
 }

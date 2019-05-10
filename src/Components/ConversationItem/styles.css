@@ -15,7 +15,7 @@
 
 .ConversationItem__Infos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: minmax(100px, 250px) 1fr 1fr;
   align-items: center;
   /*ev no en schöneri lösig mache*/
   margin-top: -40px;
@@ -24,6 +24,7 @@
 .ConversationItem__Name {
   grid-column: 1;
   grid-row: 1;
+  text-align: left;
 }
 
 .ConversationItem__Time {
@@ -42,9 +43,7 @@
 }
 
 .ConversationItem--active {
-  background-color: #574E7B;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+  background-color: var(--purple-light);
 }
 
 .ConversationItem__Writing {

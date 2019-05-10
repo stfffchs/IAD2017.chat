@@ -1,0 +1,20 @@
+.ConversationHeader {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+.ConversationHeader__Avatar {
+    display: table-cell;
+    background-color: red;
+}
+
+.ConversationHeader__AvatarImage {
+    border-radius: 50px;
+}
+
+.ConversationHeader__Infos {
+    display: table-cell;
+    background-color: orange;
+}
