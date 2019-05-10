@@ -17,6 +17,12 @@
   overflow-y: auto;
 }
 
+.Conversation__Header {
+  height: 7rem;
+  flex: 0 0 auto;
+  background-color: pink;
+}
+
 .Conversation__Form {
   height: 5rem;
   background-color: #0F1C25;

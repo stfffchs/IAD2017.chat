@@ -22,3 +22,9 @@
   top: 5rem;
   border-radius: 0% 50% 50% 50%;
 }
+
+.ConversationItem__UnreadCount {
+  width: 3rem;
+  height: 3rem;
+  background-color: yellow;
+}
