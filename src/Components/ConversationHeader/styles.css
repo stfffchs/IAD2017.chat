@@ -1,11 +1,13 @@
 .ConversationHeader__AvatarImage{
-    width: 4rem;
-    height: 4rem;
-    left: 4rem;
-    top: 4rem;
+    width: 5rem;
+    height: 5rem;
+    left: 5rem;
+    top: 5rem;
     border-radius: 0% 50% 50% 50%;
+    margin: 1rem;
 }
 
 .ConversationHeader__Infos{
     color: white;
+
 }

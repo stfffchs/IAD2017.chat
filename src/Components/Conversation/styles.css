@@ -33,3 +33,12 @@
   height: 3rem;
   background-color: #2EA6FF;
 }
+
+.Conversation__WriteTextarea{
+  background-color: #0F1C25;
+}
+
+.textarea{
+  solid-color: none;
+}
+

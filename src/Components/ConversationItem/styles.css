@@ -1,5 +1,5 @@
 .ConversationItem {
-  background-color: #0F1C25;
+  background-color: #1B2730;
   border-bottom: 1px solid black;
   width: 100%;
   display: block;
@@ -23,8 +23,13 @@
   border-radius: 0% 50% 50% 50%;
 }
 
+<<<<<<< HEAD
 .ConversationItem__UnreadCount {
   width: 3rem;
   height: 3rem;
   background-color: yellow;
+=======
+.ConversationItem ConversationItem--inactive{
+  color: #1B2730;
+>>>>>>> 92296b9b2187c8f484f743151b5d726fdc71e108
 }
