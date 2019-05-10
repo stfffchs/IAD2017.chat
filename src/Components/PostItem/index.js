@@ -9,11 +9,7 @@ class PostItem extends Component {
     var time = new Date(date * 1000).toLocaleString("de-DE", options);
 
     return (
-      <div
-        className={`PostItem PostItem--${type} PostItem--${
-          from === "me" ? "me" : "other"
-        }`}
-      >
+      <div className="PostItem">
         <div
           className={`PostItem__Post PostItem__Post--${type} PostItem__Post--${
             from === "me" ? "me" : "other"

@@ -148,6 +148,12 @@ class Conversation extends Component {
                             date={item.date}
                           />
                         )}
+
+                        <PostItem
+                          type={item.type}
+                          from={item.from}
+                          text={item.text}
+                        />
                       </div>
                     );
                   })}
