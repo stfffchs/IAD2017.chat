@@ -9,7 +9,7 @@
 .PostItem__Post--me {
   margin-left: 40%;
   margin-right: 2%;
-  background-color: #4983C1;
+  background-color: #418FB0;
   border-radius: 16px 0px 16px 16px;
 }
 
@@ -21,8 +21,13 @@
 }
 
 .PostItem__Time {
+  color: #9CA7B4;
   display: inline-block;
   padding: 0.2rem;
   background-color: none;
   font-size: 0.6rem;
+}
+
+.PostItem__Text {
+  color: white;
 }
