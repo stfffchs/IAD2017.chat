@@ -4,27 +4,26 @@
 .PostItem__Post {
   margin-top: 1rem;
   padding: 0.5rem;
+  border-radius: 16px;
 }
 
 .PostItem__Post--me {
   margin-left: 40%;
   margin-right: 2%;
   background-color: #418FB0;
-  border-radius: 16px 16px 16px 16px;
 }
 
 .PostItem__Post--other {
   margin-right: 40%;
   margin-let: 2%;
   background-color: #1B2730;
-  border-radius: 16px 16px 16px 16px;
 }
 
-.Conversation__PostItem--other + .Conversation__PostItem--me {
+.Conversation__PostItem--other + .Conversation__PostItem--me .PostItem__Post {
   border-radius: 16px 0px 16px 16px;
 }
-.Conversation__PostItem--me + .Conversation__PostItem--other {
-  border-radius: 16px 0px 16px 16px;
+.Conversation__PostItem--me + .Conversation__PostItem--other .PostItem__Post {
+  border-radius: 0px 16px 16px 16px;
 }
 
 .PostItem__Time {

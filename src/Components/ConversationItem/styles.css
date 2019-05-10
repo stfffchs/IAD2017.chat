@@ -23,17 +23,8 @@
   border-radius: 0% 50% 50% 50%;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .ConversationItem__UnreadCount {
   width: 3rem;
   height: 3rem;
   background-color: yellow;
-=======
-.ConversationItem ConversationItem--inactive{
-  color: #1B2730;
->>>>>>> 92296b9b2187c8f484f743151b5d726fdc71e108
 }
-=======
-
->>>>>>> ea2c960396ec0bf508579b197dcb0363cf00f818
