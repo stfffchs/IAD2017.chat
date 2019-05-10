@@ -9,7 +9,7 @@ export class UIProvider extends Component {
   state = {
     activeConversation: null,
     isWriting: [3],
-    menuOpen: false,
+    menuOpen: true,
     conversations: [...DATA.conversations]
   };
 
