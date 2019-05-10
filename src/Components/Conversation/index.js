@@ -127,6 +127,7 @@ class Conversation extends Component {
                       <textarea
                         className="Conversation__WriteTextarea"
                         value={this.state.value}
+                        placeholder="Nachricht schreiben..."
                         onChange={e => this.handleChange(e)}
                       />
                     </div>
