@@ -43,6 +43,13 @@ class Conversation extends Component {
     this.setState({ value: event.target.value });
   }
 
+  onKeyDown = (event, context) => {
+    if (event.keyCode === 13 && event.shiftKey === false) {
+      event.preventDefault();
+      this.handleSubmit(event, context);
+    }
+  };
+
   componentDidMount() {
     this.scrollToBottom();
   }
@@ -128,6 +135,7 @@ class Conversation extends Component {
                         className="Conversation__WriteTextarea"
                         value={this.state.value}
                         placeholder="Nachricht schreiben..."
+                        onKeyDown={e => this.onKeyDown(e, context)}
                         onChange={e => this.handleChange(e)}
                       />
                     </div>
