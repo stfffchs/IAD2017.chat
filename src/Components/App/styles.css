@@ -29,6 +29,7 @@
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {
     width: 30%;
+    min-width: 300px;
     overflow: auto;
   }
   .App--MenuOpen .App__Conversation,
