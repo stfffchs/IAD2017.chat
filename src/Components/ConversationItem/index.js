@@ -17,7 +17,6 @@ class ConversationItem extends Component {
                 context.actions.setActiveConversation(id);
               }}
             >
-            <div className="ConversationItem__Gradient"></div>
               <div className="ConversationItem__Avatar">
                 <img
                   className="ConversationItem__AvatarImage"
