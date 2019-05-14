@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { UIConsumer } from "../Context";
 import PostItem from "../PostItem";
+import ConversationHeader from "../ConversationHeader";
 import "./styles.css";
 
 class Conversation extends Component {
@@ -10,6 +11,32 @@ class Conversation extends Component {
       value: ""
     };
     this.ref = React.createRef();
+  }
+
+  handleSubmit(event, context) {
+    event.preventDefault(); //deactivate
+
+    context.actions.appendPostItem({
+      id: context.activeConversation,
+      type: "text",
+      from: "me",
+      text: this.state.value
+    });
+    context.actions.appendWriter(context.activeConversation);
+
+    setTimeout(() => {
+      context.actions.appendPostItem({
+        id: context.activeConversation,
+        type: "text",
+        from: context.activeConversation,
+        text: "Super! 🤓",
+        unread: true
+      });
+
+      context.actions.removeWriter(context.activeConversation);
+    }, Math.floor(Math.random() * 3000 + 2000));
+
+    this.setState({ value: "" });
   }
 
   handleChange(event) {
@@ -38,16 +65,42 @@ class Conversation extends Component {
   render() {
     return (
       <UIConsumer>
-        {context => (
-          <div className="Conversation">
-            {context.activeConversation && (
-              <div className="Conversation__PostItems" ref={this.ref}>
-                {context.conversations
-                  .find(
-                    conversation =>
-                      conversation.id === context.activeConversation
-                  )
-                  .conversation.map(item => {
+        {context => {
+          // no conversation selected
+          if (!context.activeConversation) {
+            return (
+              <div className="Conversation">
+                <div className="Conversation__Placeholder">
+                  <div className="Conversation__PlaceholderText">
+                    IAD2017 Chat
+                  </div>
+                </div>
+              </div>
+            );
+          }
+
+          // is the partner writing
+          const isWriting =
+            context.isWriting.filter(
+              writer => writer === context.activeConversation
+            ).length > 0;
+
+          const currentConversation = context.conversations.find(
+            conversation => conversation.id === context.activeConversation
+          );
+
+          return (
+            <div className="Conversation">
+              <Fragment>
+                <div className="Conversation__Header">
+                  <ConversationHeader
+                    id={currentConversation.id}
+                    name={currentConversation.name}
+                  />
+                </div>
+
+                <div className="Conversation__PostItems" ref={this.ref}>
+                  {currentConversation.conversation.map(item => {
                     return (
                       <div className="Conversation__PostItem">
                         <PostItem
@@ -58,67 +111,34 @@ class Conversation extends Component {
                       </div>
                     );
                   })}
-
-                {context.isWriting.filter(
-                  writer => writer === context.activeConversation
-                ).length > 0 && <div className="Conversation__Writing" />}
-              </div>
-            )}
-            {context.activeConversation && (
-              <div className="Conversation__Form">
-                <form
-                  onSubmit={e => {
-                    e.preventDefault(); //deactivate
-
-                    context.actions.appendPostItem({
-                      id: context.activeConversation,
-                      type: "text",
-                      from: "me",
-                      text: this.state.value
-                    });
-                    context.actions.appendWriter(context.activeConversation);
-
-                    setTimeout(() => {
-                      context.actions.appendPostItem({
-                        id: context.activeConversation,
-                        type: "text",
-                        from: context.activeConversation,
-                        text: "Super! 🤓"
-                      });
-
-                      context.actions.removeWriter(context.activeConversation);
-                    }, Math.floor(Math.random() * 3000 + 2000));
-
-                    this.setState({ value: "" });
-                  }}
-                >
-                  <div className="Conversation__Write">
-                    <textarea
-                      className="Conversation__WriteTextarea"
-                      value={this.state.value}
-                      onChange={e => this.handleChange(e)}
-                    />
-                  </div>
-                  <div className="Conversation__Send">
-                    <input
-                      className="Conversation__SendInput"
-                      type="submit"
-                      value="Senden"
-                    />
-                  </div>
-                </form>
-              </div>
-            )}
-
-            {!context.activeConversation && (
-              <div className="Conversation__Placeholder">
-                <div className="Conversation__PlaceholderText">
-                  IAD2017 Chat
+                  {isWriting && <div className="Conversation__Writing" />}
                 </div>
-              </div>
-            )}
-          </div>
-        )}
+                <div className="Conversation__Form">
+                  <form
+                    onSubmit={e => {
+                      this.handleSubmit(e, context);
+                    }}
+                  >
+                    <div className="Conversation__Write">
+                      <textarea
+                        className="Conversation__WriteTextarea"
+                        value={this.state.value}
+                        onChange={e => this.handleChange(e)}
+                      />
+                    </div>
+                    <div className="Conversation__Send">
+                      <input
+                        className="Conversation__SendInput"
+                        type="submit"
+                        value="Senden"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </Fragment>
+            </div>
+          );
+        }}
       </UIConsumer>
     );
   }
