@@ -1,4 +1,8 @@
 .PostItem {
+  height: 100%;
+  overflow-y: auto;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .PostItem__Post {
@@ -8,17 +12,26 @@
 
 .PostItem__Post--me {
   margin-left: 40%;
-  background-color: red;
+  background-color: #0087ff;
+  border-radius: 9px 2px 9px 9px;
+  color: white;
 }
 
 .PostItem__Post--other {
   margin-right: 40%;
-  background-color: blue;
+  background-color: white;
+  border: 1px solid #efefef;
+  border-radius: 2px 9px 9px 9px;
+  margin-bottom: 10px;
 }
 
 .PostItem__Time {
   display: inline-block;
   padding: 0.2rem;
-  background-color: white;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  background-color:white;
   font-size: 0.6rem;
+  color: #0087ff;
+  border-radius: 30px;
 }

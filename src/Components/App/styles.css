@@ -8,6 +8,10 @@
   height: 100%;
 }
 
+.App__Menu {
+  background-color: black;
+}
+
 .App--MenuOpen .App__ConversationList {
   width: 30%;
 }
@@ -23,6 +27,8 @@
 .App--MenuClosed .App__Conversation {
   width: 100%;
 }
+
+
 
 @media (min-width: 650px) {
   .App--MenuOpen .App__ConversationList,
