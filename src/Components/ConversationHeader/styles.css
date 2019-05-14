@@ -1,0 +1,45 @@
+.Conversation__Header {
+	height: 10%;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	margin-top: 0%;
+	display: flex;
+  	position: fixed;
+  	flex-wrap: wrap;
+  	flex-direction: row;
+}
+
+.ConversationHeader {
+	height: 100%;
+	margin-top: 0%;
+	display: flex;
+  	position: fixed;
+  	flex-wrap: wrap;
+  	flex-direction: row;
+}
+
+.Conversation__Avatar {
+	height: 100%;
+	border-radius: 50%;
+
+}
+
+.Conversation__Image {
+	height: 100%;
+	width: auto;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.ConversationHeader__Infos {
+	display: inline-block;
+	position: relative;
+	padding-left: 9%;
+}
+
+.ConversationHeader__Status {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}

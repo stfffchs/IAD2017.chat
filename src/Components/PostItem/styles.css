@@ -1,24 +1,33 @@
 .PostItem {
+  padding: 2rem;
+  background-color: #E4EEFF;
 }
 
 .PostItem__Post {
   margin-top: 2rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
 }
 
 .PostItem__Post--me {
   margin-left: 40%;
-  background-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5377FF;
+  border-radius: 9px 2px 9px 9px;
 }
 
 .PostItem__Post--other {
   margin-right: 40%;
-  background-color: blue;
+  background-color: white;
+  border-radius: 2px 9px 9px 9px;
 }
 
 .PostItem__Time {
-  display: inline-block;
-  padding: 0.2rem;
-  background-color: white;
+  display: block;
+  text-align: right;
+  padding: -0.2rem;
+  background-color: none;
   font-size: 0.6rem;
 }

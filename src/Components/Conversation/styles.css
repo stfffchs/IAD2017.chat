@@ -1,5 +1,4 @@
 .Conversation {
-  background-color: lightgoldenrodyellow;
   height: 100%;
 
   display: flex;
@@ -9,7 +8,7 @@
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
-  background-color: red;
+  background-color: none;
 }
 
 .Conversation__PostItems {
@@ -19,11 +18,38 @@
 
 .Conversation__Form {
   height: 5rem;
-  background-color: green;
+  background-color: lightgray;
 }
 
 .Conversation__Writing {
   width: 3rem;
   height: 3rem;
   background-color: pink;
+}
+
+
+.Conversation__Write {
+  padding: 1rem;
+  width: 
+}
+
+.Conversation__WriteTextarea {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+}
+
+.Conversation__Send {
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+}
+
+.Conversation__PlaceholderText {
+  text-align: center;
+
+  }
+
+.Conversation__Form {
+  max-width: 100%;
 }
