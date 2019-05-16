@@ -124,7 +124,13 @@ class Conversation extends Component {
                   })}
                   {isWriting && <div className="Conversation__Writing" />}
                 </div>
-                <div className="Conversation__Form">
+                <div
+                  className={`Conversation__Form ${
+                    this.state.value
+                      ? "Conversation__Form--text"
+                      : "Conversation__Form--noText"
+                  }`}
+                >
                   <form
                     onSubmit={e => {
                       this.handleSubmit(e, context);
