@@ -23,9 +23,11 @@
 }
 
 .Conversation__Writing {
-  width: 3rem;
+  width: 4rem;
   height: 3rem;
-  background-color: pink;
+  background-repeat: no-repeat;
+  background-image: url("schreibt.gif");
+  background-size: 100%;
 }
 
 
@@ -43,8 +45,10 @@
 
 .Conversation__Send {
   display: inline-block;
-  position: absolute;
-  right: 1rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 10000000;
 }
 
 .Conversation__PlaceholderText {

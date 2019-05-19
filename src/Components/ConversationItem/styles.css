@@ -36,21 +36,24 @@ h3 {
 }
 
 
-.ConversationItem__Writing:after {
-	content: '';
 
-}
 
 .ConversationItem--inactive {
 }
 
 .ConversationItem__Writing {
-  background-repeat: no-repeat;
-  width: 4rem;
-  height: auto;
-  background-color: blue;
+  
 }
 
+.ConversationItem__Writing:after {
+	content: 'schreibt...';
+	background-color: white;
+	background-size: 600px 200px;
+	left: 140px;
+	position: absolute;
+	font-weight: 200;
+	font-size: 0.9em;
+}
 
 .ConversationItem__Avatar {
 	width: auto;
