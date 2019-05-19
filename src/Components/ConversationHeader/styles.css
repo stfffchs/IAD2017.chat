@@ -1,0 +1,40 @@
+.ConversationHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.ConversationHeader__Avatar {
+    margin: 0 0 0 41px; 
+}
+
+.ConversationHeader__AvatarImage {
+    height: 38px;
+    width: 38px;
+    border-radius: 100%;
+    flex: 0 0 auto;
+}
+
+.ConversationHeader__Infos {
+    flex: 1 1 auto;
+    margin: 0 0 0 15px;
+}
+
+.ConversationHeader__Name h3 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 15px;
+    color: #0F0F0F;
+    letter-spacing: -0.17px;
+    margin: 0;
+}
+
+.ConversationHeader__Status {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    color: #A0A0A0;
+    letter-spacing: -0.17px;
+    margin: 0;
+}
