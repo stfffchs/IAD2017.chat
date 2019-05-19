@@ -9,6 +9,7 @@
   flex-direction: row;
   overflow: hidden;
   padding-left: 5%;
+  padding-right: 1em;
   margin: auto; 
   margin-top: 2%;
   border-radius: 9px;
@@ -31,6 +32,7 @@
 h3 {
 	font-weight: 500;
 	letter-spacing: 0.04em;
+	color: #5377FF;
 }
 
 
@@ -113,6 +115,7 @@ h3 {
 
 .ConversationItem__UnreadCount {
 	background-color: #5377FF;
+	font-size: 0.8em;
 	border-radius: 50%;
 	width: 1.5em;
 	height: 1.5em;
@@ -120,4 +123,8 @@ h3 {
 	text-align: center;
 	padding-top: auto;
 	padding-bottom: auto;
+	right: 5%;
+	position: absolute;
+	bottom: 5%;
+	vertical-align: middle; 
 }
