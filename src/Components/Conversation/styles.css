@@ -1,10 +1,10 @@
 .Conversation {
-  background-color: lightgoldenrodyellow;
+  background-color: #FFFFFF;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  border-left: 1px solid #F3F3F3; 
 }
 
 .Conversation__Placeholder {
@@ -15,20 +15,27 @@
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
+  box-shadow: 0 0 35px 0 rgba(0,0,0,0.20);
+  border-radius: 0 30px 0 0;
 }
 
 .Conversation__Header {
-  height: 7rem;
+  height: 90px;
   flex: 0 0 auto;
-  background-color: pink;
+  background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .Conversation__Form {
   background: #F3F3F3;
   border-top: 1px solid #D6D6D6; 
-  position: relative;
-  height: 55px;
+  height: 56px;
   width: 100%;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  flex-direction: row;
+  z-index: 100;
 }
 
 .Conversation__Writing {
@@ -50,31 +57,32 @@
   overflow-wrap: break-word;
   font-family: Inter;
   font-weight: 400;
-  font-family: Inter-Regular;
   font-size: 15px;
   letter-spacing: -0.14px;
   line-height: 21px;
   color: #0F0F0F;
-  padding: 0;
+  padding: 8px;
+}
+
+.Conversation__WriteTextarea::placeholder {
+    color: #D6D6D6;
 }
 
 .Conversation__Write {
+  width: 100%;
   height: 40px;
-  position: absolute;
-  top: 7px;
-  left: 20px;
-  right: 70px;
-  display: inline-block;
+  margin: 0;
+  flex: 1 1 auto;
+  margin: 0 0 0 20px;
 }
 
 .Conversation__Send {
-  position: absolute;
-  top: 7px;
-  right: 20px;
   height: 40px;
-  width: 40px;
   background: #67ADFE;
   border-radius: 20px;
-  padding: 0;
   margin: 0;
+}
+
+.Conversation__Form--noText .Conversation__Send {
+  display: none;
 }
