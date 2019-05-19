@@ -1,10 +1,7 @@
 .ConversationHeader__AvatarImage{
-    width: 3rem;
-    height: 3rem;
-    left: 5rem;
-    top: 5rem;
+    width: 63%;
     border-radius: 0% 50% 50% 50%;
-    margin: 1rem;
+    margin: 20%;
     display: inline-block;
 }
 
@@ -30,6 +27,10 @@
     padding:0!important;
     top:0!important;
 }
+  /* Linie
+  hr.Conversation__Header {
+    border: 0.7px solid rgba(255, 255, 255, 0.15);
+  }*/
 
 .ConversationHeader__Avatar{
     display: inline-block;
@@ -37,6 +38,6 @@
 
   .ConversationHeader__Status{
     font-size:0.8rem;
-    margin-top:2  %;
+    margin-top:1%;
     color: #9CA7B4;
 }

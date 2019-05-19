@@ -7,6 +7,7 @@
 
 .ConversationItem--active {
   background-color: #418FB0;
+  padding:4%;
 }
 
 .ConversationItem__Writing {
@@ -17,14 +18,42 @@
 
 .ConversationItem__AvatarImage{
   width: 3rem;
-  height: 3rem;
-  left: 5rem;
-  top: 5rem;
   border-radius: 0% 50% 50% 50%;
+  display: inline-block;
 }
 
 .ConversationItem__UnreadCount {
   width: 3rem;
   height: 3rem;
   background-color: yellow;
+}
+
+.ConversationItem__Avatar {
+  display: inline-block;
+  width:3rem;
+}
+
+.ConversationItem__Infos {
+  display: inline-block;
+  top:0% !important;
+
+}
+
+.ConversationItem__Name {
+  top:0% !important;
+  font-size: 1rem;
+  margin-left: 1.3rem;
+  display: inline-block;
+}
+
+.ConversationItem__Preview {
+font-size: 0.8rem;
+}
+
+.ConversationItem--inactive .ConversationItem__Time {
+  color: #9CA7B4;
+}
+
+.ConversationItem--inactive .ConversationItem__Preview {
+  color: #9CA7B4;
 }
