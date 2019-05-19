@@ -18,9 +18,8 @@
 }
 
 .Conversation__Header {
-  height: 7rem;
+  height: 5rem;
   flex: 0 0 auto;
-  background-color: pink;
 }
 
 .Conversation__Form {
@@ -41,4 +40,3 @@
 .textarea{
   solid-color: none;
 }
-
