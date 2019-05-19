@@ -9,6 +9,9 @@
 
 .ConversationHeader__Infos{
     color: white;
+  }
 
+  .Conversation__Header {
+    background-color: #0F1C25 !important;
 
 }
