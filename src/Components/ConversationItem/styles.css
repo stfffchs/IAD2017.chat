@@ -46,6 +46,13 @@
   display: inline-block;
 }
 
+.ConversationItem__Time{
+  top:0% !important;
+  font-size: 1rem;
+  margin-left: 1.3rem;
+  display: inline-block;
+}
+
 .ConversationItem__Preview {
 font-size: 0.8rem;
 }
