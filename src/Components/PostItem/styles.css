@@ -5,16 +5,16 @@
   color: #000000;
   margin-top: 2rem;
   margin-left: 4rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border: 1px solid black;
-  border-radius: 15px 15px 15px 0px;
+  border-radius: 60px 60px 60px 0px;
 }
 
 .PostItem__Post--me {
-  margin-left: 40%;
-  margin-right: 4rem;
+  margin-left: 30%;
+  margin-right: 2rem;
   background-color: #D6D6D6;
-  border-radius: 15px 15px 0px 15px;
+  border-radius: 60px 60px 0px 60px;
   border: 0;
 }
 

@@ -27,3 +27,25 @@
   height: 3rem;
   background-color: #4d4c50;
 }
+
+.Conversation__Write{
+  background-color: white;
+}
+
+
+.Conversation__WriteTextarea{
+  border-radius: 50px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2rem;
+
+}
+
+.Conversation__Send{
+  background-color: white;
+}
+
+.Conversation__SendInput{
+  color: #226CE0;
+  font-weight: bold;
+}

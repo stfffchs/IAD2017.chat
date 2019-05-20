@@ -1,3 +1,9 @@
+:root{
+  --lightgrey: #D8D8D8;
+  --darkgrey: #646464;
+  --blue: #226CE0;
+}
+
 .App {
   height: 100%;
 }
@@ -9,15 +15,15 @@
 }
 
 .App--MenuOpen .App__ConversationList {
-  width: 30%;
+  width: 100%;
 }
 .App--MenuClosed .App__ConversationList {
-  width: 0%;
+  width: 0;
   overflow: hidden;
 }
 
 .App--MenuOpen .App__Conversation {
-  width: 70%;
+  width: 0;
 }
 
 .App--MenuClosed .App__Conversation {
