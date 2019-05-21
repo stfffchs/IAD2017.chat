@@ -1,9 +1,9 @@
 .Menu {
   width: 7rem;
   height: 7rem;
-  position: absolute;
+  position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   background-color: green;
 }
 
