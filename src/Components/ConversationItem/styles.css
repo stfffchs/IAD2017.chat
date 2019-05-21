@@ -41,14 +41,16 @@
 }
 
 
-.ConversationItem__Name:before {
+.ConversationItem__Name:after {
 	content: ' ';
 	background-color: #8CFE67;
-	position: absolute;
-	display: inline-flex;
+	position: relative;
+	display: flex;
+  float: right;
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
+  margin-top: -2rem;
 }
 
 
