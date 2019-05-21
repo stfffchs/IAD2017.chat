@@ -9,19 +9,19 @@
 }
 
 .App--MenuOpen .App__ConversationList {
-  width: 100%;
+  width: 0%;
 }
 .App--MenuClosed .App__ConversationList {
-  width: 0%;
+  width: 100%;
   overflow: hidden;
 }
 
 .App--MenuOpen .App__Conversation {
-  width: 0%;
+  width: 100%;
 }
 
 .App--MenuClosed .App__Conversation {
-  width: 100%;
+  width: 0%;
 }
 
 @media (min-width: 650px) {
