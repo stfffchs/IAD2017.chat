@@ -38,13 +38,12 @@
   background-color: white;
 }
 
-.Conversation__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: red;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-radius: 50%;
+.Conversation__Writing:before {
+  content: 'schreibt';
+  font-size: 0.8em;
+}
+
+.Conversation__Writing:after {
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
@@ -56,16 +55,15 @@
 
 @keyframes ellipsis {
   to {
-    width: 2em;
+    width: 20px;
   }
 }
 
 @-webkit-keyframes ellipsis {
   to {
-    width: 2em;
+    width: 20px;
   }
 }
-
 
 
 .Conversation__Write {
