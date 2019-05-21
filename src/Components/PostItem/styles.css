@@ -1,4 +1,6 @@
-
+.PostItem {
+  margin-left: 2%;
+}
 
 .PostItem__Post {
   margin-top: 1rem;
