@@ -70,14 +70,22 @@
 
 .Conversation__Write {
   padding: 1rem;
+  padding-left: 3rem; 
   width: 80%;
   height: 90%;
+  background-image: url(smiley.svg);
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: 10px center;
+  
 }
+
+
 
 .Conversation__WriteTextarea {
   width: 100%;
   border: none;
-  border-radius: 1rem;
+  background-color: none;
 }
 
 .Conversation__Send {
@@ -86,6 +94,10 @@
   bottom: 2.5rem;
   right: 2.5rem;
   z-index: 10000000;
+}
+
+.Conversation .form {
+
 }
 
 .Conversation__Send:hover {
