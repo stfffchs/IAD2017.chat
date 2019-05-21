@@ -10,6 +10,22 @@
 .Conversation__Placeholder {
   flex: 1 1 auto;
   background-color: none;
+  text-align: left;
+}
+
+.Conversation__PlaceholderText {
+  font-size: 30px;
+  text-align: left;
+  color: #5377FF;
+  margin-top: 15px;
+}
+
+.Conversation__PlaceholderText {
+  content: 'Your favourit Contacts';
+  font-size: 30px;
+  text-align: left;
+  color: #5377FF;
+  margin-top: 15px;
 }
 
 .Conversation__PostItems {

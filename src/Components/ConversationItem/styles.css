@@ -10,12 +10,35 @@
   overflow: hidden;
   padding-left: 5%;
   padding-right: 1em;
-  margin: auto; 
+  margin: auto;
   margin-top: 2%;
   border-radius: 9px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.ConversationItem:hover {
+  background-color: #adb6d6;
+  color: white;
+  width: 95%;
+  height: 8em;
+  text-align: left;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 1em;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 9px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ConversationItem__Name:hover {
+  color: white;
+}
 
 
 .ConversationItem__Name:before {
@@ -36,13 +59,17 @@ h3 {
 }
 
 
+.ConversationItem--active {
+  color: white;
+  background-color: #5377FF;
 
+}
 
 .ConversationItem--inactive {
 }
 
 .ConversationItem__Writing {
-  
+
 }
 
 .ConversationItem__Writing:after {
@@ -67,7 +94,7 @@ h3 {
 
 .ConversationItem__AvatarImage {
 
-	border-radius: 50%; 
+	border-radius: 50%;
 	display: inline-block;
 	width: 100%;
 	height: auto;
@@ -129,5 +156,5 @@ h3 {
 	right: 5%;
 	position: absolute;
 	bottom: 5%;
-	vertical-align: middle; 
+	vertical-align: middle;
 }
