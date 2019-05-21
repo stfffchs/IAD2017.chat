@@ -39,12 +39,33 @@
 }
 
 .Conversation__Writing {
-  width: 4rem;
+  width: 3rem;
   height: 3rem;
+  background-color: red;
   background-repeat: no-repeat;
-  background-image: url("schreibt.gif");
   background-size: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
 }
+
+@keyframes ellipsis {
+  to {
+    width: 2em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 2em;
+  }
+}
+
 
 
 .Conversation__Write {
