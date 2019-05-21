@@ -67,6 +67,10 @@
   z-index: 10000000;
 }
 
+.Conversation__Send:hover {
+  color: #5377FF;
+}
+
 .Conversation__PlaceholderText {
   text-align: center;
 
