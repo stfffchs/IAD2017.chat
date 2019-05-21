@@ -13,7 +13,7 @@
 
 .ConversationHeader {
 	height: 100%;
-	margin-top: 0%;
+	margin-top: auto;
 	display: flex;
   	position: fixed;
   	flex-wrap: wrap;
@@ -21,9 +21,11 @@
 }
 
 .ConversationHeader__AvatarImage {
+	margin: 15%;
 	border-radius: 50%;
 	height: 3em;
-	padding-left: 5%;
+	padding-left: 3%;
+	display: ;
 	vertical-align: middle;
 }
 
@@ -36,18 +38,21 @@
 }
 
 .ConversationHeader__Status {
-	width: 120%;
+	width: 200%;
 	display: inline-block;
 	position: relative;
 	font-size: 0.9em;
 	margin-top: 0;
 	font-weight: 200;
-	letter-spacing: 0.02em;	
+	letter-spacing: 0.02em;
 }
 
 .ConversationHeader__Name {
 	font-size: 0.8em;
-	margin-bottom: -12px;	
+	margin-bottom: -12px;
+	width: 150%;
 	font-weight: 300;
 	margin-top: -2px;
+	vertical-align:;
+	display:;
 }
