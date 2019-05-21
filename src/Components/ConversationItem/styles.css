@@ -12,7 +12,7 @@
   padding-right: 1em;
   margin: auto;
   margin-top: 2%;
-  border-radius: 9px;
+  border-radius: 4px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -32,7 +32,7 @@
   padding-right: 1em;
   margin: auto;
   margin-top: 2%;
-  border-radius: 9px;
+  border-radius: 4px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,6 +53,38 @@
   margin-top: -2rem;
 }
 
+.ConversationItem__Writing:before {
+  content: 'schreibt';
+  font-size: 0.8em;
+  background-color: #5377FF;
+}
+
+
+.ConversationItem__Writing:after {
+  background-color: #5377FF;
+  background-size: 600px 200px;
+  font-weight: 200;
+  font-size: 0.9em;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 1200ms infinite;
+  animation: ellipsis steps(4,end) 1200ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;
+  }
+}
 
 h3 {
 	font-weight: 500;
@@ -70,41 +102,26 @@ h3 {
 .ConversationItem--inactive {
 }
 
-.ConversationItem__Writing {
-
-}
-
-.ConversationItem__Writing:after {
-	content: 'schreibt...';
-	background-color: white;
-	background-size: 600px 200px;
-	left: 140px;
-	position: absolute;
-	font-weight: 200;
-	font-size: 0.9em;
-}
 
 .ConversationItem__Avatar {
-	width: auto;
-	height: 100%;
-/*	overflow: hidden;*/
+	width: 60px;
+	height: 60px;
+
+  overflow: hidden;
 	display: inline-block;
 	position: absolute;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto;
 }
 
 .ConversationItem__AvatarImage {
-
 	border-radius: 50%;
 	display: inline-block;
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 10%;
+	margin: auto;
 }
+
 .ConversationItem__Info {
 	display: inline-block;
 
@@ -115,8 +132,8 @@ h3 {
 	font-size: 0.8em;
 	margin-bottom: 0;
 	margin-top: 0;
-	left: 100px;
-	padding-left: 20px;
+	left: 80px;
+	padding-left: 0px;
 	position: relative;
 	font-weight: 300;
 	width: 145px;
@@ -136,11 +153,11 @@ h3 {
 .ConversationItem__Preview {
 	position: relative;
 	display: inline-block;
-	width: calc(100% - 120px);
+	width: calc(130% - 10px);
 	margin-top: -25px;
-	left: 100px;
-	padding-left: 20px;
-	font-size: 0.9em;
+	left: 80px;
+	padding-left: 0px;
+	font-size: 0.8em;
 	font-weight: 200;
 	letter-spacing: 0.02em;
 }

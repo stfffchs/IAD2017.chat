@@ -39,9 +39,9 @@
 
 .ConversationHeader__Status {
 	width: 200%;
-	display: inline-block;
+	display: flex;
 	position: relative;
-	font-size: 0.9em;
+	font-size: 0.7em;
 	margin-top: 0;
 	font-weight: 200;
 	letter-spacing: 0.02em;

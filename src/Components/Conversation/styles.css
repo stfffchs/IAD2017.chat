@@ -41,14 +41,15 @@
 .Conversation__Writing:before {
   content: 'schreibt';
   font-size: 0.8em;
+  padding-left: 2.5em;
 }
 
 .Conversation__Writing:after {
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4,end) 900ms infinite;
-  animation: ellipsis steps(4,end) 900ms infinite;
+  -webkit-animation: ellipsis steps(4,end) 1200ms infinite;
+  animation: ellipsis steps(4,end) 1200ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
   width: 0px;
 }
@@ -68,7 +69,7 @@
 
 .Conversation__Write {
   padding: 1rem;
-  padding-left: 3rem; 
+  padding-left: 3rem;
   width: 80%;
   height: 90%;
   background-image: url(smiley.svg);
