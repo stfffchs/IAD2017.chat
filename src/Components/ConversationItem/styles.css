@@ -1,6 +1,6 @@
 .ConversationItem {
   background-color: #1B2730;
-  border-bottom: 1px solid black;
+  border-bottom: 0.06rem solid #9CA7B4;
   width: 100%;
   display: block;
 }
@@ -20,6 +20,7 @@
   width: 3rem;
   border-radius: 0% 50% 50% 50%;
   display: inline-block;
+
 }
 
 .ConversationItem__UnreadCount {
