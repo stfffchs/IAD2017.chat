@@ -22,6 +22,7 @@
 
 .Conversation__PostItem--other + .Conversation__PostItem--me .PostItem__Post {
   border-radius: 16px 0px 16px 16px;
+
 }
 .Conversation__PostItem--me + .Conversation__PostItem--other .PostItem__Post {
   border-radius: 0px 16px 16px 16px;
@@ -32,7 +33,11 @@
   display: inline-block;
   padding: 0.2rem;
   background-color: none;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.Conversation__PostItem--me .PostItem__Time  {
+  color: white;
 }
 
 .PostItem__Text {

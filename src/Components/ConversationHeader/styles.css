@@ -31,6 +31,7 @@
 
 .ConversationHeader__Avatar{
     display: inline-block;
+
   }
 
   .ConversationHeader__Status{
@@ -38,3 +39,11 @@
     margin-top:1%;
     color: #9CA7B4;
 }
+
+
+  @media (max-width: 650px) {
+    .ConversationHeader__Avatar{
+        margin-left: 2rem;
+
+      }
+  }

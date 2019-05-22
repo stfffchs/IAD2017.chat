@@ -2,9 +2,9 @@
   width: 3rem;
   height: 3rem;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background-color: green;
+  top: 1.5rem;
+  right: 21rem;
+  position:absolute;
 }
 
 .Menu--Open {
@@ -15,4 +15,9 @@
   .Menu {
     display: none;
   }
+}
+.Menu--Closed {
+  background-image:url('back.svg');
+  width: 2rem;
+  height: 1.5rem;
 }
