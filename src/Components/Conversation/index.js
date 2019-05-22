@@ -43,6 +43,13 @@ class Conversation extends Component {
     this.setState({ value: event.target.value });
   }
 
+  onKeyDown = (event, context) => {
+    if (event.keyCode === 13 && event.shiftKey === false) {
+      event.preventDefault();
+      this.handleSubmit(event, context);
+    }
+  };
+
   componentDidMount() {
     this.scrollToBottom();
   }
@@ -102,7 +109,11 @@ class Conversation extends Component {
                 <div className="Conversation__PostItems" ref={this.ref}>
                   {currentConversation.conversation.map(item => {
                     return (
-                      <div className="Conversation__PostItem">
+                      <div
+                        className={`Conversation__PostItem Conversation__PostItem--${
+                          item.from === "me" ? "me" : "other"
+                        }`}
+                      >
                         <PostItem
                           type={item.type}
                           from={item.from}
@@ -113,7 +124,13 @@ class Conversation extends Component {
                   })}
                   {isWriting && <div className="Conversation__Writing" />}
                 </div>
-                <div className="Conversation__Form">
+                <div
+                  className={`Conversation__Form ${
+                    this.state.value
+                      ? "Conversation__Form--text"
+                      : "Conversation__Form--noText"
+                  }`}
+                >
                   <form
                     onSubmit={e => {
                       this.handleSubmit(e, context);
@@ -123,6 +140,8 @@ class Conversation extends Component {
                       <textarea
                         className="Conversation__WriteTextarea"
                         value={this.state.value}
+                        placeholder="Nachricht schreiben..."
+                        onKeyDown={e => this.onKeyDown(e, context)}
                         onChange={e => this.handleChange(e)}
                       />
                     </div>
