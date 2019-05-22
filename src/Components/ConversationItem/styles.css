@@ -1,3 +1,4 @@
+
 .ConversationItem {
   background-color: white;
   width: 95%;
@@ -14,6 +15,7 @@
   margin-top: 2%;
   border-radius: 4px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -37,7 +39,7 @@
 }
 
 .ConversationItem__Name:hover {
-  color: white;
+
 }
 
 
@@ -56,12 +58,12 @@
 .ConversationItem__Writing:before {
   content: 'schreibt';
   font-size: 0.8em;
-  background-color: #5377FF;
+  background-color: ;
 }
 
 
 .ConversationItem__Writing:after {
-  background-color: #5377FF;
+  background-color:;
   background-size: 600px 200px;
   font-weight: 200;
   font-size: 0.9em;
@@ -89,7 +91,7 @@
 h3 {
 	font-weight: 500;
 	letter-spacing: 0.04em;
-	color: #5377FF;
+  color: #5377FF;
 }
 
 
@@ -148,12 +150,13 @@ h3 {
 	right: 5%;
 	top: 5%;
 	font-size: 0.8em;
+  font-weight: 200;
 }
 
 .ConversationItem__Preview {
 	position: relative;
 	display: inline-block;
-	width: calc(130% - 10px);
+	width: calc(100% - 30px);
 	margin-top: -25px;
 	left: 80px;
 	padding-left: 0px;
@@ -196,7 +199,7 @@ h3 {
   }
 
   p {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   .ConversationItem {
@@ -253,6 +256,6 @@ h3 {
   	display: inline-block;
   	right: 5%;
   	top: 5%;
-  	font-size: 0.7em;
+  	font-size: 0.6em;
   }
 }
