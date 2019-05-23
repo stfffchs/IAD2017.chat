@@ -2,6 +2,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+const LCG = require("./LCG").default;
+
 // https://github.com/davidak/satzgenerator
 // merci https://www.stephanl.de/satz
 
@@ -70,20 +72,21 @@ var couppler = [
   "der neue Kevin",
   "Eiskunstläufer (Männlich und sexy zugleich)"
 ];
-let sentence = () => {
-  var randomNr = Math.floor(Math.random() * 3);
+let sentence = rnd => {
+  let rand = rnd || (() => Math.random());
+  var randomNr = Math.floor(rand() * 3);
   if (randomNr === 1) {
     return (
-      Subject1[Math.floor(Math.random() * Subject1.length)] +
+      Subject1[Math.floor(rand() * Subject1.length)] +
       " ist wie " +
-      Subject2[Math.floor(Math.random() * Subject2.length)] +
+      Subject2[Math.floor(rand() * Subject2.length)] +
       "."
     );
   } else {
     return (
-      namen[Math.floor(Math.random() * namen.length)] +
+      namen[Math.floor(rand() * namen.length)] +
       " ist " +
-      couppler[Math.floor(Math.random() * couppler.length)] +
+      couppler[Math.floor(rand() * couppler.length)] +
       "."
     );
   }

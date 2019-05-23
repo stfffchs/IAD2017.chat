@@ -30,8 +30,7 @@ let data = {
   ]
 };
 
-
-let newConversations = {}
+let newConversations = {};
 newConversations.conversations = data.conversations.map(conversation => {
   let newItem = { ...conversation };
 
@@ -40,7 +39,7 @@ newConversations.conversations = data.conversations.map(conversation => {
     return {
       type: "text",
       from: rand() > 0.5 ? "me" : conversation.id,
-      text: getSentence()
+      text: getSentence(() => rand())
     };
   });
   // console.log("conversation", newConversation);
@@ -49,6 +48,4 @@ newConversations.conversations = data.conversations.map(conversation => {
   return newItem;
 });
 
-
-
-fs.writeFileSync('./index.json', JSON.stringify(newConversations, null, 2));
+fs.writeFileSync("./index.json", JSON.stringify(newConversations, null, 2));
