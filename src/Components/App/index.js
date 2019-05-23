@@ -4,7 +4,7 @@ import ConversationList from "../ConversationList";
 import Conversation from "../Conversation";
 import Menu from "../Menu";
 import { withContext } from "../Context";
-import { getSentence } from "../../Data/getSentence";
+import getSentence from "../../Data/getSentence";
 
 class App extends Component {
   componentDidMount() {
