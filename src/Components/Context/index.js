@@ -36,9 +36,11 @@ export class UIProvider extends Component {
       let newConversation = { ...conversation };
       if (newConversation.id === id) {
         newConversation.conversation.push({
+          id: id*1000+(newConversation.conversation.length ),
           type,
           from,
           text,
+          date: parseInt(new Date().getTime() / 1000),
           unread: this.state.activeConversation === from ? false : unread
         });
       }
@@ -67,7 +69,6 @@ export class UIProvider extends Component {
       newConversations.push(newConversation);
     });
 
-    console.log("newConversations ", newConversations[3]);
 
     this.setState({
       ...this.state,
