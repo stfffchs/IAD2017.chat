@@ -1,85 +1,88 @@
 .ConversationItem {
-  background-color: #1B2730;
-  border-bottom: 0.06rem solid #9CA7B4;
-  width: 100%;
+    background-color: #1B2730;
+    border-bottom: 0.06rem solid #9CA7B4;
+    width: 100%;
+    height: auto;
 }
 
 .ConversationItem--active {
-  background-color: #418FB0;
+    background-color: #418FB0;
 }
 
-.ConversationItem__AvatarImage{
-  width: 3rem;
-  border-radius: 0% 50% 50% 50%;
-  float: left;
+.ConversationItem__AvatarImage {
+    width: 100%;
+    border-radius: 0% 50% 50% 50%;
+    float: left;
 }
 
 .ConversationItem__UnreadCount {
-  float: right;
-  width: 23px;
-  height: 23px;
-  width: 23px;
-  height: 23px;
-  background: #5DBDE6;
-  border-radius: 16px;
-  text-align: center;
-  font-size:0.8rem;
-  font-weight:bold !important;
-  vertical-align:middle;
+    float: right;
+    width: 23px;
+    height: 23px;
+    width: 23px;
+    height: 23px;
+    background: #5DBDE6;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold !important;
+    vertical-align: middle;
 }
 
 .ConversationItem__Avatar {
-  margin-top: 0.5rem;
-  width:3rem;
+    margin-top: 0.5rem;
+    width: 3rem;
 }
 
 .ConversationItem__Infos {
+    width: 100%;
 }
 
 .ConversationItem__Name {
-  float: left;
-  margin-left: 1rem;
-  width: 80%;
-  text-align: left;
+    float: left;
+    margin-left: 1rem;
+    width: 80%;
+    text-align: left;
 }
 
-.ConversationItem__Time{
-  margin-top: 0.5rem;
-  width: 10%;
-  float: right;
-  font-size: 0.8rem;
+.ConversationItem__Time {
+    margin-top: 0.5rem;
+    float: right;
+    font-size: 0.8rem;
+    text-align: right;
+    width: 20%;
 }
 
 .ConversationItem__Preview {
-  font-size: 0.8rem;
-  margin-left: 1rem;
-
-
+    float: left;
+    font-size: 0.8rem;
+    margin-left: 1rem;
 }
 
 .ConversationItem--inactive .ConversationItem__Time {
-  color: white;
+    color: white;
 }
 
-p {
-  margin-block-start: 0.2em;
-  margin-inline-end: 0;
-  text-align: left;
-}
 
 .ConversationItem--inactive .ConversationItem__Preview {
-  color: #9CA7B4;
+    color: #9CA7B4;
 }
 
 .ConversationItem__Writing {
-  background-image:url('write.svg');
-  width: 2rem;
-  height: 0.5rem;
-  background-color: none;
+    background-image: url('write.svg');
+    width: 2rem;
+    height: 0.5rem;
+    background-color: none;
 
 }
 
-h3{
-  margin: 0;
-  font-size: 1.5rem;
+
+p {
+    margin-block-start: 0.2em;
+    text-align: left;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
 }
