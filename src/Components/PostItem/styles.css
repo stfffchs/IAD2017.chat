@@ -1,24 +1,63 @@
 .PostItem {
+    width: 100%;
 }
 
 .PostItem__Post {
   margin-top: 2rem;
-  padding: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 10px 15px 10px 15px;
 }
 
 .PostItem__Post--me {
-  margin-left: 40%;
-  background-color: red;
+  background: #67ADFE;
+  border-radius: 10px 10px 0 10px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: -0.14px;
+  line-height: 21px;
+  margin-right: 20px;
+  margin-left: 40px;
+  float: right;
+}
+
+.PostItem::after {
+    clear: both;
+    content: " ";
+    display: block;
+    visibility: hidden;
 }
 
 .PostItem__Post--other {
-  margin-right: 40%;
-  background-color: blue;
+  background: #E2E2E2;
+  border-radius: 10px 10px 10px 0;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: #0F0F0F;
+  letter-spacing: -0.14px;
+  line-height: 21px;
+  margin-left: 20px;
+  float: left;
+}
+
+.PostItem__Post--me .PostItem__Time {
+  color: #FFFFFF;
 }
 
 .PostItem__Time {
   display: inline-block;
   padding: 0.2rem;
-  background-color: white;
-  font-size: 0.6rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  color: #A0A0A0;
+  letter-spacing: -0.09px;
+  line-height: 15px;
 }
+
+/* .Conversation__PostItems .Conversation__PostItem--me + .Conversation__PostItem--me:last-child .PostItem .PostItem__Post .PostItem__Time {
+    transform: translateY(50px);
+    display: inline-block;
+} */
