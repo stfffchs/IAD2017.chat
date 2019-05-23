@@ -4,7 +4,8 @@
 
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  /*overflow-y: auto;*/
+  height: 100%;
 }
 
 .Conversation__Placeholder {
@@ -25,5 +26,6 @@
 .Conversation__Writing {
   width: 3rem;
   height: 3rem;
-  background-color: pink;
+  border-radius: 50%;
+  background-color: orange;
 }

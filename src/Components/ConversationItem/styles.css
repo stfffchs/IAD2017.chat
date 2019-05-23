@@ -7,12 +7,16 @@
 
 .ConversationItem--active {
   background-color: pink;
+  border-radius: 50%;
 }
 
 .ConversationItem__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: red;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: orange;
+  margin-top: -16rem;
+  text-shadow: 0 0 0.7em black;
 }
 
 .ConversationItem__Avatar {
@@ -21,14 +25,27 @@
 
 .ConversationItem__AvatarImage {
   border-radius: 50%;
-    width: 90%;
+  /*width: 100%;*/
+  padding: 1rem;
 }
 
 .ConversationItem__Name {
   margin-top: -7.5rem;
   margin-bottom: 8rem;
   color: white;
-  text-shadow: 0 0 0.7em black;
+  text-shadow: 0 0 1em black;
   font-size: 1rem;
 
+}
+
+.ConversationItem__Preview {
+    display: none;
+}
+
+.ConversationItem__Time {
+    display: none;
+}
+
+.ConversationItem__UnreadCount {
+    display: none;
 }
