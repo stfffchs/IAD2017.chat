@@ -19,7 +19,7 @@
 .Conversation__Header {
   height: 5rem;
   flex: 0 0 auto;
-  position: 0;
+  position: sticky;
   border-width: 0.5px;
 }
 
@@ -37,11 +37,12 @@
 
 .Conversation__WriteTextarea{
   background-color: #0F1C25;
+  float:left;
   color: white;
   font-family: inherit;
   border-radius: 16px 16px 16px 16px;
   padding: 0.5rem;
-  width: 90%;
+  width: 85%;
   margin-top: 1rem;
   margin-left: 1rem;
   font-size: 1rem;
@@ -55,5 +56,9 @@
 }
 
 .Conversation__Send {
-
+  float: right;
+  background-image:url('send1.svg');
+  width: 41px;
+  height: 41px;
+  margin: 26px;
 }

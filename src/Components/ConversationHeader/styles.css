@@ -22,7 +22,7 @@
     }
 
   .Conversation__Header {
-      display: inline-block;
+      display: sticky;
       background-color: #0F1C25;
       border-bottom: 0.08rem solid #9CA7B4;
 
