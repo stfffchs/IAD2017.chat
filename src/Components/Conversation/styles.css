@@ -29,6 +29,7 @@
 
 .Conversation__Writing {
   background-image:url('write.svg');
+  margin: 2rem;
   width: 2rem;
   height: 0.5rem;
   background-color: none;
