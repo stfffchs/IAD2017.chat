@@ -10,6 +10,7 @@ class App extends Component {
   componentDidMount() {
     let { context } = this.props;
 
+    // setup a fake writer
     setInterval(() => {
       context.actions.appendPostItem({
         id: 4,
