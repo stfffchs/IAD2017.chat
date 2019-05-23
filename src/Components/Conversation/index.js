@@ -5,7 +5,7 @@ import DateItem from "../DateItem";
 import ConversationHeader from "../ConversationHeader";
 import "./styles.css";
 
-var date_diff_indays = function(date1, date2) {
+var dateDiffInDays = function(date1, date2) {
   let dt1 = new Date(date1 * 1000);
   let dt2 = new Date(date2 * 1000);
 
@@ -135,7 +135,7 @@ class Conversation extends Component {
                         {index === 0 && <DateItem date={item.date} />}
 
                         {index > 0 &&
-                          (date_diff_indays(
+                          (dateDiffInDays(
                             item.date,
                             currentConversation.conversation[index - 1].date
                           ) !== 0 && <DateItem date={item.date} />)}
