@@ -197,7 +197,6 @@ p{
 
 
   .ConversationItem {
-    background-color: white;
     width: 95%;
     height: 6em;
     text-align: left;
@@ -261,4 +260,22 @@ p{
   	font-size: 0.7em;
     font-weight: 200;
   }
+
+  .ConversationItem__UnreadCount {
+  	background-color: #5377FF;
+  	font-size: 0.8em;
+  	border-radius: 50%;
+  	width: 2em;
+  	height: 2em;
+    line-height: 2em;
+  	color: white;
+  	text-align: center;
+  	padding-top: auto;
+  	padding-bottom: auto;
+  	left: 5%;
+  	position: absolute;
+  	bottom: 15%;
+  	vertical-align: middle;
+  }
+
 }

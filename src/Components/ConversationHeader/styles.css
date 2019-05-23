@@ -47,13 +47,18 @@
 }
 
 .ConversationHeader__Name {
-	font-size: 0.8em;
-	margin-bottom: -12px;
+	font-size: 0.9em;
+	margin-bottom: ;
 	width: 150%;
 	font-weight: 300;
-	margin-top: -2px;
-	vertical-align:;
-	display:;
+	margin-top: 15px;
+	line-height: 1.6em;
+}
+
+
+.ConversationHeader__Name h3 {
+	margin: 0px;
+
 }
 
 
@@ -61,7 +66,7 @@
 @media (max-width: 650px) {
 
 	.ConversationHeader {
-  	padding-left: 4%;
+  	padding-left: 8%;
 }
 
 
