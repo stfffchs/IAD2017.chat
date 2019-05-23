@@ -2,8 +2,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-const LCG = require("./LCG").default;
-
 // https://github.com/davidak/satzgenerator
 // merci https://www.stephanl.de/satz
 

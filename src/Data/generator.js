@@ -2,8 +2,10 @@ const getSentence = require("./getSentence").default;
 const LCG = require("./LCG").default;
 const fs = require("fs");
 
-let rand = LCG(123);
-//rand()
+let rand = LCG(123); //rand()
+let now = 1558000000; // 05/16/2019 @ 9:46am (UTC)
+const HOUR = 3600;
+const DAY = 24 * HOUR;
 
 let data = {
   conversations: [
@@ -34,12 +36,29 @@ let newConversations = {};
 newConversations.conversations = data.conversations.map(conversation => {
   let newItem = { ...conversation };
 
-  let length = Math.floor(rand() * 7) * Math.floor(rand() * 3);
-  let newConversation = Array.from({ length: 3 + length }, (_, i) => {
+  let length = 3 + Math.floor(rand() * 7) * Math.floor(rand() * 3);
+
+  let timestamp = now - Math.floor(rand() * 90 * DAY); // max minus 90 days
+
+  // generate timestamps
+  let timestamps = Array.from({ length: length }, (_, i) => {
+    timestamp =
+      timestamp -
+      Math.floor(rand() * 7 * HOUR) +
+      Math.floor(rand() * 3 * HOUR);
+    return timestamp;
+  }).sort();
+
+
+  let newConversation = Array.from({ length: length }, (_, i) => {
+
+
     return {
+      id: conversation.id * 1000 + i,
       type: "text",
       from: rand() > 0.5 ? "me" : conversation.id,
-      text: getSentence(() => rand())
+      text: getSentence(() => rand()),
+      date: timestamps[i] // parseInt(new Date().getTime() / 1000)
     };
   });
   // console.log("conversation", newConversation);
