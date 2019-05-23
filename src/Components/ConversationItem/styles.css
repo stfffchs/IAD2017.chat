@@ -20,20 +20,7 @@
 .ConversationItem:hover {
   background-color: #adb6d6;
   color: white;
-  width: 95%;
-  height: 8em;
-  text-align: left;
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  flex-direction: row;
-  overflow: hidden;
-  padding-left: 5%;
-  padding-right: 1em;
-  margin: auto;
-  margin-top: 2%;
-  border-radius: 4px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .ConversationItem__Name:hover {
@@ -50,12 +37,14 @@
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-  margin-top: -2rem;
+  margin-top:-18px;
+  padding-bottom: 0;
 }
 
 .ConversationItem__Writing:before {
   content: 'schreibt';
   font-size: 0.8em;
+  margin-left:80px;
 }
 
 
@@ -64,12 +53,12 @@
   font-weight: 200;
   font-size: 0.9em;
   overflow: hidden;
+
   display: inline-block;
   vertical-align: bottom;
   -webkit-animation: ellipsis steps(4,end) 1200ms infinite;
   animation: ellipsis steps(4,end) 1200ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
-  width: 0px;
 }
 
 @keyframes ellipsis {
@@ -88,13 +77,21 @@ h3 {
 	font-weight: 500;
 	letter-spacing: 0.04em;
   color: #5377FF;
+
 }
 
+.ConversationItem h3 {
+  margin:0;
+  padding:0;
+}
 
 .ConversationItem--active {
   color: white;
   background-color: #5377FF;
+}
 
+.ConversationItem--active h3 {
+  color: white;
 }
 
 .ConversationItem--inactive {
@@ -108,13 +105,14 @@ h3 {
   overflow: hidden;
 	display: inline-block;
 	position: absolute;
-	margin: auto;
+  left:20px;
+  top:33px;
 }
 
 .ConversationItem__AvatarImage {
 	border-radius: 50%;
 	display: inline-block;
-	width: 100%;
+	width: 60px;
 	height: auto;
 	object-fit: cover;
 	margin: auto;
@@ -135,14 +133,17 @@ h3 {
 	position: relative;
 	font-weight: 300;
 	width: 145px;
-
 }
 
+p{
+  margin:0;
+}
 
 .ConversationItem__Time {
 	position: absolute;
 	text-align: right;
-	display: inline-block;
+	display: block;
+  width:30%;
 	right: 5%;
 	top: 5%;
 	font-size: 0.8em;
@@ -153,8 +154,9 @@ h3 {
 	position: relative;
 	display: inline-block;
 	width: calc(100% - 30px);
-	margin-top: -25px;
 	left: 80px;
+  height:16px;
+  overflow:hidden;
 	padding-left: 0px;
 	font-size: 0.8em;
 	font-weight: 200;
@@ -172,9 +174,9 @@ h3 {
 	text-align: center;
 	padding-top: auto;
 	padding-bottom: auto;
-	left: 8%;
+	left: 6%;
 	position: absolute;
-	bottom: 12%;
+	bottom: 21%;
 	vertical-align: middle;
 }
 
@@ -189,14 +191,10 @@ h3 {
   h3 {
   	font-weight: 500;
   	letter-spacing: 0.04em;
-  	color: #5377FF;
+    color: #5377FF;
     font-size: 1em;
-    line-height: 2em;
   }
 
-  p {
-    font-size: 0.8em;
-  }
 
   .ConversationItem {
     background-color: white;
@@ -219,39 +217,48 @@ h3 {
   .ConversationItem:hover {
     background-color: #adb6d6;
     color: white;
-    width: 95%;
-    height: 6em;
-    text-align: left;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    flex-direction: row;
+  }
+
+  .ConversationItem__Avatar {
+  	width: 60px;
+  	height: 60px;
     overflow: hidden;
-    padding-left: 5%;
-    padding-right: 1em;
-    margin: auto;
-    margin-top: 2%;
-    border-radius: 9px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  	display: inline-block;
+  	position: absolute;
+    left:16px;
+    top:19px;
   }
 
   .ConversationItem__AvatarImage {
   	border-radius: 50%;
   	display: inline-block;
-  	width: 80%;
+  	width: 60px;
   	height: auto;
   	object-fit: cover;
-  	margin-top: auto;
-  	margin-bottom: auto;
-  	margin-left: 10%;
+  	margin: auto;
+  }
+
+  .ConversationItem__Preview {
+  	position: relative;
+  	display: inline-block;
+  	width: calc(100% - 30px);
+  	left: 80px;
+    height:14px;
+    overflow:hidden;
+  	padding-left: 0px;
+  	font-size: 0.7em;
+  	font-weight: 200;
+  	letter-spacing: 0.02em;
   }
 
   .ConversationItem__Time {
   	position: absolute;
   	text-align: right;
-  	display: inline-block;
+  	display: block;
+    width:30%;
   	right: 5%;
-  	top: 5%;
-  	font-size: 0.6em;
+  	top: 8%;
+  	font-size: 0.7em;
+    font-weight: 200;
   }
 }
