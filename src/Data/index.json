@@ -6,74 +6,18 @@
       "conversation": [
         {
           "type": "text",
-          "from": 1,
-          "text": "Die Weltwirtschaftskrise ist wie die Verspätung der Deutschen Bahn."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Hung ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "from": "me",
+          "text": "Herr Paulus ist der geilste im Dorf."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Die Weltwirtschaftskrise ist wie der Sinn des Lebens."
+          "text": "David ist Eiskunstläufer (Männlich und sexy zugleich)."
         },
         {
           "type": "text",
           "from": 1,
-          "text": "David ist ein heimlicher Stalker."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Deine Orientierungsgabe ist wie die Dauer des Streiks des DHL."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Erik ist der geilste im Dorf."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Deine Zimmerpflanze ist der geilste im Dorf."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Dein Daumen ist wie die total echten Freundschaften auf Facebook."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Deine Menschenkenntnis ist wie Nachts am Bahnhof auf den Zug zu warten."
-        },
-        { "type": "text", "from": 1, "text": "Marvin ist in dich verliebt." },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Marvin ist ein Experte für heikele Lebensfragen."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Herr Paulus ist der neue Kevin."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "David ist ein heimlicher Stalker."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Jasiek ist ein verdammt guter Programmierer."
-        },
-        {
-          "type": "text",
-          "from": 1,
-          "text": "Deine Orientierungsgabe ist wie der Inhalt von Frau Renners Kopf."
+          "text": "Deine Mutter ist in dich verliebt."
         }
       ]
     },
@@ -84,33 +28,17 @@
         {
           "type": "text",
           "from": 2,
-          "text": "Dein Haar ist wie die Verspätung der Deutschen Bahn."
-        },
-        { "type": "text", "from": 2, "text": "Julian ist der neue Kevin." },
-        {
-          "type": "text",
-          "from": 2,
-          "text": "Herr Strobel ist ein heimlicher Stalker."
+          "text": "Herr Strobel ist ein Experte für heikele Lebensfragen."
         },
         {
           "type": "text",
           "from": 2,
-          "text": "Dein Gesicht ist wie deine Mutter."
+          "text": "Herr Paulus ist ein heimlicher Stalker."
         },
         {
           "type": "text",
           "from": 2,
-          "text": "Herr Paulus ist ein grosser Fan von DagiBee."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Herr Strobel ist der neue Kevin."
-        },
-        {
-          "type": "text",
-          "from": 2,
-          "text": "Hung ist ein heimlicher Stalker."
+          "text": "Kamil ist in dich verliebt."
         }
       ]
     },
@@ -120,18 +48,18 @@
       "conversation": [
         {
           "type": "text",
+          "from": 3,
+          "text": "Erik ist ein heimlicher Stalker."
+        },
+        {
+          "type": "text",
+          "from": 3,
+          "text": "Deine Mutter ist ein verdammt guter Programmierer."
+        },
+        {
+          "type": "text",
           "from": "me",
-          "text": "Herr Paulus ist ein Experte für heikele Lebensfragen."
-        },
-        {
-          "type": "text",
-          "from": 3,
-          "text": "Deine Zimmerpflanze ist ein Experte für heikele Lebensfragen."
-        },
-        {
-          "type": "text",
-          "from": 3,
-          "text": "Ein Witz von dir ist wie der Inhalt von Frau Renners Kopf."
+          "text": "David ist ein Experte für heikele Lebensfragen."
         }
       ]
     },
@@ -139,9 +67,46 @@
       "id": 4,
       "name": "Jan Vogel",
       "conversation": [
-        { "type": "text", "from": "me", "text": "David ist in dich verliebt." },
-        { "type": "text", "from": 4, "text": "David ist der geilste im Dorf." },
-        { "type": "text", "from": "me", "text": "Marvin ist in dich verliebt." }
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Ein Witz von dir ist wie deine Mutter."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Hung ist in dich verliebt."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Marvin ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Urs ist ein verdammt guter Programmierer."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Hung ist ein verdammt guter Programmierer."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Dein Gehirn ist wie Nachts am Bahnhof auf den Zug zu warten."
+        },
+        {
+          "type": "text",
+          "from": 4,
+          "text": "Erik ist ein grosser Fan von DagiBee."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Die Weltwirtschaftskrise ist wie die Dauer des Streiks des DHL."
+        }
       ]
     },
     {
@@ -151,53 +116,67 @@
         {
           "type": "text",
           "from": 5,
-          "text": "Deine Orientierungsgabe ist wie die Dauer des Streiks des DHL."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Ein Witz von dir ist wie die Verspätung der Deutschen Bahn."
-        },
-        { "type": "text", "from": "me", "text": "Hung ist in dich verliebt." },
-        {
-          "type": "text",
-          "from": 5,
-          "text": "Marvin ist ein Experte für heikele Lebensfragen."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Herr Paulus ist in dich verliebt."
+          "text": "Julian ist ein Experte für heikele Lebensfragen."
         },
         {
           "type": "text",
           "from": 5,
-          "text": "Herr Strobel ist ein heimlicher Stalker."
+          "text": "1 Złoty ist wie die Dauer des Streiks des DHL."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Dein Fuss ist wie der Sinn des Lebens."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Dein Kopf ist wie Nachts am Bahnhof auf den Zug zu warten."
+          "text": "Dein Kopf ist wie die Dunkelheit."
         },
         {
           "type": "text",
           "from": 5,
-          "text": "Julian ist der geilste im Dorf."
+          "text": "Deine Mutter ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
+          "from": 5,
+          "text": "Kamil ist der neue Kevin."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Erik ist ein verdammt guter Programmierer."
+          "text": "Herr Strobel ist der, der die Witze von Herr Strobel immer als erster versteht."
+        },
+        {
+          "type": "text",
+          "from": 5,
+          "text": "Jasiek ist der neue Kevin."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "David ist der geilste im Dorf."
+          "text": "Herr Strobel ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
+          "from": 5,
+          "text": "Hung ist in dich verliebt."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Deine Mutter ist ein grosser Fan von DagiBee."
+        },
+        {
+          "type": "text",
+          "from": 5,
+          "text": "Erik ist ein Experte für heikele Lebensfragen."
+        },
+        {
+          "type": "text",
+          "from": 5,
+          "text": "Deine Zimmerpflanze ist Eiskunstläufer (Männlich und sexy zugleich)."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Dein Bauch ist wie die Verspätung der Deutschen Bahn."
         }
       ]
     },
@@ -208,53 +187,17 @@
         {
           "type": "text",
           "from": "me",
-          "text": "Herr Paulus ist der, der die Witze von Herr Strobel immer als erster versteht."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Jasiek ist der, der die Witze von Herr Strobel immer als erster versteht."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Marvin ist in dich verliebt."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "David ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "text": "Deine Mutter ist ein verdammt guter Programmierer."
         },
         {
           "type": "text",
           "from": 6,
-          "text": "Dein Haar ist wie der Inhalt von Frau Renners Kopf."
-        },
-        { "type": "text", "from": 6, "text": "Jasiek ist der neue Kevin." },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Urs ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "text": "Erik ist der geilste im Dorf."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Ein Witz von dir ist wie alle Religionen zusammen."
-        },
-        {
-          "type": "text",
-          "from": 6,
-          "text": "Dein Bauch ist wie deine Mutter."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Julian ist Eiskunstläufer (Männlich und sexy zugleich)."
-        },
-        {
-          "type": "text",
-          "from": 6,
-          "text": "Ein Schüleraustausch ist wie Enzos Fuss."
+          "text": "Julian ist ein verdammt guter Programmierer."
         }
       ]
     },
@@ -265,17 +208,32 @@
         {
           "type": "text",
           "from": "me",
-          "text": "Herr Strobel ist ein verdammt guter Programmierer."
+          "text": "Dein Gehirn ist wie ein Katzenvideo auf YouTube."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Urs ist der, der die Witze von Herr Strobel immer als erster versteht."
         },
         {
           "type": "text",
           "from": 7,
-          "text": "Marvin ist der geilste im Dorf."
+          "text": "David ist ein grosser Fan von DagiBee."
         },
         {
           "type": "text",
-          "from": 7,
-          "text": "Dein grosser Zeh ist wie einer von vielen Kommentaren auf YouTube."
+          "from": "me",
+          "text": "Deine Menschenkenntnis ist wie die total echten Freundschaften auf Facebook."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "David ist in dich verliebt."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Kamil ist ein verdammt guter Programmierer."
         }
       ]
     },
@@ -286,27 +244,17 @@
         {
           "type": "text",
           "from": 8,
-          "text": "Erik ist ein heimlicher Stalker."
+          "text": "Deine Mutter ist in dich verliebt."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Erik ist der geilste im Dorf."
+          "text": "Deine Menschenkenntnis ist wie deine Mutter."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Dein Bein ist wie 12h Busfahrt."
-        },
-        {
-          "type": "text",
-          "from": 8,
-          "text": "Dein Geist ist wie ein Katzenvideo auf YouTube."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Deine Zimmerpflanze ist der geilste im Dorf."
+          "text": "Deine Orientierungsgabe ist wie die Dunkelheit."
         }
       ]
     },
@@ -317,27 +265,32 @@
         {
           "type": "text",
           "from": 9,
-          "text": "David ist ein heimlicher Stalker."
-        },
-        {
-          "type": "text",
-          "from": 9,
-          "text": "Deine Zimmerpflanze ist ein grosser Fan von DagiBee."
-        },
-        {
-          "type": "text",
-          "from": 9,
-          "text": "Herr Strobel ist in dich verliebt."
-        },
-        {
-          "type": "text",
-          "from": 9,
-          "text": "Deine Menschenkenntnis ist wie alle Religionen zusammen."
+          "text": "Deine Mutter ist ein heimlicher Stalker."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Deine Menschenkenntnis ist wie eine Banane."
+          "text": "Dein Kopf ist wie die Verspätung der Deutschen Bahn."
+        },
+        {
+          "type": "text",
+          "from": 9,
+          "text": "Ein Schüleraustausch ist wie 12h Busfahrt."
+        },
+        {
+          "type": "text",
+          "from": 9,
+          "text": "Dein Bauch ist wie deine Mutter."
+        },
+        {
+          "type": "text",
+          "from": 9,
+          "text": "Dein Bauch ist wie 12h Busfahrt."
+        },
+        {
+          "type": "text",
+          "from": 9,
+          "text": "Hung ist ein Experte für heikele Lebensfragen."
         }
       ]
     },
@@ -348,17 +301,17 @@
         {
           "type": "text",
           "from": "me",
-          "text": "Urs ist der geilste im Dorf."
+          "text": "Urs ist der, der die Witze von Herr Strobel immer als erster versteht."
         },
         {
           "type": "text",
           "from": 10,
-          "text": "Ein Witz von dir ist wie alle Religionen zusammen."
+          "text": "Jasiek ist ein Experte für heikele Lebensfragen."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "David ist der, der die Witze von Herr Strobel immer als erster versteht."
+          "text": "David ist in dich verliebt."
         }
       ]
     },
@@ -368,38 +321,23 @@
       "conversation": [
         {
           "type": "text",
+          "from": "me",
+          "text": "David ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
           "from": 11,
-          "text": "Urs ist ein Experte für heikele Lebensfragen."
+          "text": "Herr Paulus ist in dich verliebt."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Julian ist in dich verliebt."
+          "text": "Dein Bein ist wie die Dauer des Streiks des DHL."
         },
         {
           "type": "text",
           "from": 11,
-          "text": "Julian ist Eiskunstläufer (Männlich und sexy zugleich)."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Dein Bauch ist wie die Dauer des Streiks des DHL."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Jasiek ist der geilste im Dorf."
-        },
-        {
-          "type": "text",
-          "from": 11,
-          "text": "Dein Kopf ist wie die Dauer des Streiks des DHL."
-        },
-        {
-          "type": "text",
-          "from": 11,
-          "text": "Dein Haar ist wie die total echten Freundschaften auf Facebook."
+          "text": "Herr Paulus ist ein Experte für heikele Lebensfragen."
         }
       ]
     },
@@ -409,18 +347,43 @@
       "conversation": [
         {
           "type": "text",
+          "from": 12,
+          "text": "Kamil ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
           "from": "me",
-          "text": "Deine Orientierungsgabe ist wie Enzos Fuss."
+          "text": "Herr Strobel ist ein heimlicher Stalker."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Herr Paulus ist in dich verliebt."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Erik ist der neue Kevin."
         },
         {
           "type": "text",
           "from": 12,
-          "text": "Marvin ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "text": "Erik ist ein heimlicher Stalker."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Herr Strobel ist ein grosser Fan von DagiBee."
         },
         {
           "type": "text",
           "from": 12,
-          "text": "Julian ist ein heimlicher Stalker."
+          "text": "Deine Mutter ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Dein Arm ist wie die Verspätung der Deutschen Bahn."
         }
       ]
     },
@@ -430,18 +393,18 @@
       "conversation": [
         {
           "type": "text",
+          "from": "me",
+          "text": "Hung ist der geilste im Dorf."
+        },
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Marvin ist in dich verliebt."
+        },
+        {
+          "type": "text",
           "from": 13,
-          "text": "Julian ist ein grosser Fan von DagiBee."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Deine Zimmerpflanze ist der geilste im Dorf."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Dein Fuss ist wie der Sinn des Lebens."
+          "text": "Herr Paulus ist ein grosser Fan von DagiBee."
         }
       ]
     },
@@ -452,13 +415,17 @@
         {
           "type": "text",
           "from": "me",
-          "text": "Erik ist ein heimlicher Stalker."
+          "text": "Dich zu sehen ist wie deine Mutter."
         },
-        { "type": "text", "from": "me", "text": "Erik ist der neue Kevin." },
         {
           "type": "text",
           "from": "me",
-          "text": "Herr Strobel ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "text": "Kamil ist der neue Kevin."
+        },
+        {
+          "type": "text",
+          "from": 14,
+          "text": "Dein Geist ist wie der Internet Explorer."
         }
       ]
     },
@@ -466,21 +433,20 @@
       "id": 15,
       "name": "Daniel Herrmann",
       "conversation": [
-        { "type": "text", "from": 15, "text": "Dein Haar ist wie Enzos Fuss." },
+        {
+          "type": "text",
+          "from": 15,
+          "text": "Hung ist der neue Kevin."
+        },
+        {
+          "type": "text",
+          "from": 15,
+          "text": "Jasiek ist Eiskunstläufer (Männlich und sexy zugleich)."
+        },
         {
           "type": "text",
           "from": "me",
-          "text": "Dein Kopf ist wie alle Nachrichten auf Twitter zusammen."
-        },
-        {
-          "type": "text",
-          "from": 15,
-          "text": "Kamil ist der geilste im Dorf."
-        },
-        {
-          "type": "text",
-          "from": 15,
-          "text": "Deine Orientierungsgabe ist wie ein Katzenvideo auf YouTube."
+          "text": "Urs ist der geilste im Dorf."
         }
       ]
     },
@@ -490,15 +456,29 @@
       "conversation": [
         {
           "type": "text",
-          "from": "me",
-          "text": "Hung ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "from": 16,
+          "text": "Dein Geist ist wie die total echten Freundschaften auf Facebook."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Marvin ist ein heimlicher Stalker."
+          "text": "Ein Schüleraustausch ist wie die Verspätung der Deutschen Bahn."
         },
-        { "type": "text", "from": 16, "text": "Marvin ist der neue Kevin." }
+        {
+          "type": "text",
+          "from": "me",
+          "text": "Die Weltwirtschaftskrise ist wie 12h Busfahrt."
+        },
+        {
+          "type": "text",
+          "from": 16,
+          "text": "Die Weltwirtschaftskrise ist wie die total echten Freundschaften auf Facebook."
+        },
+        {
+          "type": "text",
+          "from": 16,
+          "text": "Julian ist ein heimlicher Stalker."
+        }
       ]
     },
     {
@@ -508,42 +488,17 @@
         {
           "type": "text",
           "from": "me",
-          "text": "Erik ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "text": "Dein Bauch ist wie der Inhalt von Frau Renners Kopf."
+        },
+        {
+          "type": "text",
+          "from": 17,
+          "text": "Deine Zimmerpflanze ist ein heimlicher Stalker."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Deine Orientierungsgabe ist wie einer von vielen Kommentaren auf YouTube."
-        },
-        {
-          "type": "text",
-          "from": 17,
-          "text": "Urs ist ein heimlicher Stalker."
-        },
-        {
-          "type": "text",
-          "from": 17,
-          "text": "Herr Paulus ist ein grosser Fan von DagiBee."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Die Weltwirtschaftskrise ist wie alle Nachrichten auf Twitter zusammen."
-        },
-        {
-          "type": "text",
-          "from": 17,
-          "text": "Ein Schüleraustausch ist wie die Verspätung der Deutschen Bahn."
-        },
-        {
-          "type": "text",
-          "from": 17,
-          "text": "Dein Haar ist wie ein Katzenvideo auf YouTube."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Julian ist ein grosser Fan von DagiBee."
+          "text": "Erik ist ein heimlicher Stalker."
         }
       ]
     },
@@ -551,55 +506,26 @@
       "id": 18,
       "name": "Petra Holtzmann",
       "conversation": [
-        { "type": "text", "from": "me", "text": "Erik ist in dich verliebt." },
         {
           "type": "text",
           "from": "me",
-          "text": "Urs ist Eiskunstläufer (Männlich und sexy zugleich)."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Deine Zimmerpflanze ist der geilste im Dorf."
-        },
-        { "type": "text", "from": 18, "text": "Erik ist der geilste im Dorf." },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "David ist der geilste im Dorf."
+          "text": "Deine Zimmerpflanze ist der, der die Witze von Herr Strobel immer als erster versteht."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Hung ist Eiskunstläufer (Männlich und sexy zugleich)."
+          "text": "Dein Haar ist wie eine Gurke."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Dein grosser Zeh ist wie alle Religionen zusammen."
-        },
-        {
-          "type": "text",
-          "from": 18,
-          "text": "Ein Schüleraustausch ist wie Nachts am Bahnhof auf den Zug zu warten."
+          "text": "Marvin ist der geilste im Dorf."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Dein Arm ist wie alle Nachrichten auf Twitter zusammen."
-        },
-        {
-          "type": "text",
-          "from": 18,
-          "text": "Die Weltwirtschaftskrise ist wie die Verspätung der Deutschen Bahn."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Marvin ist ein heimlicher Stalker."
-        },
-        { "type": "text", "from": "me", "text": "David ist in dich verliebt." },
-        { "type": "text", "from": "me", "text": "Erik ist in dich verliebt." }
+          "text": "Dein Bein ist wie alle Religionen zusammen."
+        }
       ]
     },
     {
@@ -609,73 +535,27 @@
         {
           "type": "text",
           "from": "me",
-          "text": "Ein Witz von dir ist wie Enzos Fuss."
+          "text": "Deine Mutter ist in dich verliebt."
         },
         {
           "type": "text",
           "from": 19,
-          "text": "Dein Bauch ist wie deine Mutter."
-        },
-        { "type": "text", "from": "me", "text": "Julian ist der neue Kevin." },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Herr Paulus ist der neue Kevin."
-        },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Herr Strobel ist der neue Kevin."
-        },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Erik ist ein heimlicher Stalker."
-        },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Herr Strobel ist ein verdammt guter Programmierer."
-        },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Dein Gehirn ist wie die Dunkelheit."
+          "text": "Deine Mutter ist ein grosser Fan von DagiBee."
         },
         {
           "type": "text",
           "from": "me",
-          "text": "Herr Paulus ist der neue Kevin."
+          "text": "Marvin ist der geilste im Dorf."
         },
         {
           "type": "text",
           "from": 19,
-          "text": "Dein Kopf ist wie der Internet Explorer."
+          "text": "Jasiek ist ein verdammt guter Programmierer."
         },
         {
           "type": "text",
           "from": 19,
-          "text": "Dein Daumen ist wie der Inhalt von Frau Renners Kopf."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Kamil ist der, der die Witze von Herr Strobel immer als erster versteht."
-        },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Herr Paulus ist ein verdammt guter Programmierer."
-        },
-        {
-          "type": "text",
-          "from": "me",
-          "text": "Dein Arm ist wie alle Nachrichten auf Twitter zusammen."
-        },
-        {
-          "type": "text",
-          "from": 19,
-          "text": "Deine Orientierungsgabe ist wie Nachts am Bahnhof auf den Zug zu warten."
+          "text": "Dein Bein ist wie eine Gurke."
         }
       ]
     },
@@ -685,18 +565,18 @@
       "conversation": [
         {
           "type": "text",
-          "from": 20,
-          "text": "Deine Menschenkenntnis ist wie alle Nachrichten auf Twitter zusammen."
-        },
-        {
-          "type": "text",
           "from": "me",
-          "text": "Kamil ist ein Experte für heikele Lebensfragen."
+          "text": "Julian ist ein verdammt guter Programmierer."
         },
         {
           "type": "text",
           "from": 20,
-          "text": "Deine Menschenkenntnis ist wie die Dunkelheit."
+          "text": "Deine Zimmerpflanze ist ein grosser Fan von DagiBee."
+        },
+        {
+          "type": "text",
+          "from": 20,
+          "text": "Dein Arm ist wie der Internet Explorer."
         }
       ]
     }

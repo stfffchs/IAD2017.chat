@@ -1,29 +1,10 @@
-// console.log("getSentence()", getSentence());
-// let newData = {...DATA};
-//
-// let newConversations = DATA.conversations.map(conversation => {
-//   let newItem = { ...conversation };
-//
-//   let length = Math.floor(Math.random() * 7) * Math.floor(Math.random() * 3);
-//   let newConversation = Array.from({ length: 3 + length }, (_, i) => {
-//     return {
-//       type: "text",
-//       from: Math.random() > 0.5 ? "me" : conversation.id,
-//       text: getSentence()
-//     };
-//   });
-//   // console.log("conversation", newConversation);
-//   newItem.conversation = newConversation
-//
-//   return newItem;
-// });
-//
-// newData.conversations = newConversations
-//
-// console.log("newData", JSON.stringify(newData));
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 // https://github.com/davidak/satzgenerator
 // merci https://www.stephanl.de/satz
+
 var Subject1 = [
   "Dein Bein",
   "Dein Bauch",
@@ -108,4 +89,5 @@ let sentence = () => {
   }
 };
 
-export let getSentence = sentence;
+// export let getSentence = sentence;
+exports.default = sentence;
