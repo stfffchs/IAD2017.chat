@@ -25,7 +25,6 @@
 	border-radius: 50%;
 	height: 3em;
 	padding-left: 3%;
-	display: ;
 	vertical-align: middle;
 }
 
@@ -59,7 +58,11 @@
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 650px) {
+
+	.ConversationHeader {
+  	padding-left: 4%;
+}
 
 
 }

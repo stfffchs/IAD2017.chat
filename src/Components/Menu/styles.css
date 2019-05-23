@@ -1,18 +1,35 @@
-.Menu {
-  width: 7rem;
-  height: 7rem;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  background-color: green;
+@media (max-width: 650px) {
+
+  .Menu {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 1.25rem;
+  left: 0;
+  background-color: none;
+  background-image: url(arrow.svg);
+  z-index: 100000000;
 }
 
 .Menu--Open {
-  background-color: blue;
+  background-color: none;
+  }
+
+.Menu--Closed {
+  }
 }
 
 @media (min-width: 650px) {
   .Menu {
     display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 1.5rem;
+    left: -1rem;
+    background-color: none;
+    background-image: url(arrow.svg);
+    z-index: 100000000;
+
   }
 }
