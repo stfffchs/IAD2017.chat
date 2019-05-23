@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { DATA } from "../../Data";
+import DATA from "../../Data/index.json";
 
 export const UIContext = React.createContext();
 
