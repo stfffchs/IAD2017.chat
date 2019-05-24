@@ -34,6 +34,9 @@
   font-size: 0.6rem;
 }
 
+.DateItem__Time {
+  text-align: center;
+}
 
 @media (max-width: 850px) {
 
