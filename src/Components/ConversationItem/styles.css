@@ -20,9 +20,10 @@
     min-width: 23px;
     height: 23px;
     background: #5DBDE6;
+    color: white;
     border-radius: 50%;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: bold !important;
     vertical-align: middle;
 }
