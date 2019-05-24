@@ -28,17 +28,16 @@
 }
 
 
-.ConversationItem__Name:after {
+.ConversationItem__Name h3:after {
 	content: ' ';
 	background-color: #8CFE67;
-	position: relative;
-	display: flex;
-  float: right;
+	position: absolute;
+	display: inline-block;
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-  margin-top:-18px;
-  padding-bottom: 0;
+  right: -24px;
+  bottom: 4px;
 }
 
 .ConversationItem__Writing:before {
@@ -53,6 +52,8 @@
   font-weight: 200;
   font-size: 0.9em;
   overflow: hidden;
+  width: max-content;
+  position: relative;
 
   display: inline-block;
   vertical-align: bottom;
@@ -87,7 +88,7 @@ h3 {
 
 .ConversationItem--active {
   color: white;
-  background-color: #5377FF;
+  background-color: #5377FF !important;
 }
 
 .ConversationItem--active h3 {
@@ -153,9 +154,10 @@ p{
 .ConversationItem__Preview {
 	position: relative;
 	display: inline-block;
-	width: calc(100% - 30px);
+	width: calc(100% - 45px);
 	left: 80px;
   height:16px;
+  padding-right: 5rem;
   overflow:hidden;
 	padding-left: 0px;
 	font-size: 0.8em;
@@ -179,8 +181,6 @@ p{
 	bottom: 21%;
 	vertical-align: middle;
 }
-
-
 
 
 
@@ -257,7 +257,7 @@ p{
     width:30%;
   	right: 5%;
   	top: 8%;
-  	font-size: 0.7em;
+  	font-size: 0.6em;
     font-weight: 200;
   }
 
