@@ -4,11 +4,22 @@
   width: 100%;
   display: block;
   color: #000000;
+  position: relative;
+  text-align: left;
+  height: 10rem;
+}
+.ConversationItem__Name{
+  margin-left: 8rem;
 }
 
+.ConversationItem__AvatarImage{
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+}
 
 .ConversationItem__Avatar{
-  margin-left: -15rem;
+padding-left: 0;
 }
 
 .ConversationItem--active {
