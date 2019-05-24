@@ -30,14 +30,35 @@
   width: 100%;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
+  body{
+
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 3px 3px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 3px 3px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 3px 3px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+  }
+
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {
     width: 30%;
     overflow: auto;
+
   }
   .App--MenuOpen .App__Conversation,
   .App--MenuClosed .App__Conversation {
     width: 70%;
   }
+}
+
+body{
+  max-width: 1140px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+
 }

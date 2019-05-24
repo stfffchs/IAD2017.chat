@@ -1,10 +1,11 @@
 .ConversationHeader{
     background-color: #ffffff;
+    border: 1px;
 }
 
 img{
     border-radius: 100%;
-    margin-left: 1rem;
+
 }
 
 .Name{
