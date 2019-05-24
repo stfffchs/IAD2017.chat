@@ -1,5 +1,5 @@
 .ConversationHeader__AvatarImage{
-    width: 63%;
+    width: 60px;
     border-radius: 0% 50% 50% 50%;
     margin: 20%;
     display: inline-block;
@@ -10,6 +10,7 @@
     display: inline-block;
     position: absolute;
     margin-top:1rem;
+    margin-left: 2rem;
   }
 
   .ConversationHeader__Name{

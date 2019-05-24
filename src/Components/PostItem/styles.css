@@ -43,3 +43,11 @@
 .PostItem__Text {
   color: white;
 }
+
+.Conversation__PostItem--me .DateItem{
+  color: #9CA7B4;
+  float: right;
+  margin: 2%;
+  font-size: 0.8rem;
+
+}
