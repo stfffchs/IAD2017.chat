@@ -20,7 +20,7 @@
   height: 5rem;
   flex: 0 0 auto;
   position: sticky;
-  border-width: 0.5px;
+  border-width: 0.05rem;
 }
 
 .Conversation__Form {

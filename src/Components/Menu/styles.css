@@ -8,7 +8,7 @@
 }
 
 .Menu--Open {
-  background-color: none;
+  background-color: transparent;
 }
 
 @media (min-width: 650px) {
