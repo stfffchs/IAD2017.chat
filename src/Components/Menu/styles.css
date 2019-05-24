@@ -17,14 +17,13 @@
 }
 
 @media (max-width: 650px) {
-  .Menu {
-    display: none;
-  }
 
-}
+
 .Menu--Closed {
   background-image:url('back.svg');
   width: 2rem;
   height: 1.5rem;
   z-index: 1;
+  color:#418FB0 !important;
+}
 }
