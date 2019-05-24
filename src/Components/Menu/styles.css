@@ -13,6 +13,7 @@
 
 .Menu--Open {
   background-color: none;
+  display: none;
   }
 
 .Menu--Closed {
