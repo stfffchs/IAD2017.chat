@@ -4,7 +4,6 @@
   position: fixed;
   top: 1.5rem;
   right: 21rem;
-  position:absolute;
 }
 
 .Menu--Open {
@@ -29,5 +28,3 @@
   height: 1.5rem;
   z-index: 1;
 }
-
-
