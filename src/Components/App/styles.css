@@ -24,7 +24,31 @@
   width: 0%;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 750px) {
+  .App--MenuOpen .App__ConversationList,
+  .App--MenuClosed .App__ConversationList {
+    width: 40%;
+    overflow: auto;
+  }
+  .App--MenuOpen .App__Conversation,
+  .App--MenuClosed .App__Conversation {
+    width: 60%;
+  }
+
+  /*.App__Conversation .Conversation__Placeholder .App--MenuOpen ,
+   .App__Conversation .Conversation__Placeholder .App--MenuClosed{
+    display: none;
+  }*/
+
+  .App__Menu {
+    position: relative;
+    margin-left: 2rem;
+  }
+}
+
+
+
+@media (min-width: 1030px) {
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {
     width: 30%;
@@ -34,12 +58,6 @@
   .App--MenuClosed .App__Conversation {
     width: 70%;
   }
-
-  /*.App__Conversation .Conversation__Placeholder .App--MenuOpen ,
-   .App__Conversation .Conversation__Placeholder .App--MenuClosed{
-    display: none;
-  }*/
-
   .App__Menu {
     position: relative;
     margin-left: 2rem;
