@@ -20,6 +20,10 @@
   	flex-direction: row;
 }
 
+.ConversationHeader__Avatar {
+	position: fixed;
+}
+
 .ConversationHeader__AvatarImage {
 	margin: 15%;
 	border-radius: 50%;
@@ -31,7 +35,7 @@
 
 .ConversationHeader__Infos {
 	display: inline-block;
-	position: relative;
+	position: fixed;
 	padding-left: 9%;
 
 }
