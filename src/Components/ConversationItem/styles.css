@@ -50,6 +50,8 @@
     font-size: 0.8rem;
     text-align: right;
     width: 20%;
+    color: #9CA7B4;
+
 }
 
 .ConversationItem__Preview {
@@ -59,7 +61,7 @@
 }
 
 .ConversationItem--inactive .ConversationItem__Time {
-    color: white;
+    color: #9CA7B4;
 }
 
 

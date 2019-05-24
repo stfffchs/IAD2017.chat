@@ -16,7 +16,6 @@
 
 .PostItem__Post--other {
   margin-right: 40%;
-  margin-left: 2%;
   background-color: #1B2730;
 }
 
@@ -36,6 +35,13 @@
   /*noinspection CssInvalidPropertyValue*/
   background-color: none;
   font-size: 0.8rem;
+}
+
+.DateItem__Time{
+  font-size: 0.8rem;
+  margin: 2%;
+  color: #9CA7B4;
+
 }
 
 .Conversation__PostItem--me .PostItem__Time  {
