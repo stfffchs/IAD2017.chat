@@ -2,3 +2,13 @@
   height: 100%;
   overflow-y: auto;
 }
+
+  @media (max-width: 650px) {
+    .App--MenuOpen .App__ConversationList {
+      width:100%;
+      }
+
+    .App--MenuOpen .App__Conversation {
+    width:0%;  
+    }
+  }
