@@ -12,8 +12,15 @@
   margin-left: 8rem;
 }
 
+.ConversationItem__Infos{
+  margin-top: -5.6rem;
+  margin-left: 5rem;
+}
+
 .ConversationItem__AvatarImage{
   border-radius: 100%;
+  margin-top: 3rem;
+  margin-left: 1rem;
   width: 4rem;
   height: 4rem;
 }
@@ -46,5 +53,5 @@ padding-left: 0;
 .ConversationItem__Preview{
   text-align: left;
   margin-left: 1rem;
-  margin-top: 1rem  ;
+  margin-top: -0.7rem;
 }
