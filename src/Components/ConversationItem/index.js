@@ -32,11 +32,10 @@ class ConversationItem extends Component {
                 <div className="ConversationItem__Name">
                   <h3>{name}</h3>
                 </div>
+                <div className="ConversationItem__Preview">
+                  <p>{text}</p>
+                </div>
                 <div className="ConversationItem__Time">{time}</div>
-              </div>
-
-              <div className="ConversationItem__Preview">
-                <p>{text}</p>
               </div>
 
               {writing && <div className="ConversationItem__Writing" />}
