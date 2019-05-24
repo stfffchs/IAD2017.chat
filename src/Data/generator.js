@@ -1,111 +1,70 @@
-// console.log("getSentence()", getSentence());
-// let newData = {...DATA};
-//
-// let newConversations = DATA.conversations.map(conversation => {
-//   let newItem = { ...conversation };
-//
-//   let length = Math.floor(Math.random() * 7) * Math.floor(Math.random() * 3);
-//   let newConversation = Array.from({ length: 3 + length }, (_, i) => {
-//     return {
-//       type: "text",
-//       from: Math.random() > 0.5 ? "me" : conversation.id,
-//       text: getSentence()
-//     };
-//   });
-//   // console.log("conversation", newConversation);
-//   newItem.conversation = newConversation
-//
-//   return newItem;
-// });
-//
-// newData.conversations = newConversations
-//
-// console.log("newData", JSON.stringify(newData));
+const getSentence = require("./getSentence").default;
+const LCG = require("./LCG").default;
+const fs = require("fs");
 
-// https://github.com/davidak/satzgenerator
-// merci https://www.stephanl.de/satz
-var Subject1 = [
-  "Dein Bein",
-  "Dein Bauch",
-  "Dein Kopf",
-  "Dein Fuss",
-  "Dein grosser Zeh",
-  "Dein Arm",
-  "Die Weltwirtschaftskrise",
-  "Dein Daumen",
-  "Dein Haar",
-  "Dein Gesicht",
-  "Ein Witz von dir",
-  "Dein Geist",
-  "Dein Gehirn",
-  "Deine Orientierungsgabe",
-  "Nichts",
-  "Ein Schüleraustausch",
-  "Dich zu sehen",
-  "Deine Menschenkenntnis",
-  "1 Złoty"
-];
-var Subject2 = [
-  "Enzos Fuss",
-  "eine Banane",
-  "der Inhalt von Frau Renners Kopf",
-  "alle Religionen zusammen",
-  "einer von vielen Kommentaren auf YouTube",
-  "alle Nachrichten auf Twitter zusammen",
-  "eine Gurke",
-  "deine Mutter",
-  "der Internet Explorer",
-  "die Verspätung der Deutschen Bahn",
-  "die total echten Freundschaften auf Facebook",
-  "ein Katzenvideo auf YouTube",
-  "die Dauer des Streiks des DHL",
-  "der Sinn des Lebens",
-  "Nachts am Bahnhof auf den Zug zu warten",
-  "12h Busfahrt",
-  "die Dunkelheit"
-];
-var namen = [
-  "Urs",
-  "Julian",
-  "Marvin",
-  "Hung",
-  "David",
-  "Erik",
-  "Herr Paulus",
-  "Herr Strobel",
-  "Jasiek",
-  "Kamil",
-  "Deine Mutter",
-  "Deine Zimmerpflanze"
-];
-var couppler = [
-  "der geilste im Dorf",
-  "der, der die Witze von Herr Strobel immer als erster versteht",
-  "in dich verliebt",
-  "ein heimlicher Stalker",
-  "ein grosser Fan von DagiBee",
-  "ein verdammt guter Programmierer",
-  "ein Experte für heikele Lebensfragen",
-  "der neue Kevin",
-  "Eiskunstläufer (Männlich und sexy zugleich)"
-];
-let sentence = () => {
-  var randomNr = Math.floor(Math.random() * 3);
-  if (randomNr === 1) {
-    return (
-      Subject1[Math.floor(Math.random() * Subject1.length)] +
-      " ist wie " +
-      Subject2[Math.floor(Math.random() * Subject2.length)] +
-      "."
-    );
-  } else {
-    return (
-      namen[Math.floor(Math.random() * namen.length)] +
-      " ist " +
-      couppler[Math.floor(Math.random() * couppler.length)] +
-      "."
-    );
-  }
+let rand = LCG(123); //rand()
+let now = 1558000000; // 05/16/2019 @ 9:46am (UTC)
+const HOUR = 3600;
+const DAY = 24 * HOUR;
+
+let data = {
+  conversations: [
+    { id: 1, name: "Manuela Himmel" },
+    { id: 2, name: "Marcel Bach" },
+    { id: 3, name: "Andreas Möller" },
+    { id: 4, name: "Jan Vogel" },
+    { id: 5, name: "Ralf Herz" },
+    { id: 6, name: "Mike Fisher" },
+    { id: 7, name: "Frank Sommer" },
+    { id: 8, name: "Kristian Vogler" },
+    { id: 9, name: "Katharina Lowe" },
+    { id: 10, name: "Marina Scherer" },
+    { id: 11, name: "Sophie Blau" },
+    { id: 12, name: "Bernd Konig" },
+    { id: 13, name: "Sebastian Wirtz" },
+    { id: 14, name: "Max Kuester" },
+    { id: 15, name: "Daniel Herrmann" },
+    { id: 16, name: "Nicole Grunwald" },
+    { id: 17, name: "Daniela Lehrer" },
+    { id: 18, name: "Petra Holtzmann" },
+    { id: 19, name: "Monika Nussbaum" },
+    { id: 20, name: "Luca Urner" }
+  ]
 };
 
-export let getSentence = sentence;
+let newConversations = {};
+newConversations.conversations = data.conversations.map(conversation => {
+  let newItem = { ...conversation };
+
+  let length = 3 + Math.floor(rand() * 7) * Math.floor(rand() * 3);
+
+  let timestamp = now - Math.floor(rand() * 90 * DAY); // max minus 90 days
+
+  // generate timestamps
+  let timestamps = Array.from({ length: length }, (_, i) => {
+    timestamp =
+      timestamp -
+      Math.floor(rand() * 7 * HOUR) +
+      Math.floor(rand() * 3 * HOUR);
+    return timestamp;
+  }).sort();
+
+
+  let newConversation = Array.from({ length: length }, (_, i) => {
+
+
+    return {
+      id: conversation.id * 1000 + i,
+      type: "text",
+      from: rand() > 0.5 ? "me" : conversation.id,
+      text: getSentence(() => rand()),
+      date: timestamps[i] // parseInt(new Date().getTime() / 1000)
+    };
+  });
+  // console.log("conversation", newConversation);
+  newItem.conversation = newConversation;
+
+  return newItem;
+});
+
+fs.writeFileSync("./index.json", JSON.stringify(newConversations, null, 2));
