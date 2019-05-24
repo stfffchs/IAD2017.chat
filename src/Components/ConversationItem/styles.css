@@ -1,60 +1,57 @@
 .ConversationItem {
-  background-color: #393350;
-  color: white;
-  width: 100%;
-  height: 6em;
-  display: flex;
-  font-size: 1rem;
+    background-color: #393350;
+    color: white;
+    width: 100%;
+    height: 6em;
+    display: flex;
+    font-size: 1rem;
 }
 
 .ConversationItem__Avatar {
-  padding: 0.5em;
-  height: 100%;
-  align-self: center;
+    padding: 0.5em;
+    height: 100%;
+    align-self: center;
 }
 
 .ConversationItem__AvatarImage {
-  border-radius: 50px;
-  height: 3.5em;
+    border-radius: 50px;
+    height: 3.5em;
 }
 
 .ConversationItem__Infos {
-  height: 100%;
-
+    height: 100%;
 }
 
 .ConversationItem__Name {
-  text-align: left;
-  margin-top: -0.5em;
+    text-align: left;
+    margin-top: -0.5em;
 }
 
 .ConversationItem__Time {
-  display: none;
+    display: none;
 }
 
 .ConversationItem__Preview p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 17em;
-  margin-top: -0.8em;
-  color: darkgrey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 17em;
+    margin-top: -0.8em;
+    color: darkgrey;
 }
 
 .ConversationItem--active {
-  background-color: var(--purple-light);
+    background-color: var(--purple-light);
 }
 
 .ConversationItem__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: pink;
+    width: 3rem;
+    height: 3rem;
+    background-color: pink;
 }
 
 .ConversationItem__UnreadCount {
-  width: 3rem;
-  height: 3rem;
-  background-color: yellow;
+    width: 3rem;
+    height: 3rem;
+    background-color: yellow;
 }
-
-
