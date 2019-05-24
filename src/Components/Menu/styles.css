@@ -20,4 +20,5 @@
   background-image:url('back.svg');
   width: 2rem;
   height: 1.5rem;
+  z-index: 1;
 }
