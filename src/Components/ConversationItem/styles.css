@@ -2,9 +2,6 @@
   background-color: gray;
   border-bottom: 1px solid #ffffff;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
 }
 
 
