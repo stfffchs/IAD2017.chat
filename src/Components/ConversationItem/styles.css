@@ -2,8 +2,12 @@
   background-color: gray;
   border-bottom: 1px solid #ffffff;
   width: 100%;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+
+
 
 .ConversationItem__Preview {
   color: grey;
@@ -45,6 +49,7 @@ border-left-style: none;
 
 .ConversationItem__Avatar {
   text-align: left;
+  margin-right: 1rem;
 }
 
 .ConversationItem__Name {

@@ -1,6 +1,3 @@
-.PostItem__Text {
-  color: #2e2e2e;
-}
 
 .PostItem__Post {
   margin-top: 2rem;
@@ -20,6 +17,7 @@
   font-size: 1.1rem;
   line-height: 1.6rem;
   font-weight: 300;
+  color: #2e2e2e;
 }
 
 .PostItem__Post--other {
@@ -34,6 +32,7 @@
   font-size: 1.1rem;
   line-height: 1.6rem;
   font-weight: 300;
+  color: #ea7d5b;
 }
 
 .PostItem__Time {
