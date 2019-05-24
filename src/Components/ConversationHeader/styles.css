@@ -1,20 +1,28 @@
 .ConversationHeader {
-    display: table;
+    display: flex;
     width: 100%;
-    table-layout: fixed;
-    border-spacing: 10px;
+    flex: 1;
+    height: 100%;
+    align-items: center;
 }
 
 .ConversationHeader__Avatar {
-    display: table-cell;
-    background-color: red;
+    vertical-align: middle;
+    width: 5em;
+    padding: 0 10px 0 10px;
 }
 
 .ConversationHeader__AvatarImage {
     border-radius: 50px;
+    width: 5em;
 }
 
 .ConversationHeader__Infos {
-    display: table-cell;
-    background-color: orange;
+}
+
+.ConversationHeader__Name {
+}
+
+.ConversationHeader__Status {
+    display: none;
 }
