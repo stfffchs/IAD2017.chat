@@ -35,7 +35,7 @@
   background-color: none;
 }
 
-.Conversation__WriteTextarea {
+.Conversation__WriteTextarea{
   background-color: #0F1C25;
   float:left;
   color: white;
@@ -50,7 +50,7 @@
 
 }
 
-.textarea {
+.textarea{
   solid-color: none;
 
 }
@@ -61,11 +61,4 @@
   width: 41px;
   height: 41px;
   margin: 26px;
-}
-
-@media (max-width: 650px) {
-.ConversationHeader__Avatar {
-  margin-left: 39px;
-}
-
 }
