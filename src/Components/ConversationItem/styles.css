@@ -2,7 +2,8 @@
     background-color: #1B2730;
     border-bottom: 0.06rem solid #9CA7B4;
     width: 100%;
-    height: auto;
+    height: 100px;
+    overflow: hidden;
 }
 
 .ConversationItem--active {
@@ -27,6 +28,7 @@
     font-size: 0.8rem;
     font-weight: bold !important;
     vertical-align: middle;
+    margin-left: 95%;
 }
 
 .ConversationItem__Avatar {
@@ -36,6 +38,7 @@
 
 .ConversationItem__Infos {
     width: 100%;
+
 }
 
 .ConversationItem__Name {
@@ -53,9 +56,14 @@
 }
 
 .ConversationItem__Preview {
-    float: left;
+    /*float: left;*/
+    position: absolute;
     font-size: 0.8rem;
-    margin-left: 1rem;
+    margin-left: 3.9rem;
+    margin-top: 1.7rem;
+    max-width: 32ch;
+    overflow: hidden;
+    height: 60px;
 }
 
 .ConversationItem--inactive .ConversationItem__Time {
