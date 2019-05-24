@@ -2,44 +2,43 @@
   background-color: #393350;
   color: white;
   width: 100%;
+  height: 6em;
   display: flex;
   font-size: 1rem;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .ConversationItem__Avatar {
-  padding: 1rem;
-  display: flex;
-}
-
-.ConversationItem__Infos {
-  display: grid;
-  grid-template-columns: minmax(100px, 250px) 1fr 1fr;
-  align-items: center;
-  /*ev no en schöneri lösig mache*/
-  margin-top: -40px;
-}
-
-.ConversationItem__Name {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: left;
-}
-
-.ConversationItem__Time {
-  grid-column: 2;
-  grid-row: 1;
-  text-align: right;
+  padding: 0.5em;
+  height: 100%;
+  align-self: center;
 }
 
 .ConversationItem__AvatarImage {
   border-radius: 50px;
-  height: 4rem;
+  height: 3.5em;
 }
 
-.ConversationItem__Preview {
+.ConversationItem__Infos {
+  height: 100%;
 
+}
+
+.ConversationItem__Name {
+  text-align: left;
+  margin-top: -0.5em;
+}
+
+.ConversationItem__Time {
+  display: none;
+}
+
+.ConversationItem__Preview p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 17em;
+  margin-top: -0.8em;
+  color: darkgrey;
 }
 
 .ConversationItem--active {
