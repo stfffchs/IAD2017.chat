@@ -1,0 +1,37 @@
+.App {
+  height: 100%;
+}
+
+.App__Chat {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.App--MenuOpen .App__ConversationList {
+  width: 30%;
+}
+.App--MenuClosed .App__ConversationList {
+  width: 0%;
+  overflow: hidden;
+}
+
+.App--MenuOpen .App__Conversation {
+  width: 70%;
+}
+
+.App--MenuClosed .App__Conversation {
+  width: 100%;
+}
+
+@media (min-width: 650px) {
+  .App--MenuOpen .App__ConversationList,
+  .App--MenuClosed .App__ConversationList {
+    width: 30%;
+    overflow: auto;
+  }
+  .App--MenuOpen .App__Conversation,
+  .App--MenuClosed .App__Conversation {
+    width: 70%;
+  }
+}
