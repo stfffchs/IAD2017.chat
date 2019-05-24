@@ -4,7 +4,11 @@ import "./styles.css";
 
 class ConversationItem extends Component {
   render() {
-    const { id, name, active, text, writing, unread } = this.props;
+    const { id, name, active, text, writing, unread, date } = this.props;
+
+    var options = { hour: "2-digit", minute: "2-digit" };
+    var time = new Date(date * 1000).toLocaleString("de-DE", options);
+
     return (
       <UIConsumer>
         {context => {
@@ -21,16 +25,20 @@ class ConversationItem extends Component {
                 <img
                   className="ConversationItem__AvatarImage"
                   alt="avatar"
+<<<<<<< HEAD
                   src={`//lorempixel.com/175/175/${
                     ["people", "nature", "sports"][id % 3]
                   }/${id % 8}`}
+=======
+                  src={`/assets/avatar/${id}.jpg`}
+>>>>>>> 3cb921d522b8e8d93b9851d1b2b52ff1d21da012
                 />
               </div>
               <div className="ConversationItem__Infos">
                 <div className="ConversationItem__Name">
                   <h3>{name}</h3>
                 </div>
-                <div className="ConversationItem__Time">12:00</div>
+                <div className="ConversationItem__Time">{time}</div>
               </div>
 
               <div className="ConversationItem__Preview">

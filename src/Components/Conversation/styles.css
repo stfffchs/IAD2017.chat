@@ -1,10 +1,10 @@
-.Conversation {
+/*.Conversation {
   background-color: lightgoldenrodyellow;
   height: 100%;
 
   display: flex;
   flex-direction: column;
-  /*overflow-y: auto;*/
+  overflow-y: auto;
   height: 100%;
 }
 
@@ -29,3 +29,4 @@
   border-radius: 50%;
   background-color: orange;
 }
+*/
