@@ -17,15 +17,14 @@
 
 .ConversationItem__UnreadCount {
     float: right;
-    min-width: 23px;
+    min-width: auto;
     height: 23px;
     background: #5DBDE6;
     color: white;
     border-radius: 50%;
-    text-align: center;
     font-size: 0.8rem;
     font-weight: bold !important;
-    vertical-align: middle;
+    text-align: center;
 }
 
 .ConversationItem__Avatar {
@@ -48,6 +47,7 @@
     float: right;
     font-size: 0.8rem;
     text-align: right;
+    align-items: top;
     width: 20%;
     color: #9CA7B4;
 
