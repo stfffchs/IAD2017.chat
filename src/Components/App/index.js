@@ -4,12 +4,13 @@ import ConversationList from "../ConversationList";
 import Conversation from "../Conversation";
 import Menu from "../Menu";
 import { withContext } from "../Context";
-import { getSentence } from "../../Data/generator";
+import getSentence from "../../Data/getSentence";
 
 class App extends Component {
   componentDidMount() {
     let { context } = this.props;
 
+    // setup a fake writer
     setInterval(() => {
       context.actions.appendPostItem({
         id: 4,

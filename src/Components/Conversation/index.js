@@ -1,8 +1,20 @@
 import React, { Component, Fragment } from "react";
 import { UIConsumer } from "../Context";
 import PostItem from "../PostItem";
+import DateItem from "../DateItem";
 import ConversationHeader from "../ConversationHeader";
 import "./styles.css";
+
+var dateDiffInDays = function(date1, date2) {
+  let dt1 = new Date(date1 * 1000);
+  let dt2 = new Date(date2 * 1000);
+
+  return Math.floor(
+    (Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) -
+      Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate())) /
+      (1000 * 60 * 60 * 24)
+  );
+};
 
 class Conversation extends Component {
   constructor(props) {
@@ -42,6 +54,13 @@ class Conversation extends Component {
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
+
+  onKeyDown = (event, context) => {
+    if (event.keyCode === 13 && event.shiftKey === false) {
+      event.preventDefault();
+      this.handleSubmit(event, context);
+    }
+  };
 
   componentDidMount() {
     this.scrollToBottom();
@@ -96,24 +115,51 @@ class Conversation extends Component {
                   <ConversationHeader
                     id={currentConversation.id}
                     name={currentConversation.name}
+                    date={
+                      currentConversation.conversation[
+                        currentConversation.conversation.length - 1
+                      ].date
+                    }
                   />
                 </div>
 
                 <div className="Conversation__PostItems" ref={this.ref}>
-                  {currentConversation.conversation.map(item => {
+                  {currentConversation.conversation.map((item, index) => {
                     return (
-                      <div className="Conversation__PostItem">
-                        <PostItem
-                          type={item.type}
-                          from={item.from}
-                          text={item.text}
-                        />
+                      <div
+                        key={item.id}
+                        className={`Conversation__PostItem Conversation__PostItem--${
+                          item.from === "me" ? "me" : "other"
+                        }`}
+                      >
+                        {index === 0 && <DateItem date={item.date} />}
+
+                        {index > 0 &&
+                          (dateDiffInDays(
+                            item.date,
+                            currentConversation.conversation[index - 1].date
+                          ) !== 0 && <DateItem date={item.date} />)}
+
+                        {item.type === "text" && (
+                          <PostItem
+                            type={item.type}
+                            from={item.from}
+                            text={item.text}
+                            date={item.date}
+                          />
+                        )}
                       </div>
                     );
                   })}
                   {isWriting && <div className="Conversation__Writing" />}
                 </div>
-                <div className="Conversation__Form">
+                <div
+                  className={`Conversation__Form ${
+                    this.state.value
+                      ? "Conversation__Form--text"
+                      : "Conversation__Form--noText"
+                  }`}
+                >
                   <form
                     onSubmit={e => {
                       this.handleSubmit(e, context);
@@ -123,6 +169,8 @@ class Conversation extends Component {
                       <textarea
                         className="Conversation__WriteTextarea"
                         value={this.state.value}
+                        placeholder="Nachricht schreiben..."
+                        onKeyDown={e => this.onKeyDown(e, context)}
                         onChange={e => this.handleChange(e)}
                       />
                     </div>
