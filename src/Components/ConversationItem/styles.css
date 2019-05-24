@@ -31,13 +31,13 @@
 .ConversationItem__Name h3:after {
 	content: ' ';
 	background-color: #8CFE67;
-	position: absolute;
+	position: relative;
 	display: inline-block;
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-  right: -24px;
-  bottom: 4px;
+  right: -4px;
+  bottom: -1px;
 }
 
 .ConversationItem__Writing:before {
@@ -84,6 +84,7 @@ h3 {
 .ConversationItem h3 {
   margin:0;
   padding:0;
+  max-width: max-content;
 }
 
 .ConversationItem--active {
@@ -133,7 +134,7 @@ h3 {
 	padding-left: 0px;
 	position: relative;
 	font-weight: 300;
-	width: 145px;
+	width: 155px;
 }
 
 p{
@@ -156,13 +157,14 @@ p{
 	display: inline-block;
 	width: calc(100% - 45px);
 	left: 80px;
-  height:16px;
+  height:20px;
   padding-right: 5rem;
   overflow:hidden;
 	padding-left: 0px;
 	font-size: 0.8em;
 	font-weight: 200;
 	letter-spacing: 0.02em;
+  line-height: 2em;
 }
 
 .ConversationItem__UnreadCount {
