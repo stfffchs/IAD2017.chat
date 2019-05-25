@@ -1,5 +1,5 @@
 .ConversationItem {
-  /* background-color: #FFFFFF; */
+  background-color: #FFFFFF;
   width: 100%;
   height: 90px;
   display: block;
@@ -57,13 +57,13 @@
 .ConversationItem__UnreadCount {
 	position: absolute;
 	border-radius: 9px;
-	background-color: #FF2355;
+	background-color: #FFBDCC;
 	height: 16px;
 	min-width: 8px;
 	font-family: Inter;
 	font-weight: 500;
 	font-size: 11px;
-	color: #FFFFFF;
+	color: #FF2355;
 	letter-spacing: -0.09px;
 	text-align: right;
 	line-height: 15px;
