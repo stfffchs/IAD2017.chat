@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  border-left: 1px solid #F3F3F3; 
 }
 
 .Conversation__Placeholder {
@@ -15,15 +14,14 @@
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
-  box-shadow: 0 0 35px 0 rgba(0,0,0,0.20);
-  border-radius: 0 30px 0 0;
+  border-left: 1px solid #F3F3F3; 
+
 }
 
 .Conversation__Header {
   height: 90px;
   flex: 0 0 auto;
-  background-color: #FFFFFF;
-  overflow: hidden;
+  z-index: 300;
 }
 
 .Conversation__Form {
@@ -85,4 +83,23 @@
 
 .Conversation__Form--noText .Conversation__Send {
   display: none;
+}
+
+.DateItem {
+    border-top: 1px solid #F3F3F3;
+    text-align: center;
+    margin: 0 20px 0 20px;
+}
+
+.DateItem__Time {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: #A0A0A0;
+    letter-spacing: -0.09px;
+    line-height: 15px;
+    transform: translateY(-11px);
+    background-color: #FFFFFF;
+    display: inline-block; 
+    padding: 0 20px 0 20px;
 }
