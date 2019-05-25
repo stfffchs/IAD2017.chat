@@ -80,11 +80,13 @@
     height: 0.5rem;
     background-color: none;
 
+
 }
 
 .Conversation__Form Conversation__Form--noText{
     border-top: 0.06rem solid #9CA7B4;
     width: 100%;
+
 }
 
 p {
@@ -95,4 +97,8 @@ p {
 h3 {
     margin: 0;
     font-size: 1.3rem;
+}
+
+form{
+    margin-left: 2%;
 }

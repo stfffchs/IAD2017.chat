@@ -47,7 +47,7 @@
 
 .App__ConversationList::before {
   display: block;
-  content: "Chat";
+  content: "Deine Chats";
   color: white;
   font-size: 2rem;
   position: absolute;
