@@ -17,6 +17,7 @@ body,
 body {
   margin: 0;
   padding: 0;
+  background-color: #F3F3F3;
 }
 
 button,
@@ -29,4 +30,10 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+@media (min-width: 1400px) {
+  body {
+      height: calc(100% - 1rem);
+  }
 }
