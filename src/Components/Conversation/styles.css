@@ -11,6 +11,10 @@
   flex: 1 1 auto;
 }
 
+.Conversation__PlaceholderText{
+  color: #0F1C25;
+}
+
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
