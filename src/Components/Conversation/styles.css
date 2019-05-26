@@ -41,7 +41,7 @@
 
 .Conversation__WriteTextarea{
   background-color: #0F1C25;
-  float:left;
+  float: left;
   color: white;
   font-family: inherit;
   border-radius: 16px 16px 16px 16px;
@@ -50,9 +50,13 @@
   margin-top: 1rem;
   padding-left: 2%;
   font-size: 1rem;
-
-
+  border-style: none;
 }
+
+.Conversation__WriteTextarea:focus {
+  border: solid 0.5px;
+  outline: 0;
+  }
 
 .textarea{
   solid-color: none;

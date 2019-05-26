@@ -49,14 +49,15 @@
   display: block;
   content: "Deine Chats";
   color: white;
-  font-size: 2rem;
   position: absolute;
   top: 0;
+  padding-top: 1.8rem;
   left: 0;
-  height: 5rem;
+  height: 3.2rem;
   width: 100%;
   text-align: center;
   border-bottom: 0.06rem solid #9CA7B4;
+  font-size: 1.3rem;
 
 }
 
