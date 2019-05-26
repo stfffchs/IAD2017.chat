@@ -16,7 +16,7 @@
 }
 
 .ConversationItem__UnreadCount {
-    float: right;
+    margin-left: 95%;
     background: #5DBDE6;
     color: white;
     font-size: 0.8rem;
@@ -61,6 +61,8 @@
     color: white;
     font-size: 0.8rem;
     margin-left: 1rem;
+    white-space: nowrap;
+    max-width: 30ch;
 }
 
 .ConversationItem--inactive .ConversationItem__Time {
@@ -72,14 +74,21 @@
     color: #9CA7B4;
 }
 
+
 .ConversationItem__Writing {
     background-image: url('write.svg');
     width: 2rem;
     height: 0.5rem;
     background-color: none;
 
+
 }
 
+.Conversation__Form Conversation__Form--noText {
+    border-top: 0.06rem solid #9CA7B4;
+    width: 100%;
+
+}
 
 p {
     margin-block-start: 0.2em;
@@ -89,4 +98,8 @@ p {
 h3 {
     margin: 0;
     font-size: 1.3rem;
+}
+
+form {
+    margin-left: 2%;
 }

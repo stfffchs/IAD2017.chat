@@ -11,6 +11,10 @@
   flex: 1 1 auto;
 }
 
+.Conversation__PlaceholderText{
+  color: #0F1C25;
+}
+
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
@@ -19,12 +23,12 @@
 .Conversation__Header {
   height: 5rem;
   flex: 0 0 auto;
-  position: sticky;
   border-width: 0.05rem;
 }
 
 .Conversation__Form {
-  height: 5rem;
+  border-top: 0.06rem solid #9CA7B4;
+
 }
 
 .Conversation__Writing {
