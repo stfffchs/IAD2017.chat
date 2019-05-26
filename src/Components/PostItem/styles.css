@@ -36,15 +36,12 @@
     /*noinspection CssInvalidPropertyValue*/
     background-color: none;
     font-size: 0.8rem;
-    font-family: 'Fira Sans', sans-serif;
-
 }
 
 .DateItem__Time {
     font-size: 0.8rem;
     margin: 2%;
     color: #9CA7B4;
-    font-family: 'Fira Sans', sans-serif;
 
 }
 
@@ -54,8 +51,6 @@
 
 .PostItem__Text {
     color: white;
-    font-family: 'Fira Sans', sans-serif;
-
 }
 
 
