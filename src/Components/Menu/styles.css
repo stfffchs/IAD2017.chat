@@ -10,21 +10,21 @@
   background-color: transparent;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .Menu {
     display: none;
   }
 }
 
-@media (max-width: 765px) {
-
-
+@media (max-width: 767px) {
 .Menu--Closed {
-  background-image:url('back.svg');
+  background-image: url(/static/media/back.9a016a6d.svg);
   width: 2rem;
   height: 1.5rem;
   z-index: 1;
-  color:#418FB0 !important;
+  color: #418FB0 !important;
   left: 0.2rem;
+  top: 1.8rem;
+  background-repeat: no-repeat;
 }
 }

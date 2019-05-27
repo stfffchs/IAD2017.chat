@@ -62,7 +62,7 @@
     font-size: 0.8rem;
     margin-left: 1rem;
     /*white-space: nowrap;*/
-    max-width: 32ch;
+    max-width: 27ch;
 }
 
 .ConversationItem--inactive .ConversationItem__Time {

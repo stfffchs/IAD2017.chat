@@ -26,6 +26,12 @@
   border-width: 0.05rem;
 }
 
+@media (max-width: 767px) {
+  .ConversationHeader {
+    margin-left: 1.6rem;
+  }
+}
+
 .Conversation__Form {
   border-top: 0.06rem solid #9CA7B4;
 
