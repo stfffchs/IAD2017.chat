@@ -42,13 +42,12 @@
 .Conversation__WriteTextarea{
   background-color: #0F1C25;
   float: left;
-  color: white;
+  color: #9CA7B4;
   font-family: inherit;
-  border-radius: 16px 16px 16px 16px;
+  border-radius: 13px 13px 13px 13px;
   padding: 0.5rem;
-  width: 80%;
-  margin-top: 1rem;
-  padding-left: 2%;
+  width: 86%;
+  margin-top: 1.2rem;
   font-size: 1rem;
   border-style: none;
 }
@@ -60,7 +59,10 @@
 
 .textarea{
   solid-color: none;
+}
 
+.placeholder {
+  color:#9CA7B4;
 }
 
 .Conversation__Send {
