@@ -1,57 +1,71 @@
-.ConversationItem {
-  background-color: #ffffff;
-  border-right: 1px solid black;
-  width: 100%;
-  display: block;
-  color: #000000;
-  position: relative;
-  text-align: left;
-  height: 10rem;
-}
-.ConversationItem__Name{
-  margin-left: 8rem;
-}
+  .ConversationItem {
+    background-color: #ffffff;
+    border-right: 1px solid black;
+    width: 100%;
+    display: block;
+    color: #000000;
+    position: relative;
+    text-align: left;
+    height: 7.25rem;
+  }
+  .ConversationItem__Name{
+    margin-left: 8rem;
+  }
 
-.ConversationItem__Infos{
-  margin-top: -5.6rem;
-  margin-left: 5rem;
-}
+  .ConversationItem__Infos{
+    margin-top: -5.6rem;
+    margin-left: 5rem;
+  }
 
-.ConversationItem__AvatarImage{
-  border-radius: 100%;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  width: 4rem;
-  height: 4rem;
-}
+  .ConversationItem__AvatarImage{
+    border-radius: 100%;
+    margin-top: 1.74rem;
+    margin-left: 1rem;
+    width: 4.31rem;
+    height: 4.31rem;
+  }
 
-.ConversationItem__Avatar{
-padding-left: 0;
-}
+  .ConversationItem__Avatar{
+  padding-left: 0;
+  }
 
-.ConversationItem--active {
-  background-color: #D8D8D8;
-}
+  .ConversationItem--active {
+    background-color: #D8D8D8;
+  }
 
-.ConversationItem__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: pink;
-}
+  .ConversationItem__Writing {
+    width: 3rem;
+    height: 3rem;
+    background-color: pink;
+  }
 
-.ConversationItem__Name{
-  text-align: left;
-  margin-left: 1rem;
-}
+  .ConversationItem__Name{
+    text-align: left;
+    margin-left: 1rem;
+  }
 
-.ConversationItem__Time{
-  text-align: right;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-}
+  .ConversationItem__Time{
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
 
-.ConversationItem__Preview{
-  text-align: left;
-  margin-left: 1rem;
-  margin-top: -0.7rem;
-}
+  .ConversationItem__Preview{
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: -0.7rem;
+  }
+
+  .ConversationItem__UnreadCount{
+    background-color: #226CE0;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-left: 24rem;
+  }
+
+  .DateItem__Time{
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }

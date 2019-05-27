@@ -1,12 +1,34 @@
 .ConversationHeader{
     background-color: #ffffff;
-    border: 1px;
+
+    height: 7rem;
+}
+
+.Conversation__Header{
+    border-bottom-color: black;
+    border-bottom-width: 1px;
 }
 
 img{
 
 }
+.ConversationHeader__AvatarImage{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
 
+
+.ConversationHeader__Infos{
+    margin-top: -4.3rem;
+    margin-left: 6rem;
+}
+
+.ConversationHeader__Status{
+    margin-top: -0.8rem;
+}
 .Name{
     margin-left: 5rem;
 }

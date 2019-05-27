@@ -37,15 +37,21 @@
   border-radius: 50px;
   width: 90%;
   margin-left: 5%;
-  margin-top: 2rem;
-
+  margin-top: 1.5rem;
+  height: 2rem;
 }
 
 .Conversation__Send{
-  background-color: white;
+  background-color: #ffffff;
+  margin-left: 55rem;
+  margin-top: -2rem;
 }
 
 .Conversation__SendInput{
   color: #226CE0;
   font-weight: bold;
+}
+
+.button{
+  color: #226CE0;
 }
