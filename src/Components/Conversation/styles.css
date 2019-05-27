@@ -98,7 +98,7 @@
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: 10px center;
-
+  float: left;
 }
 
 
@@ -112,10 +112,11 @@
 
 .Conversation__Send {
   display: inline-block;
-  position: absolute;
   bottom: 2.65rem;
   right: 0;
   z-index: 10000000;
+  float: right;
+  padding-top: 1.5rem;
 }
 
 .Conversation .form {
@@ -130,10 +131,6 @@
 .Conversation__PlaceholderText {
   text-align: center;
   margin: 2rem;
-}
-
-input {
-  position: absolute;
 }
 
 textarea {
