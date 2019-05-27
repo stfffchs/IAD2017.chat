@@ -87,18 +87,6 @@ h3 {
   max-width: max-content;
 }
 
-.ConversationItem--active {
-  color: white;
-  background-color: #5377FF !important;
-}
-
-.ConversationItem--active h3 {
-  color: white;
-}
-
-.ConversationItem--inactive {
-}
-
 
 .ConversationItem__Avatar {
 	width: 60px;
@@ -137,7 +125,7 @@ h3 {
 	width: 155px;
 }
 
-p{
+p {
   margin:0;
 }
 
@@ -155,7 +143,7 @@ p{
 .ConversationItem__Preview {
 	position: relative;
 	display: inline-block;
-	width: calc(100% - 45px);
+	width: calc(100% - 50px);
 	left: 80px;
   height:20px;
   padding-right: 5rem;
@@ -196,6 +184,7 @@ p{
     color: #5377FF;
     font-size: 1em;
   }
+
 
   .ConversationItem {
     width: 95%;
@@ -278,5 +267,21 @@ p{
   	bottom: 15%;
   	vertical-align: middle;
   }
+
+}
+
+@media (min-width: 750px) {
+
+.ConversationItem--active {
+  color: white;
+  background-color: #5377FF !important;
+}
+
+.ConversationItem--active h3 {
+  color: white;
+}
+
+
+
 
 }

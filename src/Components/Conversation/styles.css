@@ -34,12 +34,14 @@
   margin-top: 15px;
 }
 
-.Conversation__PlaceholderText {
-  content: 'Your favourit Contacts';
-  font-size: 30px;
+.Conversation__PlaceholderText:after {
+  content: 'Your favorite contacts';
+  font-size: 20px;
   text-align: left;
   color: #5377FF;
-  margin-top: 15px;
+  margin-top: 40vh;
+  position: static;
+  display: block;
 }
 
 .Conversation__PostItems {

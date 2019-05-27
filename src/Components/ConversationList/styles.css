@@ -14,3 +14,10 @@
 .ConversationList::-webkit-scrollbar {
 	display: none;
 }
+
+
+@media (max-width: 750px) {
+	.ConversationList {
+		padding-top: 0;
+	}
+}
