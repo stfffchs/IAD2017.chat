@@ -62,3 +62,10 @@
 .DateItem {
     text-align: center;
 }
+
+.PostItem::after {
+    clear: both;
+    content: " ";
+    display: block;
+    visibility: hidden;
+}
