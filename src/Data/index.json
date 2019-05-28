@@ -2,7 +2,7 @@
   "conversations": [
     {
       "id": 1,
-      "name": "Manuela Himmel",
+      "name": "MH",
       "conversation": [
         {
           "id": 1000,
@@ -29,7 +29,7 @@
     },
     {
       "id": 2,
-      "name": "Marcel Bach",
+      "name": "MB",
       "conversation": [
         {
           "id": 2000,
@@ -126,7 +126,7 @@
     },
     {
       "id": 3,
-      "name": "Andreas Möller",
+      "name": "AM",
       "conversation": [
         {
           "id": 3000,
@@ -167,7 +167,7 @@
     },
     {
       "id": 4,
-      "name": "Jan Vogel",
+      "name": "JV",
       "conversation": [
         {
           "id": 4000,
@@ -278,7 +278,7 @@
     },
     {
       "id": 5,
-      "name": "Ralf Herz",
+      "name": "RH",
       "conversation": [
         {
           "id": 5000,
@@ -305,7 +305,7 @@
     },
     {
       "id": 6,
-      "name": "Mike Fisher",
+      "name": "MF",
       "conversation": [
         {
           "id": 6000,
@@ -346,7 +346,7 @@
     },
     {
       "id": 7,
-      "name": "Frank Sommer",
+      "name": "FS",
       "conversation": [
         {
           "id": 7000,
@@ -373,7 +373,7 @@
     },
     {
       "id": 8,
-      "name": "Kristian Vogler",
+      "name": "KV",
       "conversation": [
         {
           "id": 8000,
@@ -400,7 +400,7 @@
     },
     {
       "id": 9,
-      "name": "Katharina Lowe",
+      "name": "KL",
       "conversation": [
         {
           "id": 9000,
@@ -427,7 +427,7 @@
     },
     {
       "id": 10,
-      "name": "Marina Scherer",
+      "name": "MS",
       "conversation": [
         {
           "id": 10000,
@@ -510,7 +510,7 @@
     },
     {
       "id": 11,
-      "name": "Sophie Blau",
+      "name": "SB",
       "conversation": [
         {
           "id": 11000,
@@ -544,7 +544,7 @@
     },
     {
       "id": 12,
-      "name": "Bernd Konig",
+      "name": "BK",
       "conversation": [
         {
           "id": 12000,
@@ -606,7 +606,7 @@
     },
     {
       "id": 13,
-      "name": "Sebastian Wirtz",
+      "name": "SW",
       "conversation": [
         {
           "id": 13000,
@@ -675,7 +675,7 @@
     },
     {
       "id": 14,
-      "name": "Max Kuester",
+      "name": "MK",
       "conversation": [
         {
           "id": 14000,
@@ -702,7 +702,7 @@
     },
     {
       "id": 15,
-      "name": "Daniel Herrmann",
+      "name": "DH",
       "conversation": [
         {
           "id": 15000,
@@ -757,7 +757,7 @@
     },
     {
       "id": 16,
-      "name": "Nicole Grunwald",
+      "name": "NG",
       "conversation": [
         {
           "id": 16000,
@@ -784,7 +784,7 @@
     },
     {
       "id": 17,
-      "name": "Daniela Lehrer",
+      "name": "DL",
       "conversation": [
         {
           "id": 17000,
@@ -825,7 +825,7 @@
     },
     {
       "id": 18,
-      "name": "Petra Holtzmann",
+      "name": "PH",
       "conversation": [
         {
           "id": 18000,
@@ -894,7 +894,7 @@
     },
     {
       "id": 19,
-      "name": "Monika Nussbaum",
+      "name": "MN",
       "conversation": [
         {
           "id": 19000,
@@ -921,7 +921,7 @@
     },
     {
       "id": 20,
-      "name": "Luca Urner",
+      "name": "LU",
       "conversation": [
         {
           "id": 20000,

@@ -1,5 +1,4 @@
 .Conversation {
-  background-color: lightgoldenrodyellow;
   height: 100%;
 
   display: flex;
@@ -9,7 +8,10 @@
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
-  background-color: red;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 30%;
 }
 
 .Conversation__PostItems {
@@ -18,19 +20,40 @@
 }
 
 .Conversation__Header {
-  height: 7rem;
+  height: 5.5rem;
   flex: 0 0 auto;
-  background-color: pink;
 }
 
 .Conversation__Form {
-  height: 5rem;
+  align: right;
+  height: 3rem;
   flex: 0 0 auto;
-  background-color: green;
+  background-color: rgba(109,113,121);
+
 }
 
-.Conversation__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: pink;
+
+.Conversation__Write {
+  text-align: right;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 0.5rem;
+
+}
+
+.Conversation__Send {
+  color: white;
+  font-family: 'fontello';
+  content: '\f1d8';
+  text-align: right;
+  padding-right: 1.3rem;
+  margin-top: -2rem;
+}
+
+.Conversation__WriteTextarea {
+  border: 0px solid silver;
+  border-radius: 7px 7px 0px 7px;
+  padding: 5px 10px 2px 5px;
+  width: 90%;
+
 }
