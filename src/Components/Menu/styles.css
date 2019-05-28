@@ -10,15 +10,10 @@
   background-color: transparent;
 }
 
-@media (min-width: 768px) {
-  .Menu {
-    display: none;
-  }
-}
 
 @media (max-width: 767px) {
 .Menu--Closed {
-  background-image: url(/static/media/back.9a016a6d.svg);
+  background-image: url('back.svg');
   width: 2rem;
   height: 1.5rem;
   z-index: 1;
