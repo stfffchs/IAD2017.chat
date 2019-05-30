@@ -1,4 +1,4 @@
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 
   .Menu {
   width: 1.5rem;
@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 750px) {
   .Menu {
     display: flex;
     width: 1.5rem;

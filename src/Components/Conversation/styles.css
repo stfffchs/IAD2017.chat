@@ -154,6 +154,22 @@ textarea {
   right: 1em;
 }
 
+.DateItem__Time:before {
+  content: '';
+  border: 0.5px solid #8B8B8B;
+  width: 85%;
+  left: 7.5%;
+  bottom: 1.2rem;
+  position: absolute;
+  display: inline-block;
+}
+
+.DateItem__Time {
+  font-size: 0.8em;
+  position: relative;
+  top: 1rem;
+}
+
 @media (max-width: 850px) {
 
   .Conversation__Write {

@@ -38,9 +38,30 @@
 
 .DateItem__Time {
   text-align: center;
+  font-size: 0.8em;
+  position: relative;
+  top: 1rem;
 }
 
-@media (max-width: 850px) {
+.DateItem__Time:before {
+  content: '';
+  border: 0.5px solid #8B8B8B;
+  width: 85%;
+  left: 7.5%;
+  bottom: 1.2rem;
+  position: absolute;
+  display: inline-block;
+}
 
+
+@media (max-width: 750px) {
+
+.PostItem__Post--me {
+  margin-left: 25%;
+}
+
+.PostItem__Post--other {
+  margin-right: 25%;
+}
 
 }

@@ -23,9 +23,6 @@
 
 }
 
-.ConversationItem__Name:hover {
-
-}
 
 
 .ConversationItem__Name h3:after {
@@ -135,8 +132,8 @@ p {
 	display: block;
   width:30%;
 	right: 5%;
-	top: 5%;
-	font-size: 0.8em;
+	top: 36%;
+	font-size: 0.7em;
   font-weight: 200;
 }
 
@@ -176,13 +173,12 @@ p {
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
 
   h3 {
   	font-weight: 500;
   	letter-spacing: 0.04em;
     color: #5377FF;
-    font-size: 1em;
   }
 
 
@@ -232,10 +228,9 @@ p {
   	display: inline-block;
   	width: calc(100% - 30px);
   	left: 80px;
-    height:14px;
+    height: 20px;
     overflow:hidden;
   	padding-left: 0px;
-  	font-size: 0.7em;
   	font-weight: 200;
   	letter-spacing: 0.02em;
   }
@@ -246,8 +241,7 @@ p {
   	display: block;
     width:30%;
   	right: 5%;
-  	top: 8%;
-  	font-size: 0.6em;
+  	top: 36%;
     font-weight: 200;
   }
 
