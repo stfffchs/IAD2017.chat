@@ -73,5 +73,21 @@
   	padding-left: 8%;
 }
 
+.ConversationHeader__Status {
+	margin-left: 30px;
+	width: 200%;
+	display: flex;
+	position: relative;
+	font-size: 0.7em;
+	margin-top: 0;
+	font-weight: 200;
+	letter-spacing: 0.02em;
+}
+
+.ConversationHeader__Name h3 {
+	margin-left: 30px;
+
+}
+
 
 }
