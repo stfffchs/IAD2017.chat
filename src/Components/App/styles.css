@@ -1,9 +1,18 @@
-/*App__Colors*/
 :root {
+  /*App__Colors*/
   --purple-light: #443B68;
   --purple-normal: #393350;
   --purple-dark: #2F2B44;
   --blue-light: #4A7BFF;
+  --white: white;
+
+  /*App__Fonts*/
+  --font-xs: 0.75em;
+  --font-s: 1em;
+  --font-m: 1.25em;
+  --font-l: 1.75em;
+
+  --letter-spacing: -0.77px
 }
 
 .App {

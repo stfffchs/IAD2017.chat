@@ -15,13 +15,13 @@
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
-  background-color: var(--purple-normal);
+  background-color: var(--purple-dark);
 }
 
 .Conversation__Header {
   height: 7rem;
   flex: 0 0 auto;
-  background-color: var(--purple-light);
+  background-color: var(--purple-normal);
 }
 
 .Conversation__Form {
