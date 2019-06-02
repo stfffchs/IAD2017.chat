@@ -1,23 +1,33 @@
 .PostItem {
+    text-align: right;
 }
 
 .PostItem__Post {
-  margin-top: 2rem;
-  padding: 0.5rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 15px;
 }
 
 .PostItem__Post--me {
-  margin-left: 40%;
-  background-color: var(--purple-normal);
+    display: inline-block;
+    text-align: left;
+    margin-right: 1.5em;
+    margin-left: 40%;
+    background-color: var(--purple-normal);
 }
 
 .PostItem__Post--other {
-  margin-right: 40%;
-  background-color: var(--blue-light);
+    text-align: left;
+    margin-left: 1.5em;
+    width: fit-content;
+    background-color: var(--blue-light);
+}
+
+.PostItem__Text {
+    max-width: 95%;
 }
 
 .PostItem__Time {
-  display: inline-block;
-  padding: 0.2rem;
-  font-size: var(--font-xs)
+    font-size: var(--font-xs);
+    text-align: right;
 }

@@ -1,0 +1,15 @@
+.DateItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.DateItem__Time {
+    background-color: var(--blue-light);
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
