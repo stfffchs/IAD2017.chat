@@ -25,19 +25,43 @@
   flex: 1 1 auto;
   background-color: none;
   text-align: left;
-  background-image: url(boyfriend.jpg);
+  background-image: url(favoriten.png);
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 80%;
   background-position: 2rem 380px;
+
+}
+
+
+/*.Conversation__Placeholder:before {
+  content: '';
+  flex: none;
+  background-color: none;
+  background-image: url(bestfriend.jpg);
+  background-repeat: no-repeat;
+  background-size: 39%;
+  position: absolute;
+  top: 380px;
+  left: 693px;
+  width: 400px;
+  height: 400px;
+
 }
 
 .Conversation__Placeholder:after {
+  content: '';
+  flex: none;
+  background-color: none;
   background-image: url(mom.jpg);
   background-repeat: no-repeat;
-  background-size: 40%;
-  position: relative;
+  background-size: 39%;
+  position: absolute;
+  top: 380px;
+  left: 530px;
+  width: 400px;
+  height: 400px;
 
-}
+}*/
 
 .Conversation__PlaceholderText {
   font-size: 30px;
