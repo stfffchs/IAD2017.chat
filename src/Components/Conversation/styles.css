@@ -25,13 +25,25 @@
   flex: 1 1 auto;
   background-color: none;
   text-align: left;
+  background-image: url(boyfriend.jpg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 2rem 380px;
+}
+
+.Conversation__Placeholder:after {
+  background-image: url(mom.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  position: relative;
+
 }
 
 .Conversation__PlaceholderText {
   font-size: 30px;
-  text-align: left;
+  text-align: center;
   color: #5377FF;
-  margin-top: 15px;
+  margin: 2rem;
 }
 
 .Conversation__PlaceholderText:after {
@@ -39,7 +51,7 @@
   font-size: 20px;
   text-align: left;
   color: #5377FF;
-  margin-top: 40vh;
+  margin-top: 280px;
   position: static;
   display: block;
 }
@@ -130,10 +142,9 @@
   color: #5377FF;
 }
 
-.Conversation__PlaceholderText {
-  text-align: center;
-  margin: 2rem;
-}
+
+
+
 
 textarea {
   outline: none;
@@ -154,21 +165,7 @@ textarea {
   right: 1em;
 }
 
-.DateItem__Time:before {
-  content: '';
-  border: 0.5px solid #8B8B8B;
-  width: 85%;
-  left: 7.5%;
-  bottom: 1.2rem;
-  position: absolute;
-  display: inline-block;
-}
 
-.DateItem__Time {
-  font-size: 0.8em;
-  position: relative;
-  top: 1rem;
-}
 
 @media (max-width: 850px) {
 
