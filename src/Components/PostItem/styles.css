@@ -12,10 +12,12 @@
 .PostItem__Post--me {
   color: #5377FF;
   margin-left: 40%;
-  border-style: solid;
+  border-style: none;
+/*  border-style: solid;
   border-width: 1px;
-  border-color: #5377FF;
+  border-color: #5377FF;*/
   border-radius: 9px 2px 9px 9px;
+  background-color: #D0DBEC;
 }
 
 .PostItem__Post--other {
@@ -36,9 +38,30 @@
 
 .DateItem__Time {
   text-align: center;
+  font-size: 0.8em;
+  position: relative;
+  top: 1rem;
 }
 
-@media (max-width: 850px) {
+.DateItem__Time:before {
+  content: '';
+  border: 0.5px solid #8B8B8B;
+  width: 85%;
+  left: 7.5%;
+  bottom: 1.2rem;
+  position: absolute;
+  display: inline-block;
+}
 
+
+@media (max-width: 750px) {
+
+.PostItem__Post--me {
+  margin-left: 25%;
+}
+
+.PostItem__Post--other {
+  margin-right: 25%;
+}
 
 }

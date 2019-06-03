@@ -9,6 +9,7 @@
   	flex-wrap: wrap;
   	flex-direction: row;
   	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  	z-index: 100000;
 }
 
 .ConversationHeader {
@@ -28,7 +29,7 @@
 	margin: 15%;
 	border-radius: 50%;
 	height: 3em;
-	padding-left: 3%;
+	padding-left: 6%;
 	vertical-align: middle;
 }
 
@@ -65,14 +66,25 @@
 
 }
 
+@media (min-width: 1000px){
+	.ConversationHeader__AvatarImage {
+	padding-left: 6%;
+}
 
 
-@media (max-width: 650px) {
+.ConversationHeader__Infos {
+	padding-left: 7%;
+}
+
+}
+
+@media (max-width: 750px) {
 
 	.ConversationHeader {
   	padding-left: 8%;
 }
 
+<<<<<<< HEAD
 .ConversationHeader__Status {
 	margin-left: 30px;
 	width: 200%;
@@ -89,5 +101,12 @@
 
 }
 
+=======
+.ConversationHeader__Infos {
+	padding-left: 13%;
+	margin-top: 0;
+
+}
+>>>>>>> d50df4d9ea1f4928a0429d48e438d804e419a5e5
 
 }
