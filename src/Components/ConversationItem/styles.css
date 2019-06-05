@@ -20,3 +20,11 @@
   height: 3rem;
   background-color: yellow;
 }
+
+.ConversationItem--me .ConversationItem__Preview > p::before {
+  content: "Ich: ";
+}
+
+.ConversationItem--others .ConversationItem__Preview > p::before {
+  content: "Du: ";
+}
