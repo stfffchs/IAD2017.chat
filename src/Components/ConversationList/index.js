@@ -36,6 +36,10 @@ class ConversationList extends Component {
                     context.isWriting.filter(writer => writer === item.id)
                       .length > 0
                   }
+                  online={
+                    context.isOnline.filter(user => user === item.id)
+                      .length > 0
+                  }
                   unread={
                     item.conversation.filter(post => post.unread === true)
                       .length
