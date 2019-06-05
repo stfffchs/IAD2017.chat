@@ -4,7 +4,7 @@ import "./styles.css";
 
 class ConversationItem extends Component {
   render() {
-    const { id, name, active, text, writing, unread, date } = this.props;
+    const { id, name, active, text, writing, unread, date, me } = this.props;
 
     var options = { hour: "2-digit", minute: "2-digit" };
     var time = new Date(date * 1000).toLocaleString("de-DE", options);
@@ -16,6 +16,8 @@ class ConversationItem extends Component {
             <button
               className={`ConversationItem ConversationItem--${
                 active ? "active" : "inactive"
+              } ConversationItem--${
+                me ? "me" : "others"
               }`}
               onClick={e => {
                 context.actions.setActiveConversation(id);
