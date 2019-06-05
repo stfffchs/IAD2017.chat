@@ -20,6 +20,16 @@ class App extends Component {
         unread: true
       });
     }, 5000);
+
+    // setup a fake online offline
+    setInterval(() => {
+      context.actions.appendOnline(Math.floor(Math.random() * 10));
+    }, 5000);
+
+    // setup a fake online offline
+    setInterval(() => {
+      context.actions.removeOnline(Math.floor(Math.random() * 10));
+    }, 5000);
   }
 
   render() {
