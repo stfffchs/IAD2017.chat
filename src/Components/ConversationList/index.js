@@ -27,9 +27,17 @@ class ConversationList extends Component {
                   name={item.name}
                   text={item.conversation[item.conversation.length - 1].text}
                   date={item.conversation[item.conversation.length - 1].date}
+                  me={
+                    item.conversation[item.conversation.length - 1].from ===
+                    "me"
+                  }
                   active={context.activeConversation === item.id}
                   writing={
                     context.isWriting.filter(writer => writer === item.id)
+                      .length > 0
+                  }
+                  online={
+                    context.isOnline.filter(user => user === item.id)
                       .length > 0
                   }
                   unread={
