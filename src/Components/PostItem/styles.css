@@ -9,7 +9,7 @@
 }
 
 .PostItem__Post--me {
-  background: #67ADFE;
+  background: #28978A;
   border-radius: 10px 10px 0 10px;
   font-family: Inter;
   font-weight: 400;
@@ -17,8 +17,8 @@
   color: #FFFFFF;
   letter-spacing: -0.14px;
   line-height: 21px;
-  margin-right: 20px;
-  margin-left: 40px;
+  margin-right: 100px;
+  margin-left: 200px;
   float: right;
 }
 
@@ -38,7 +38,8 @@
   color: #0F0F0F;
   letter-spacing: -0.14px;
   line-height: 21px;
-  margin-left: 20px;
+  margin-left: 100px;
+  margin-right: 200px;
   float: left;
 }
 
