@@ -10,7 +10,7 @@
 }
 
 .ConversationItem:hover::before {
-	border-left: 5px solid #C2DEFF;
+	border-left: 5px solid #a9d5d0;
 	content: '';
 	position: absolute;
 	top: 0px;
@@ -32,7 +32,7 @@
 }
 
 .ConversationItem--active::before {
-	border-left: 5px solid #67ADFE;
+	border-left: 5px solid #28978A;
 	content: '';
 	position: absolute;
 	top: 0px;
@@ -40,7 +40,7 @@
 }
 
 .ConversationItem--active:hover::before {
-	border-left: 5px solid #67ADFE;
+	border-left: 5px solid #28978A;
 	content: '';
 	position: absolute;
 	top: 0px;
