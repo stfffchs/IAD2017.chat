@@ -25,7 +25,7 @@
   width: 100%;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 900px) {
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {
     width: 30%;
