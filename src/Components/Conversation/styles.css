@@ -8,8 +8,20 @@
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
-  background-color: red;
+  background-color: #FFFFFF;
+  border-left: 1px solid #F3F3F3;
 }
+
+.Conversation__Placeholder::before {
+    position: relative;
+    display: block;
+    height: 90px;
+    z-index: 300;
+    background-image: linear-gradient(180deg, #2FBFA7 0%, #24B1A1 100%);
+    box-shadow: 0 4px 12px -4px rgba(0,0,0,0.30), 0 9px 15px 0 rgba(0,0,0,0.10);
+    width: 100%;
+    content: " ";
+  }
 
 .Conversation__PostItems {
   flex: 1 1 auto;
@@ -76,7 +88,7 @@
 
 .Conversation__Send {
   height: 40px;
-  background: #67ADFE;
+  background: #28978A;
   border-radius: 20px;
   margin: 0;
 }
