@@ -31,3 +31,9 @@
     font-size: var(--font-xs);
     text-align: right;
 }
+
+@media (max-width: 850px) {
+    .PostItem__Post--other {
+        margin-right: 1.5em;
+    }
+}

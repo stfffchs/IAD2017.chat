@@ -7,9 +7,16 @@
 }
 
 .DateItem__Time {
-    background-color: var(--blue-light);
+    background-color: var(--white);
+    color: var(--purple-dark);
     width: 20%;
     padding: 5px;
     text-align: center;
     border-radius: 15px;
+}
+
+@media (max-width: 850px) {
+    .DateItem__Time {
+        width: 30%;
+    }
 }

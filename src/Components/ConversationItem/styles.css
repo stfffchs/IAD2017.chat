@@ -96,3 +96,9 @@
     text-align: center;
     line-height: 30px;
 }
+
+@media (max-width: 850px) {
+    .ConversationItem__Preview p {
+        max-width: 15em;
+    }
+}

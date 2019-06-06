@@ -1,18 +1,19 @@
 .Menu {
-  width: 3rem;
-  height: 3rem;
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background-color: green;
+    position: fixed;
+    width: 5em;
+    height: 7em;
+    background-size: cover;
+    background: url("back_icon.png") no-repeat center;
+    z-index: 1;
 }
 
 .Menu--Open {
-  background-color: blue;
+    background-color: blue;
+    z-index: -1;
 }
 
-@media (min-width: 650px) {
-  .Menu {
-    display: none;
-  }
+@media (min-width: 1300px) {
+    .Menu {
+        display: none;
+    }
 }

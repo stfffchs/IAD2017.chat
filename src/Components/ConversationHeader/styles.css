@@ -1,7 +1,6 @@
 .ConversationHeader {
     display: flex;
     width: 100%;
-    flex: 1;
     height: 100%;
     align-items: center;
 }
@@ -9,7 +8,7 @@
 .ConversationHeader__Avatar {
     vertical-align: middle;
     width: 5em;
-    padding: 0 10px 0 10px;
+    padding: 0 1em 0 1em;
 }
 
 .ConversationHeader__AvatarImage {
@@ -20,9 +19,27 @@
 .ConversationHeader__Infos {
 }
 
-.ConversationHeader__Name {
-}
-
 .ConversationHeader__Status {
     display: none;
+}
+
+@media (max-width: 1300px) {
+    .ConversationHeader {
+        position: relative;
+    }
+
+    .ConversationHeader__Avatar {
+        right: 1em;
+        width: 3em;
+        position: absolute;
+    }
+
+    .ConversationHeader__AvatarImage {
+        width: 3em;
+    }
+
+    .ConversationHeader__Infos {
+        position: absolute;
+        left: 5.2em;
+    }
 }
