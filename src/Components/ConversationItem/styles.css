@@ -6,7 +6,7 @@
   text-align: left;
   position: relative;
   white-space: nowrap;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .ConversationItem:hover::before {
@@ -143,4 +143,9 @@
   letter-spacing: -0.14px;
   line-height: 21px;
   margin: 0;
+}
+
+.ConversationItem--me .ConversationItem__Preview > p::before {
+    content: "Du: ";
+    color: #0F0F0F;
 }
