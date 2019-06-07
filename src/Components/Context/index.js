@@ -9,6 +9,7 @@ export class UIProvider extends Component {
   state = {
     activeConversation: null,
     isWriting: [3],
+    isOnline: [4],
     menuOpen: true,
     conversations: [...DATA.conversations]
   };
@@ -25,10 +26,22 @@ export class UIProvider extends Component {
       isWriting: [...this.state.isWriting, id]
     });
   };
+  appendOnline = id => {
+    this.setState({
+      ...this.state,
+      isOnline: [...this.state.isOnline, id]
+    });
+  };
   removeWriter = id => {
     this.setState({
       ...this.state,
       isWriting: this.state.isWriting.filter(item => item !== id)
+    });
+  };
+  removeOnline = id => {
+    this.setState({
+      ...this.state,
+      isOnline: this.state.isOnline.filter(item => item !== id)
     });
   };
   appendPostItem = ({ id, type, from, text, unread }) => {
@@ -36,7 +49,7 @@ export class UIProvider extends Component {
       let newConversation = { ...conversation };
       if (newConversation.id === id) {
         newConversation.conversation.push({
-          id: id*1000+(newConversation.conversation.length ),
+          id: id * 1000 + newConversation.conversation.length,
           type,
           from,
           text,
@@ -69,7 +82,6 @@ export class UIProvider extends Component {
       newConversations.push(newConversation);
     });
 
-
     this.setState({
       ...this.state,
       conversations: newConversations,
@@ -86,8 +98,10 @@ export class UIProvider extends Component {
           actions: {
             setActiveConversation: this.setActiveConversation,
             appendPostItem: this.appendPostItem,
+            appendOnline: this.appendOnline,
             appendWriter: this.appendWriter,
             removeWriter: this.removeWriter,
+            removeOnline: this.removeOnline,
             toggleMenuOpen: this.toggleMenuOpen
           }
         }}
