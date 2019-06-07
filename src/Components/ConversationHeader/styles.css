@@ -1,8 +1,12 @@
 .ConversationHeader{
-    background-color: #ffffff;
+    background-color: #D8D8D8;
     height: 7rem;
     border-bottom-color: #979797;
     border-bottom-width: 1px;
+    width: 92%;
+    margin-left: 4%;
+    border-radius: 0 0 10px 10px;
+    z-index: 100;
 }
 
 .Conversation__Header{

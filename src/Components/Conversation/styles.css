@@ -47,9 +47,13 @@
 }
 
 .Conversation__Write{
-  background-color: white;
+  background-color: #EBEBEB;
+
 }
 
+input.Conversation__WriteTextarea:focus{
+  background-color: #ffffff;
+}
 
 .Conversation__WriteTextarea{
   border-radius: 50px;
@@ -58,12 +62,20 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   height: 2rem;
+  padding-top: 0.2rem;
+  background-color: #EBEBEB;
+
 }
 
 .Conversation__Send{
-  background-color: #ffffff;
+  background-color: none;
   margin-left: 55rem;
-  margin-top: -2rem;
+  margin-top: -2.9rem;
+  color: #226CE0;
+}
+
+input.Conversation__SendInput{
+  text-align: center;
 }
 
 .Conversation__SendInput{

@@ -1,73 +1,68 @@
-:root{
-  --lightgrey: #D8D8D8;
-  --darkgrey: #646464;
-  --blue: #226CE0;
+:root {
+    --lightgrey: #D8D8D8;
+    --darkgrey: #646464;
+    --blue: #226CE0;
 }
 
+ #root{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
 .App {
-  height: 90vh;
-  margin-top: 3rem;
-  overflow-y: hidden;
+    height: 100vh;
+    margin-top: 0;
+    overflow-y: hidden;
+    min-width: 1440px;
 }
 
 .App__Chat {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 
 .App--MenuOpen .App__ConversationList {
-  width: 100%;
+    width: 100%;
 }
+
 .App--MenuClosed .App__ConversationList {
-  width: 0;
-  overflow: hidden;
+    width: 0;
+    overflow: hidden;
 }
 
 .App--MenuOpen .App__Conversation {
-  width: 0;
+    width: 0;
 }
 
 .App--MenuClosed .App__Conversation {
-  width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-  body{
 
-    border-radius: 1vw 1vw 1vw 1vw;
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-.app{
-  height: 100vh;
-}
-  .App--MenuOpen .App__ConversationList,
-  .App--MenuClosed .App__ConversationList {
-    width: 30%;
-    overflow: auto;
+    .App {
+        border-radius: 1vw 1vw 1vw 1vw;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        height: 90vh;
+        overflow: hidden;
 
-  }
-  .App--MenuOpen .App__Conversation,
-  .App--MenuClosed .App__Conversation {
-    width: 70%;
-  }
+    }
+
+    .App--MenuOpen .App__ConversationList,
+    .App--MenuClosed .App__ConversationList {
+        width: 30%;
+        overflow: auto;
+
+    }
+
+    .App--MenuOpen .App__Conversation,
+    .App--MenuClosed .App__Conversation {
+        width: 70%;
+    }
 }
 
-
-body{
-  max-width: 1440px;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-
-}
 
 @media (min-width: 1140px) {
-html{
-  height: 90%;
-}
 }
