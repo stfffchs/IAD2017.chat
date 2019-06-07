@@ -18,6 +18,16 @@
     background-color: var(--darkest);
 }
 
+.Conversation__PlaceholderText {
+    font-size: var(--xl);
+    color: var(--medium);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+
 .Conversation__PostItems {
     flex: 1 1 auto;
     overflow-y: auto;
@@ -65,17 +75,17 @@
 }
 
 .Conversation__Send {
-    color: var(--hilight);
+    color: white;
     right: 0px;
     position: absolute;
-    background-color: white;
-    padding: 10px;
+    background-color: var(--hilight);
+    padding: 10px 5px 10px 5px;
     border-radius: 10px;
 
 }
 .Conversation__Send:hover {
-    color: white;
-    background-color: var(--hilight);
+    color: var(--hilight);
+    background-color: white;
 }
 
 .Conversation__SendInput {
