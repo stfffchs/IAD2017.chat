@@ -42,6 +42,25 @@
   width: 100%;
 }
 
+.App__ConversationList {
+  position: relative;
+}
+
+.App__ConversationList::before {
+  display: block;
+  content: "Chats";
+  position: absolute;
+  top: 0;
+  padding-top: 3.2rem;
+  left: 0;
+  height: 3.2em;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-m);
+  background-color: var(--purple-normal);
+  font-weight: 600;
+}
+
 @media (min-width: 1300px) {
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {

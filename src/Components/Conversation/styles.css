@@ -9,7 +9,14 @@
 
 .Conversation__Placeholder {
     flex: 1 1 auto;
-    background-color: red;
+    background-color: var(--purple-dark);
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+.Conversation__PlaceholderText {
+    font-weight: 600;
+    font-size: var(--font-l);
 }
 
 .Conversation__PostItems {

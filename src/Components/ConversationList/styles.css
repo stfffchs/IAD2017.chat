@@ -1,5 +1,6 @@
 .ConversationList {
-  height: 100%;
   overflow-y: auto;
   background-color: var(--purple-normal);
+  margin-top: 7rem; /* push content down */
+  height: calc(100% - 7rem); /* height minus head */
 }
