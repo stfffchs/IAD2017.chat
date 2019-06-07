@@ -5,10 +5,12 @@
   top: 1rem;
   right: 1rem;
   background-color: green;
+  background-image: ;
 }
 
 .Menu--Open {
   background-color: blue;
+  background-image: ;
 }
 
 @media (min-width: 768px) {

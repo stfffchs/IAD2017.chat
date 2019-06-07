@@ -8,6 +8,15 @@
     text-align: left;
     height: 7.25rem;
   }
+
+  .ConversationItem:hover{
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
   .ConversationItem__Name{
     margin-left: 8rem;
   }
@@ -54,6 +63,7 @@
     text-align: left;
     margin-left: 1rem;
     margin-top: -0.7rem;
+    text-overflow: ellipsis;
   }
 
   .ConversationItem__UnreadCount{
@@ -66,6 +76,6 @@
   }
 
   .DateItem__Time{
-    margin-left: 4rem;
+    margin-left: 46%;
     margin-top: 1rem;
   }
