@@ -1,17 +1,17 @@
 .Menu {
-  width: 3rem;
-  height: 3rem;
+  background-image: url(menu.svg);
+  background-repeat: no-repeat;
+  background-size: 174%;
+  width: 50px;
+  height: 50px;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background-color: green;
+  margin-left: 13px;
+  margin-top: 13px;
+  border: none;
 }
 
-.Menu--Open {
-  background-color: blue;
-}
 
-@media (min-width: 650px) {
+@media (min-width: 1040px) {
   .Menu {
     display: none;
   }

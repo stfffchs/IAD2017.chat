@@ -1,0 +1,38 @@
+.ConversationHeader {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    padding-left: 80px;
+    align-items: center;
+}
+
+@media (min-width: 760px) {
+  .ConversationHeader {
+    padding-left: 15px;
+  }
+}
+
+
+
+.ConversationHeader__Avatar {
+    vertical-align: middle;
+    width: 70px;
+    padding: 0 10px 0 10px;
+}
+
+.ConversationHeader__AvatarImage {
+    border-radius: 35px;
+    width: 70px;
+}
+
+.ConversationHeader__Infos {
+}
+
+.ConversationHeader__Name {
+  font-size: var(--m);
+}
+
+.ConversationHeader__Status {
+    display: none;
+}

@@ -1,0 +1,12 @@
+.DateItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.DateItem__Time {
+  font-size: var(--xs);
+    text-align: center;
+}

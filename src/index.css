@@ -1,15 +1,19 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 html,
 body,
 #root {
   height: 100%;
+  color: var(--white);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
 }
 
 button,
@@ -17,7 +21,13 @@ input[type="submit"],
 input[type="reset"] {
   background: none;
   color: inherit;
-  border: none;
+  border-width: 4px;
+  border-color: var(--dark);
+  border-left: 1;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+
   padding: 0;
   font: inherit;
   cursor: pointer;

@@ -4,7 +4,21 @@ import "./styles.css";
 
 class ConversationItem extends Component {
   render() {
-    const { id, name, active, text, writing } = this.props;
+    const {
+      id,
+      name,
+      active,
+      text,
+      writing,
+      unread,
+      date,
+      me,
+      online
+    } = this.props;
+
+    var options = { hour: "2-digit", minute: "2-digit" };
+    var time = new Date(date * 1000).toLocaleString("de-DE", options);
+
     return (
       <UIConsumer>
         {context => {
@@ -12,6 +26,8 @@ class ConversationItem extends Component {
             <button
               className={`ConversationItem ConversationItem--${
                 active ? "active" : "inactive"
+              } ConversationItem--${me ? "me" : "others"} ConversationItem--${
+                writing ? "online" : online ? "online" : "offline"
               }`}
               onClick={e => {
                 context.actions.setActiveConversation(id);
@@ -21,23 +37,23 @@ class ConversationItem extends Component {
                 <img
                   className="ConversationItem__AvatarImage"
                   alt="avatar"
-                  src={`//lorempixel.com/75/75/${
-                    ["people", "nature", "sports"][id % 3]
-                  }/${id % 8}`}
+                  src={`/assets/avatar/${id}.jpg`}
                 />
               </div>
               <div className="ConversationItem__Infos">
                 <div className="ConversationItem__Name">
                   <h3>{name}</h3>
                 </div>
-                <div className="ConversationItem__Time">12:00</div>
-              </div>
-
-              <div className="ConversationItem__Preview">
-                <p>{text}</p>
+                <div className="ConversationItem__Preview">
+                  <p>{text}</p>
+                </div>
+                <div className="ConversationItem__Time">{time}</div>
               </div>
 
               {writing && <div className="ConversationItem__Writing" />}
+              {unread > 0 && (
+                <div className="ConversationItem__UnreadCount">{unread}</div>
+              )}
             </button>
           );
         }}

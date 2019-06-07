@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { DATA } from "../../Data";
+import DATA from "../../Data/index.json";
 
 export const UIContext = React.createContext();
 
@@ -9,7 +9,8 @@ export class UIProvider extends Component {
   state = {
     activeConversation: null,
     isWriting: [3],
-    menuOpen: false,
+    isOnline: [4],
+    menuOpen: true,
     conversations: [...DATA.conversations]
   };
 
@@ -25,20 +26,35 @@ export class UIProvider extends Component {
       isWriting: [...this.state.isWriting, id]
     });
   };
+  appendOnline = id => {
+    this.setState({
+      ...this.state,
+      isOnline: [...this.state.isOnline, id]
+    });
+  };
   removeWriter = id => {
     this.setState({
       ...this.state,
       isWriting: this.state.isWriting.filter(item => item !== id)
     });
   };
-  appendPostItem = ({ id, type, from, text }) => {
+  removeOnline = id => {
+    this.setState({
+      ...this.state,
+      isOnline: this.state.isOnline.filter(item => item !== id)
+    });
+  };
+  appendPostItem = ({ id, type, from, text, unread }) => {
     let newConversations = this.state.conversations.map(conversation => {
       let newConversation = { ...conversation };
       if (newConversation.id === id) {
         newConversation.conversation.push({
+          id: id * 1000 + newConversation.conversation.length,
           type,
           from,
-          text
+          text,
+          date: parseInt(new Date().getTime() / 1000),
+          unread: this.state.activeConversation === from ? false : unread
         });
       }
       return newConversation;
@@ -51,8 +67,24 @@ export class UIProvider extends Component {
   };
 
   setActiveConversation = id => {
+    let newConversations = [];
+
+    this.state.conversations.forEach(conversation => {
+      let newConversation = { ...conversation };
+
+      if (conversation.id === id) {
+        newConversation.conversation = conversation.conversation.map(post => ({
+          ...post,
+          unread: false
+        }));
+      }
+
+      newConversations.push(newConversation);
+    });
+
     this.setState({
       ...this.state,
+      conversations: newConversations,
       menuOpen: false,
       activeConversation: id
     });
@@ -66,8 +98,10 @@ export class UIProvider extends Component {
           actions: {
             setActiveConversation: this.setActiveConversation,
             appendPostItem: this.appendPostItem,
+            appendOnline: this.appendOnline,
             appendWriter: this.appendWriter,
             removeWriter: this.removeWriter,
+            removeOnline: this.removeOnline,
             toggleMenuOpen: this.toggleMenuOpen
           }
         }}

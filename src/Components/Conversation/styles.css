@@ -1,29 +1,113 @@
 .Conversation {
-  background-color: lightgoldenrodyellow;
-  height: 100%;
+    background-color: var(--dark);
+    height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
+.Conversation__Header {
+    height: 100px;
+    flex: 0 0 auto;
+    background-color: var(--light);
+  }
+
 .Conversation__Placeholder {
-  flex: 1 1 auto;
-  background-color: red;
+    flex: 1 1 auto;
+    background-color: var(--darkest);
 }
 
 .Conversation__PostItems {
-  flex: 1 1 auto;
-  overflow-y: auto;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    background-color: var(--darkest);
 }
 
 .Conversation__Form {
-  height: 5rem;
-  background-color: green;
+    margin: 10px 10px 10px 10px;
+    align-self: center;
+    width: 90%;
+
+    border-radius: 10px;
+    height: 5%;
+    background-color: var(--medium);
+
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
 }
 
-.Conversation__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: pink;
+.Conversation__Form form {
+    display: flex;
+}
+
+.Conversation__Write {
+    flex: 0 0 85%;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+.Conversation__WriteTextarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    width: 100%;
+    color: var(--white);
+    font-size: var(--s);
+}
+
+.Conversation__Send {
+    color: var(--hilight);
+    right: 0px;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.Conversation__Send:hover {
+    color: white;
+    background-color: var(--hilight);
+}
+
+.Conversation__SendInput {
+    right: 5px;
+    border: none;
+}
+
+/* loading dots */
+.Conversation__Writing::after {
+    padding-left: 1.5em;
+    font-size: var(--l);
+    content: ' .';
+    animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        color: rgba(0, 0, 0, 0);
+        text-shadow: .25em 0 0 rgba(0, 0, 0, 0),
+        .5em 0 0 rgba(0, 0, 0, 0);
+    }
+    40% {
+        color: white;
+        text-shadow: .25em 0 0 rgba(0, 0, 0, 0),
+        .5em 0 0 rgba(0, 0, 0, 0);
+    }
+    60% {
+        text-shadow: .25em 0 0 white,
+        .5em 0 0 rgba(0, 0, 0, 0);
+    }
+    80%, 100% {
+        text-shadow: .25em 0 0 white,
+        .5em 0 0 white;
+    }
 }

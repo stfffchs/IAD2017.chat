@@ -1,15 +1,36 @@
+:root {
+  --light: #323C50;
+  --medium: #1E2832;
+  --dark: #151F29;
+  --darkest: #0B141E;
+  --hilight: #D50044;
+  --highlight: 213, 0, 68;
+  --white: white;
+
+  /* Fonts */
+
+  --xl: 2em;
+  --l: 1.75em;
+  --m: 1.25em;
+  --s: 1em;
+  --xs: 0.75em;
+
+
+}
+
 .App {
   height: 100%;
+  color: white;
 }
 
 .App__Chat {
   display: flex;
-  flex-direction: row;
   height: 100%;
+
 }
 
 .App--MenuOpen .App__ConversationList {
-  width: 30%;
+  width: 100%;
 }
 .App--MenuClosed .App__ConversationList {
   width: 0%;
@@ -17,14 +38,15 @@
 }
 
 .App--MenuOpen .App__Conversation {
-  width: 70%;
+  width: 0%;
 }
 
 .App--MenuClosed .App__Conversation {
   width: 100%;
 }
 
-@media (min-width: 650px) {
+
+@media screen and (min-width: 760px) {
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {
     width: 30%;
@@ -34,4 +56,20 @@
   .App--MenuClosed .App__Conversation {
     width: 70%;
   }
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--medium);
 }

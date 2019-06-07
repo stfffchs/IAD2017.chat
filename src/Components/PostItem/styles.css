@@ -1,24 +1,38 @@
 .PostItem {
+    text-align: right;
 }
 
 .PostItem__Post {
-  margin-top: 2rem;
-  padding: 0.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
 }
 
 .PostItem__Post--me {
-  margin-left: 40%;
-  background-color: red;
+    display: inline-block;
+    text-align: left;
+    margin-left: 40%;
+    background-color: var(--medium);
+    border-radius: 10px 0 0 10px;
+
 }
 
 .PostItem__Post--other {
-  margin-right: 40%;
-  background-color: blue;
+    text-align: left;
+    width: fit-content;
+    background-color: var(--light);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.PostItem__Text {
+    max-width: 95%;
 }
 
 .PostItem__Time {
-  display: inline-block;
-  padding: 0.2rem;
-  background-color: white;
-  font-size: 0.6rem;
+    font-size: var(--xs);
+    text-align: right;
+    margin-bottom: -10px;
+    margin-right: -7px;
+
 }
