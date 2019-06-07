@@ -64,7 +64,7 @@
 
 .ConversationItem__Time {
     float: right;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: right;
     align-items: top;
     width: 20%;
@@ -90,15 +90,6 @@
     color: #9CA7B4;
 }
 
-
-.ConversationItem__Writing {
-    background-image: url('write.svg');
-    width: 2rem;
-    height: 0.5rem;
-    background-color: none;
-
-
-}
 
 .Conversation__Form Conversation__Form--noText {
     border-top: 0.06rem solid #9CA7B4;

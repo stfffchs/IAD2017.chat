@@ -3,7 +3,6 @@
 }
 
 .PostItem__Post {
-    margin-top: 0.3rem;
     padding: 0.7rem;
     border-radius: 16px;
 }
@@ -14,6 +13,8 @@
     background-color: #418FB0;
     float: right;
     min-width: 8rem;
+    margin-bottom: 0.4rem;
+
 }
 
 .PostItem__Post--other {
@@ -21,6 +22,8 @@
     background-color: #1B2730;
     float: left;
     min-width: 8rem;
+    margin-bottom: 0.4rem;
+
 }
 
 .Conversation__PostItem--other + .Conversation__PostItem--me .PostItem__Post {
@@ -31,7 +34,6 @@
 .Conversation__PostItem--me + .Conversation__PostItem--other .PostItem__Post {
     border-radius: 0 16px 16px 16px;
     margin-top: 1rem;
-    margin-bottom: 1rem;
 
 }
 

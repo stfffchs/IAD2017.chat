@@ -1,49 +1,49 @@
-.ConversationHeader__AvatarImage{
+.ConversationHeader__AvatarImage {
     width: 60px;
     border-radius: 0 50% 50% 50%;
     margin: 20%;
     display: inline-block;
 }
 
-.ConversationHeader__Infos{
+.ConversationHeader__Infos {
     color: white;
     display: inline-block;
     position: absolute;
-    margin-top:1rem;
+    margin-top: 1rem;
     margin-left: 2rem;
-  }
+}
 
-  .ConversationHeader__Name{
-      color: white;
-      display: inline-block;
-      margin:0;
-      padding:0;
-      font-size:1.2rem;
+.ConversationHeader__Name {
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
 
-    }
+}
 
-  .Conversation__Header {
-      display: sticky;
-      background-color: #0F1C25;
-      border-bottom: 0.08rem solid #9CA7B4;
+.Conversation__Header {
+    display: sticky;
+    background-color: #0F1C25;
+    border-bottom: 0.08rem solid #9CA7B4;
 
 }
 
 
-.ConversationHeader__Avatar{
+.ConversationHeader__Avatar {
     display: inline-block;
 
-  }
+}
 
-  .ConversationHeader__Status{
-    font-size:0.8rem;
-    margin-top:1%;
+.ConversationHeader__Status {
+    font-size: 0.8rem;
+    margin-top: 1%;
     color: #9CA7B4;
 }
 
 
-  @media (max-width: 650px) {
-    .ConversationHeader__Avatar{
+@media (max-width: 650px) {
+    .ConversationHeader__Avatar {
 
-      }
-  }
+    }
+}
