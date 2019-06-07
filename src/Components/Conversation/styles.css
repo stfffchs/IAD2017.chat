@@ -33,7 +33,7 @@
 .Conversation__Header {
   height: 90px;
   flex: 0 0 auto;
-  z-index: 300;
+  z-index: 200;
 }
 
 .Conversation__Form {
@@ -46,6 +46,12 @@
   align-items: center;
   flex-direction: row;
   z-index: 100;
+}
+
+.Conversation__Form form {
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .Conversation__Writing {
@@ -83,14 +89,20 @@
   height: 40px;
   margin: 0;
   flex: 1 1 auto;
-  margin: 0 0 0 20px;
+  margin: 0 20px 0 20px;
 }
 
 .Conversation__Send {
+  width: 40px;
   height: 40px;
   background: #28978A;
-  border-radius: 20px;
-  margin: 0;
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+  flex: initial;
+}
+
+input.Conversation__SendInput {
+    display: none;
 }
 
 .Conversation__Form--noText .Conversation__Send {
