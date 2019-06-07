@@ -11,7 +11,7 @@
   background-color: blue;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 900px) {
   .Menu {
     display: none;
   }
