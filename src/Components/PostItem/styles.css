@@ -31,6 +31,8 @@
 .Conversation__PostItem--me + .Conversation__PostItem--other .PostItem__Post {
     border-radius: 0 16px 16px 16px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+
 }
 
 /*noinspection CssInvalidPropertyValue,CssInvalidPropertyValue*/
