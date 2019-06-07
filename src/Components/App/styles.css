@@ -1,41 +1,44 @@
 .App {
-  height: 100%;
+    height: 100%;
 }
 
 .App__Chat {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 
 .App--MenuOpen .App__ConversationList {
-  width: 100%;
+    width: 100%;
 
 }
+
 .App--MenuClosed .App__ConversationList {
-  width: 0;
-  overflow: hidden;
+    width: 0;
+    overflow: hidden;
 }
 
 .App--MenuOpen .App__Conversation {
-  width: 0;
+    width: 0;
 }
 
 .App--MenuClosed .App__Conversation {
-  width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 760px) {
-  .App--MenuOpen .App__ConversationList,
-  .App--MenuClosed .App__ConversationList {
-    min-width: 400px;
-    max-width: 400px;
+    .App--MenuOpen .App__ConversationList,
+    .App--MenuClosed .App__ConversationList {
+        min-width: 375px;
+        max-width: 375px;
+        height: 100vh;
 
-    overflow: auto;
-  }
-  .App--MenuOpen .App__Conversation,
-  .App--MenuClosed .App__Conversation {
-  }
+        overflow: auto;
+    }
+
+    .App--MenuOpen .App__Conversation,
+    .App--MenuClosed .App__Conversation {
+    }
 }
 
 /*@media (min-width: 1000px) {
@@ -52,30 +55,30 @@
 }*/
 
 .App__ConversationList {
-  position: relative;
-  background-color: #1B2730;
+    position: relative;
+    background-color: #1B2730;
 }
 
 .App__ConversationList::before {
-  display: block;
-  content: "Deine Chats";
-  color: white;
-  position: absolute;
-  top: 0;
-  padding-top: 1.8rem;
-  left: 0;
-  height: 3.2rem;
-  width: 100%;
-  text-align: center;
-  border-bottom: 0.06rem solid #9CA7B4;
-  font-size: 1.3rem;
+    display: block;
+    content: "Deine Chats";
+    color: white;
+    position: absolute;
+    top: 0;
+    padding-top: 1.8rem;
+    left: 0;
+    height: 3.2rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.06rem solid #9CA7B4;
+    font-size: 1.3rem;
 
 }
 
 .ConversationList {
-  margin-top: 5rem; /* push content down */
-  height: calc(100% - 5rem); /* height minus head */
-  background-color: #1B2730;
+    margin-top: 5rem; /* push content down */
+    height: calc(100% - 5rem); /* height minus head */
+    background-color: #1B2730;
 
 
 }
