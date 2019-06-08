@@ -1,9 +1,17 @@
-.Conversation {
-  height: 100%;
+@font-face {
+  font-family: 'fontello';
+  src: url('/assets/icons/font/fontello.woff2?32606818') format('woff2'),
+       url('/assets/icons/font/fontello.woff?32606818') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+
+.Conversation {
+    flex: 1 1 auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
 }
 
 .Conversation__Placeholder {
@@ -11,7 +19,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 10rem;
 }
 
 .Conversation__PostItems {
@@ -25,29 +33,45 @@
 }
 
 .Conversation__Form {
-  align: right;
-  height: 3rem;
-  flex: 0 0 auto;
+/*display: flex;
+flex-direction: row;*/
+padding-left: 0rem;
   background-color: rgba(109,113,121);
 
 }
 
 
+.Conversation__Write::after {
+  float: right;
+  color: white;
+  font-family: 'fontello';
+  content: '\f1d8';
+  font-size: 1.5rem;
+  padding-top: 5px;
+    background-color: rgba(109,113,121);
+
+}
+
+
 .Conversation__Write {
-  text-align: right;
-  padding-right: 5rem;
-  padding-left: 5rem;
+  padding-right: 2rem;
   padding-top: 0.5rem;
+  padding-left: 0.7rem;
+  padding-bottom: 0.6rem;
+    background-color: rgba(109,113,121);
 
 }
 
 .Conversation__Send {
-  color: white;
-  font-family: 'fontello';
-  content: '\f1d8';
-  text-align: right;
-  padding-right: 1.3rem;
-  margin-top: -2rem;
+text-align: right;
+float: right;
+padding: 20px;
+margin-top: -60px;
+opacity: 0;
+}
+
+.Conversation__SendInput {
+
 }
 
 .Conversation__WriteTextarea {
@@ -56,4 +80,11 @@
   padding: 5px 10px 2px 5px;
   width: 90%;
 
+
+}
+
+.Conversation__Form--noText {
+  width: 100%;
+  flex-direction: row-reverse;
+  background-color: rgba(109,113,121);
 }

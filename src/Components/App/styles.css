@@ -24,6 +24,7 @@
 
 .App--MenuClosed .App__ConversationList {
   height: 0%;
+  overflow: hidden;
 }
 
 .App--MenuOpen .App__Conversation {

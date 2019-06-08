@@ -26,7 +26,7 @@ class ConversationHeader extends Component {
         </div>
         <div className="ConversationHeader__Infos">
           <div className="ConversationHeader__Name">
-            <h3>{name}</h3>
+            <h4>{name}</h4>
           </div>
           <div className="ConversationHeader__Status">
             Zuletzt online: {time}
