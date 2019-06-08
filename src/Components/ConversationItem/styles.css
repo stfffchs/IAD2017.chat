@@ -3,6 +3,7 @@
     border-bottom: 0.06rem solid #9CA7B4;
     width: 100%;
     height: auto;
+    position: relative;
 
 }
 
@@ -17,6 +18,8 @@
     top: 1rem;
     left: 1rem;
     position: absolute;
+    border-bottom: 0.06rem solid #9CA7B4;
+
 }
 
 .ConversationItem--active {
@@ -30,7 +33,10 @@
 }
 
 .ConversationItem__UnreadCount {
-    margin-left: 95%;
+    /* statt margin righ, anfang*/
+    position: absolute;
+    right: 10px;
+    /* statt margin righ, ende*/
     background: #5DBDE6;
     color: white;
     font-size: 0.8rem;
