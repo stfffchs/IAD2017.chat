@@ -11,10 +11,10 @@
  }
 
 .App {
-    height: 100vh;
+    height: 100%;
+    width:100%;
     margin-top: 0;
     overflow-y: hidden;
-    min-width: 1440px;
 }
 
 .App__Chat {
@@ -42,27 +42,39 @@
 
 @media (min-width: 768px) {
 
-    .App {
-        border-radius: 1vw 1vw 1vw 1vw;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        height: 90vh;
-        overflow: hidden;
-
-    }
-
     .App--MenuOpen .App__ConversationList,
     .App--MenuClosed .App__ConversationList {
-        width: 30%;
+        width: 40%;
         overflow: auto;
-
     }
 
     .App--MenuOpen .App__Conversation,
     .App--MenuClosed .App__Conversation {
         width: 70%;
     }
+
 }
 
 
-@media (min-width: 1140px) {
+
+
+@media (min-width: 1440px) {
+    .App {
+        border-radius: 1vw 1vw 1vw 1vw;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        height: 90%;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .App--MenuOpen .App__ConversationList,
+    .App--MenuClosed .App__ConversationList {
+        width: 26%;
+        overflow: auto;
+    }
+
+    .App--MenuOpen .App__Conversation,
+    .App--MenuClosed .App__Conversation {
+        width: 74%;
+    }
 }
