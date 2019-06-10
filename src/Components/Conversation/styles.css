@@ -13,9 +13,9 @@
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,2989d8+50,207cca+51,7db9e8+100 */
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,ffffff+100,ffffff+100,207cca+100 */
   background: #076585; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #076585 0%, #ffffff 100%, #ffffff 100%, #207cca 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #076585 0%,#ffffff 100%,#ffffff 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #076585 0%,#ffffff 100%,#ffffff 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(-45deg,  #226CE0 0%, #ffffff 100%, #ffffff 100%, #207cca 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #226CE0 0%,#ffffff 100%,#ffffff 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #226CE0 0%,#ffffff 100%,#ffffff 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#076585', endColorstr='#207cca',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
@@ -56,16 +56,21 @@ input.Conversation__WriteTextarea:focus{
 }
 
 .Conversation__WriteTextarea{
-  border-radius: 50px;
+  border-radius: 3.125rem;
   width: 90%;
   margin-left: 5%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   height: 2rem;
   padding-top: 0.2rem;
   background-color: #EBEBEB;
 
 }
+
+.Conversation__Form Conversation__Form--noText{
+
+}
+
 
 .Conversation__Send{
   background-color: none;
@@ -78,6 +83,12 @@ input.Conversation__SendInput{
   text-align: center;
 }
 
+input:focus {
+  outline: none !important;
+  border-color: #226CE0;
+  border-radius: 50px;
+}
+
 .Conversation__SendInput{
   color: #226CE0;
   font-weight: bold;
@@ -88,4 +99,29 @@ input.Conversation__SendInput{
 .button{
   color: #226CE0;
   text-align: center;
+}
+
+textarea::-webkit-input-placeholder {
+  padding-top:  0.4375rem;
+  padding-left: 1rem;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  padding-top:  0.4375rem;
+  padding-left: 1rem;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  padding-top: 0.4375rem;
+  padding-left: 1rem;
+}
+
+textarea:-ms-input-placeholder {
+  padding-top: 0.4375rem;
+  padding-left: 1rem;
+}
+
+textarea::placeholder {
+  padding-top: 0.4375rem;
+  padding-left: 1rem;
 }

@@ -1,20 +1,26 @@
   .ConversationItem {
-    background-color: #ffffff;
-    border-right: 1px solid black;
+    background-color: #EFF5FF;
     width: 100%;
     display: block;
     color: #000000;
     position: relative;
     text-align: left;
     height: 7.25rem;
+    transition: all .2s ease-in-out;
+    padding: 1rem;
+  }
+
+  .App__ConversationList{
+    background-color: #EFF5FF;
   }
 
   .ConversationItem:hover{
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -ms-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    -o-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .ConversationItem--active{
+    background-color: #D8D8D8;
   }
 
   .ConversationItem__Name{
@@ -22,24 +28,19 @@
   }
 
   .ConversationItem__Infos{
-    margin-top: -5.6rem;
+    margin-top: -11rem;
     margin-left: 5rem;
   }
 
   .ConversationItem__AvatarImage{
     border-radius: 100%;
-    margin-top: 1.74rem;
-    margin-left: 1rem;
     width: 4.31rem;
     height: 4.31rem;
+    margin-bottom: 5rem;
   }
 
   .ConversationItem__Avatar{
   padding-left: 0;
-  }
-
-  .ConversationItem--active {
-    background-color: #D8D8D8;
   }
 
   .ConversationItem__Writing {
@@ -72,10 +73,11 @@
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    margin-left: 24rem;
+    margin-left: 22rem;
+    margin-top: 1rem;
   }
 
-  .DateItem__Time{
+  .ConversationItem__Time{
     margin-left: 46%;
-    margin-top: 1rem;
+    margin-top: -5.1rem;
   }
