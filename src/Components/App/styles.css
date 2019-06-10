@@ -24,7 +24,7 @@
   width: 100%;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .App--MenuOpen .App__ConversationList,
   .App--MenuClosed .App__ConversationList {
     width: 30%;
@@ -33,5 +33,17 @@
   .App--MenuOpen .App__Conversation,
   .App--MenuClosed .App__Conversation {
     width: 70%;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 768px) {
+  .App--MenuOpen .App__ConversationList,
+  .App--MenuClosed .App__ConversationList {
+    width: 50%;
+    overflow: auto;
+  }
+  .App--MenuOpen .App__Conversation,
+  .App--MenuClosed .App__Conversation {
+    width: 50%;
   }
 }

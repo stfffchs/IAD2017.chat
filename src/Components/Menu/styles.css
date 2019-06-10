@@ -1,6 +1,6 @@
 .Menu {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 520px) {
   .Menu {
     display: none;
   }

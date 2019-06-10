@@ -1,7 +1,35 @@
 .Conversation__Header {
   background-color: #ffffff;
+  margin: 1.4rem;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #e3dfd1;
 }
 
 .ConversationHeader__AvatarImage {
   border-radius: 50%;
+  width: 4.5rem;
+  display: flex;
+  float: left;
+  margin-right: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.ConversationHeader__Name h3 {
+  font-weight: 900;
+  color: #ea7d5b;
+  padding-top: 1rem;
+  line-height: 1.4rem;
+}
+
+.ConversationHeader__Status {
+  color: #9a978d;
+  font-size: 0.9rem;
+  font-weight: 200;
+  line-height: 1.2rem;
+  margin-top: -0.8rem;
+
+}
+
+.ConversationHeader__Infos {
+  line-height: 0.5rem;
 }
