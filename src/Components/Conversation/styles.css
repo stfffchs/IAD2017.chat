@@ -8,6 +8,11 @@
 
 }
 
+.Conversation__PostItems{
+  z-index: 0;
+  height: 100%;
+}
+
 .Conversation__Placeholder {
   flex: 1 1 auto;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,2989d8+50,207cca+51,7db9e8+100 */
@@ -67,11 +72,6 @@ input.Conversation__WriteTextarea:focus{
 
 }
 
-.Conversation__Form Conversation__Form--noText{
-
-}
-
-
 .Conversation__Send{
   background-color: none;
   margin-left: 55rem;
@@ -124,4 +124,14 @@ textarea:-ms-input-placeholder {
 textarea::placeholder {
   padding-top: 0.4375rem;
   padding-left: 1rem;
+}
+
+
+.ConversationItem--me .ConversationItem__Preview > p::before {
+  content: "You: ";
+  color: #226CE0;
+}
+
+.DateItem{
+  margin-left: 40%;
 }
