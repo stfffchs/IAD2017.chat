@@ -1,14 +1,14 @@
 :root {
-    --lightgrey: #D8D8D8;
-    --darkgrey: #646464;
-    --blue: #226CE0;
-}
-
- #root{
-     display: flex;
-     justify-content: center;
-     align-items: center;
+     --lightgrey: #D8D8D8;
+     --darkgrey: #646464;
+     --blue: #226CE0;
  }
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .App {
     height: 100%;
@@ -54,9 +54,6 @@
     }
 
 }
-
-
-
 
 @media (min-width: 1440px) {
     .App {
