@@ -44,7 +44,7 @@
 .ConversationHeader__Status {
 	width: 200%;
 	display: flex;
-	position: relative;
+	position: absolute;
 	font-size: 0.7em;
 	margin-top: 0;
 	font-weight: 200;
@@ -88,7 +88,7 @@
 	margin-left: 30px;
 	width: 200%;
 	display: flex;
-	position: relative;
+	position: absolute;
 	font-size: 0.7em;
 	margin-top: 0;
 	font-weight: 200;

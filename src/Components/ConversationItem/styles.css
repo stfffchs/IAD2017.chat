@@ -23,9 +23,32 @@
 
 }
 
+.ConversationItem:after {
+   border-bottom: 1px solid #F3F3F3;
+   content: ' ';
+   bottom: 0px;
+   left: 20px;
+   right: 0px;
+   top: 0px;
+   background: linear-gradient(to right, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 90%);
+   z-index: 100;
+   position: absolute;
+}
+
+.ConversationItem:after:hover {
+   border-bottom: 1px solid #F3F3F3;
+   content: ' ';
+   bottom: 0px;
+   left: 20px;
+   right: 0px;
+   top: 0px;
+   background: linear-gradient(to right, rgba(173, 182, 214,0) 40%, rgba(173, 182, 214,1) 90%);
+   z-index: 100;
+   position: absolute;
+}
 
 
-.ConversationItem__Name h3:after {
+.ConversationItem--online h3:after {
 	content: ' ';
 	background-color: #8CFE67;
 	position: relative;
@@ -33,8 +56,8 @@
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
-  right: -4px;
-  bottom: -1px;
+  right: -5px;
+  bottom: -2px;
 }
 
 .ConversationItem__Writing:before {
@@ -49,14 +72,12 @@
   font-weight: 200;
   font-size: 0.9em;
   overflow: hidden;
-  width: max-content;
-  position: relative;
-
   display: inline-block;
   vertical-align: bottom;
   -webkit-animation: ellipsis steps(4,end) 1200ms infinite;
   animation: ellipsis steps(4,end) 1200ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
 }
 
 @keyframes ellipsis {
@@ -120,6 +141,7 @@ h3 {
 	position: relative;
 	font-weight: 300;
 	width: 155px;
+  z-index: 1000;
 }
 
 p {
@@ -234,7 +256,7 @@ p {
   	font-weight: 200;
   	letter-spacing: 0.02em;
   }
-
+  
   .ConversationItem__Time {
   	position: absolute;
   	text-align: right;
@@ -243,6 +265,7 @@ p {
   	right: 5%;
   	top: 36%;
     font-weight: 200;
+    z-index:1000;
   }
 
   .ConversationItem__UnreadCount {
@@ -270,6 +293,19 @@ p {
   color: white;
   background-color: #5377FF !important;
 }
+
+.ConversationItem--active:after {
+  border-bottom: 1px solid #F3F3F3;
+  content: ' ';
+  bottom: 0px;
+  left: 20px;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(to right, rgba(83, 119, 255,0) 40%, rgba(83, 119, 255,1) 90%);
+  z-index: 100;
+  position: absolute;
+}
+
 
 .ConversationItem--active h3 {
   color: white;

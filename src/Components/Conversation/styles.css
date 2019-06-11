@@ -19,7 +19,7 @@
 
 .Conversation__PostItems::-webkit-scrollbar {
   display: none;
- } 
+ }
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
@@ -98,10 +98,15 @@
   min-height: 4rem;
 }
 
+.Conversation__Writing{
+  margin-bottom: 2em;
+}
+
 .Conversation__Writing:before {
   content: 'schreibt';
   font-size: 0.8em;
   padding-left: 2.5em;
+  margin-bottom: 10px;
 }
 
 .Conversation__Writing:after {
@@ -135,17 +140,16 @@
   background-image: url(smiley.svg);
   background-repeat: no-repeat;
   background-size: 1.5rem;
-  background-position: 10px center;
+  background-position: 17px center;
   float: left;
 }
-
 
 
 .Conversation__WriteTextarea {
   width: 100%;
   border: none;
   background-color: none;
-
+  margin-left: 1em;
 }
 
 .Conversation__Send {
@@ -199,5 +203,12 @@ textarea {
 
   .Conversation__Send {
     font-size: 0.8rem;
+  }
+
+  .Conversation__WriteTextarea {
+    width: 90%;
+    border: none;
+    background-color: none;
+    margin-left: 1em;
   }
 }
