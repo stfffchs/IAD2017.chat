@@ -12,8 +12,9 @@
 
 .App--MenuOpen .App__ConversationList {
     width: 100%;
-    height: calc(100% - 3.2em);
+    /*height: calc(100% - 3.2em);*/
     overflow: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -35,7 +36,7 @@
     .App--MenuClosed .App__ConversationList {
         min-width: 375px;
         max-width: 375px;
-        height: calc(100% - 3.2em);
+        /*height: calc(100% - 3.2em);*/
         overflow: hidden;
     }
 
