@@ -1,5 +1,7 @@
 .PostItem {
     margin-left: 2%;
+    hyphens: auto;
+
 }
 
 .PostItem__Post {
@@ -8,7 +10,7 @@
 }
 
 .PostItem__Post--me {
-    margin-left: 40%;
+    margin-left: 10%;
     margin-right: 2%;
     background-color: #418FB0;
     float: right;
@@ -22,6 +24,7 @@
     background-color: #1B2730;
     float: left;
     min-width: 8rem;
+    max-width: 16rem;
     margin-bottom: 0.4rem;
 
 }
