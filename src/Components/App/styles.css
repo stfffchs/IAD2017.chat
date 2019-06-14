@@ -11,6 +11,8 @@
 
 .App--MenuOpen .App__ConversationList {
     width: 100%;
+    height: calc(100% - 3.2em);
+    overflow: hidden;
 
 }
 
@@ -77,7 +79,7 @@
 
 .ConversationList {
     margin-top: 5rem; /* push content down */
-    height: calc(100% - 5rem); /* height minus head */
+    height: calc(100% - 3.2rem); /* height minus head */
     background-color: #1B2730;
 
 
