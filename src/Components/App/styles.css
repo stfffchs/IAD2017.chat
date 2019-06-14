@@ -1,6 +1,7 @@
 .App {
     height: 100%;
     background-color: #0F1C25;
+    min-width: 349px;
 }
 
 .App__Chat {
@@ -58,6 +59,9 @@
     position: relative;
     background-color: #1B2730;
 }
+
+
+
 
 .App__ConversationList::before {
     display: block;
