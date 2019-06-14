@@ -1,3 +1,8 @@
+.ConversationHeader__Avatar {
+    display: inline-block;
+
+}
+
 .ConversationHeader__AvatarImage {
     width: 60px;
     border-radius: 0 50% 50% 50%;
@@ -30,15 +35,17 @@
 }
 
 
-.ConversationHeader__Avatar {
-    display: inline-block;
-
-}
-
 .ConversationHeader__Status {
     font-size: 0.8rem;
     margin-top: 1%;
     color: #9CA7B4;
 }
 
+.ConversationItem--me .ConversationItem__Preview > p::before {
+    content: "Ich: ";
+}
+
+.ConversationItem--others .ConversationItem__Preview > p::before {
+    content: "Du: ";
+}
 
