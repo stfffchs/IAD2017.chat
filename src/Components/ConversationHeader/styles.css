@@ -45,7 +45,5 @@
     content: "Ich: ";
 }
 
-.ConversationItem--others .ConversationItem__Preview > p::before {
-    content: "Du: ";
-}
+
 
