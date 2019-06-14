@@ -11,16 +11,17 @@
 .ConversationItem--online::after {
     display: block;
     content: "";
-    width: 1rem;
-    height: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50%;
     background-color: green;
-    top: 1rem;
-    left: 1rem;
+    top: 3rem;
+    left: 2.8rem;
     position: absolute;
     border-bottom: 0.06rem solid #9CA7B4;
 
 }
+
 
 .ConversationItem--active {
     background-color: #418FB0;
