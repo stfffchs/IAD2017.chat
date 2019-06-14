@@ -70,7 +70,7 @@
 
 .ConversationItem__Time {
     float: right;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: right;
     align-items: top;
     width: 20%;
