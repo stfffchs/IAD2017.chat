@@ -53,18 +53,6 @@
     }
 }
 
-/*@media (min-width: 1000px) {
-  .App--MenuOpen .App__ConversationList,
-  .App--MenuClosed .App__ConversationList {
-    width: 30%;
-    overflow: auto;
-  }
-  .App--MenuOpen .App__Conversation,
-  .App--MenuClosed .App__Conversation {
-    width: 70%;
-  }
-
-}*/
 .App__ConversationList {
     position: relative;
     background-color: #1B2730;
@@ -83,6 +71,8 @@
     text-align: center;
     border-bottom: 0.06rem solid #9CA7B4;
     font-size: 1.3rem;
+    z-index: 1000;
+
 
 }
 
