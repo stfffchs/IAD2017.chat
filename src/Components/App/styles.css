@@ -42,12 +42,15 @@
     }
 }
 
-@media (min-width: 375px){
+@media (max-width: 375px) {
     .PostItem__Post--me {
-        margin-left: 40%;
+        margin-left: 10% !important;
 
     }
 
+    .PostItem__Post--other {
+        margin-right: 10% !important;
+    }
 }
 
 /*@media (min-width: 1000px) {
@@ -62,7 +65,6 @@
   }
 
 }*/
-
 .App__ConversationList {
     position: relative;
     background-color: #1B2730;
