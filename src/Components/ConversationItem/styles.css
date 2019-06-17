@@ -10,6 +10,7 @@
     padding: 1rem;
     white-space: nowrap;
     overflow: hidden;
+    padding-right: 10%;
   }
 
   .App__ConversationList{
@@ -69,17 +70,13 @@
     margin-left: 1rem;
   }
 
-  .ConversationItem__Time{
-    text-align: right;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .ConversationItem__Preview{
+  .ConversationItem__Preview p{
     text-align: left;
     margin-left: 1rem;
     margin-top: -0.7rem;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .ConversationItem__UnreadCount {
@@ -95,15 +92,20 @@
     letter-spacing: -0.2px;
     text-align: center;
     line-height: 15px;
-    padding: 0;
+    padding: 0.125rem;
     position: absolute;
-    right: 40px;
+    right: 20px;
     top: 47px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     z-index: 200;
   }
 
   .ConversationItem__Time{
     margin-left: 46%;
-    margin-top: -5.1rem;
+    margin-top: -4rem;
+    text-align: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
