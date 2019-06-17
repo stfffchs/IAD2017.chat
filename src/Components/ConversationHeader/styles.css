@@ -37,7 +37,7 @@
 .ConversationHeader__Infos {
 	display: inline-block;
 	position: fixed;
-	padding-left: 9%;
+	padding-left: 70px;
 
 }
 
@@ -73,7 +73,7 @@
 
 
 .ConversationHeader__Infos {
-	padding-left: 7%;
+	padding-left: 70px;
 }
 
 }
@@ -81,7 +81,7 @@
 @media (max-width: 750px) {
 
 	.ConversationHeader {
-  	padding-left: 8%;
+  	padding-left: 6%;
 }
 
 .ConversationHeader__Status {
@@ -102,7 +102,7 @@
 
 
 .ConversationHeader__Infos {
-	padding-left: 13%;
+	padding-left: 40px;
 	margin-top: 0;
 
 }
