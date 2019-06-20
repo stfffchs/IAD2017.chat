@@ -157,6 +157,7 @@ p {
 	top: 36%;
 	font-size: 0.7em;
   font-weight: 200;
+  z-index: 100000;
 }
 
 .ConversationItem__Preview {
