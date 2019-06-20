@@ -24,7 +24,7 @@
 }
 
 .ConversationItem:after {
-   border-bottom: 1px solid #F3F3F3;
+   /*border-bottom: 1px solid #F3F3F3;*/
    content: ' ';
    bottom: 0px;
    left: 20px;
@@ -35,14 +35,14 @@
    position: absolute;
 }
 
-.ConversationItem:after:hover {
-   border-bottom: 1px solid #F3F3F3;
+.ConversationItem:hover:after {
+   /*border-bottom: 1px solid #F3F3F3;*/
    content: ' ';
    bottom: 0px;
    left: 20px;
    right: 0px;
    top: 0px;
-   background: linear-gradient(to right, rgba(173, 182, 214,0) 40%, rgba(173, 182, 214,1) 90%);
+   background: linear-gradient(to right, rgba(173,182,214,0) 40%, rgba(173,182,214,1) 90%);
    z-index: 100;
    position: absolute;
 }
@@ -295,13 +295,13 @@ p {
 }
 
 .ConversationItem--active:after {
-  border-bottom: 1px solid #F3F3F3;
+ /* border-bottom: 1px solid #F3F3F3;*/
   content: ' ';
   bottom: 0px;
   left: 20px;
   right: 0px;
   top: 0px;
-  background: linear-gradient(to right, rgba(83, 119, 255,0) 40%, rgba(83, 119, 255,1) 90%);
+  background: linear-gradient(to right, rgba(83, 119, 255,0) 40%, rgba(83, 119, 255,1) 90%) !important;
   z-index: 100;
   position: absolute;
 }
