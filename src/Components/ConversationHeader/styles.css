@@ -40,5 +40,6 @@ h4 {
 .ConversationHeader__Status {
   font-size: 0.8rem;
   color: white;
+  opacity: 0.7;
 
 }
