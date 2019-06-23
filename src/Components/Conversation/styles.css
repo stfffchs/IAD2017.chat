@@ -1,5 +1,5 @@
 .Conversation {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -8,26 +8,28 @@
 
 .Conversation__Placeholder {
   flex: 1 1 auto;
-  background-color: #FFFFFF;
-  border-left: 1px solid #F3F3F3;
+  background-image: url(/assets/svg/homescreen.svg);
+  background-position: 50% calc(50vh - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 200px 200px;
 }
 
 .Conversation__Placeholder::before {
-    position: relative;
-    display: block;
-    height: 90px;
-    z-index: 300;
-    background-image: linear-gradient(180deg, #2FBFA7 0%, #24B1A1 100%);
-    box-shadow: 0 4px 12px -4px rgba(0,0,0,0.30), 0 9px 15px 0 rgba(0,0,0,0.10);
-    width: 100%;
-    content: " ";
-  }
+  position: relative;
+  display: block;
+  height: 90px;
+  z-index: 300;
+  background-image: linear-gradient(180deg, #2fbfa7 0%, #24b1a1 100%);
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.3),
+    0 9px 15px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  content: " ";
+}
 
 .Conversation__PostItems {
   flex: 1 1 auto;
   overflow-y: auto;
-  border-left: 1px solid #F3F3F3; 
-
 }
 
 .Conversation__Header {
@@ -37,8 +39,8 @@
 }
 
 .Conversation__Form {
-  background: #F3F3F3;
-  border-top: 1px solid #D6D6D6; 
+  background: #f3f3f3;
+  border-top: 1px solid #d6d6d6;
   height: 56px;
   width: 100%;
   display: flex;
@@ -49,21 +51,25 @@
 }
 
 .Conversation__Form form {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .Conversation__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: pink;
+  width: 40px;
+  height: 40px;
+  background-image: url(/assets/svg/writing-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  margin: 0px 0px 40px 100px;
 }
 
 .Conversation__WriteTextarea {
   box-sizing: border-box;
-  background: #FFFFFF;
-  border: 1px solid #D6D6D6;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
   border-radius: 20px;
   height: 40px;
   width: 100%;
@@ -76,12 +82,12 @@
   font-size: 15px;
   letter-spacing: -0.14px;
   line-height: 21px;
-  color: #0F0F0F;
+  color: #0f0f0f;
   padding: 8px;
 }
 
 .Conversation__WriteTextarea::placeholder {
-    color: #D6D6D6;
+  color: #d6d6d6;
 }
 
 .Conversation__Write {
@@ -95,14 +101,20 @@
 .Conversation__Send {
   width: 40px;
   height: 40px;
-  background: #28978A;
+  background-color: #28978a;
   border-radius: 50%;
   margin: 0 20px 0 0;
-  flex: initial;
+  flex: 0 0 auto;
+  background-image: url(/assets/svg/send-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 input.Conversation__SendInput {
-    display: none;
+  color: transparent;
 }
 
 .Conversation__Form--noText .Conversation__Send {
@@ -110,20 +122,45 @@ input.Conversation__SendInput {
 }
 
 .DateItem {
-    border-top: 1px solid #F3F3F3;
-    text-align: center;
-    margin: 0 20px 0 20px;
+  border-top: 1px solid #f3f3f3;
+  text-align: center;
+  margin: 0 20px 0 20px;
 }
 
 .DateItem__Time {
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 12px;
-    color: #A0A0A0;
-    letter-spacing: -0.09px;
-    line-height: 15px;
-    transform: translateY(-11px);
-    background-color: #FFFFFF;
-    display: inline-block; 
-    padding: 0 20px 0 20px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  color: #a0a0a0;
+  letter-spacing: -0.09px;
+  line-height: 15px;
+  transform: translateY(-11px);
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+}
+
+.Conversation__PlaceholderText {
+  visibility: hidden;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.14px;
+}
+
+.Conversation__PlaceholderText::after {
+  visibility: visible;
+  content: "Kontakt auswählen um einen Chat zu beginnen";
+  font-size: 22px;
+  color: #a0a0a0;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: calc(50vh - 50px);
+}
+
+@media (max-width: 900px) {
+  .Conversation__Writing {
+    margin-left: 20px;
+  }
 }
