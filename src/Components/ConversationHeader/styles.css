@@ -23,7 +23,7 @@
     display: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 760px) {
     .ConversationHeader {
         position: relative;
     }
@@ -39,7 +39,6 @@
     }
 
     .ConversationHeader__Infos {
-        position: absolute;
-        left: 5.2em;
+        margin: 0 auto;
     }
 }

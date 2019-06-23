@@ -104,3 +104,8 @@
         .5em 0 0 white;
     }
 }
+
+textarea {
+    transform: translateY(10px);
+    padding-left: 1em;
+}

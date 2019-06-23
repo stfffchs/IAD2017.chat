@@ -1,17 +1,19 @@
 .Menu {
     position: fixed;
-    width: 5em;
-    height: 7em;
+    width: 2rem;
+    height: 2rem;
     background-size: cover;
-    background: url("back_icon.png") no-repeat center;
+    background-image: url('back.svg');
     z-index: 1;
+    left: 1rem;
+    top: 2.5rem;
 }
 
 .Menu--Open {
     z-index: -1;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 760px) {
     .Menu {
         display: none;
     }
