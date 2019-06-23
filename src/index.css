@@ -6,6 +6,10 @@
     html { font-family: 'Inter var', sans-serif; }
 }
 
+*:focus {
+    outline-color: #28978A;
+}
+
 html,
 body,
 #root {
