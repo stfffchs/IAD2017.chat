@@ -19,9 +19,10 @@
     box-shadow: 0 4px 12px -4px rgba(0,0,0,0.30), 0 9px 15px 0 rgba(0,0,0,0.10);
     width: 100%;
   }
-  
+
   .ConversationList {
       background: #FFFFFF;
       overflow-y: auto;
       flex: 1 1 auto;
+      border-right: 1px solid #F3F3F3;
   }
