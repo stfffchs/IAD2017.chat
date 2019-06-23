@@ -2,8 +2,11 @@
 
 ## Index
 
+In the following the styles and the behavior of the Blubbe chat are explained and pointed out. This chat was developed as part of a task during the course HFIAD2017.
+
 ### [Styleguide](#styleguide)
-  - [Font](#font)
+  - [Font-selection](#font-selection)
+  - [Type-system](#type-system)
   - [Colors](#colors)
   - [Grid-system](#grid-system)
 
@@ -28,9 +31,17 @@
 
 ### [Optical feedback](#optical-feedback)
 
+---
+
 ### Styleguide
 
-#### Font
+#### Font selection
+In this work the inter typeface family was used. This choice is based on the following reason: this font has been designed for the best possible readability on display applications.
+
+Link to the font site: [Inter](https://rsms.me/inter/)
+
+#### Type system
+
 #### Colors
 #### Grid system
 
