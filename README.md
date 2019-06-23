@@ -1,21 +1,44 @@
 # IAD2017.Chat blubbe
 
-## Ausfühurng
-* [Node installieren](https://nodejs.org/en/download/)
-* in Verzeichnis wechseln `cd ...`
-* `npm install` → Installiert die benötigten Module
-* `npm run start` → startet für die Entwicklung
-* `npm run build` → erzeugt die endgültige Version
+## Index
 
-## BEM-CSS
-CSS-Klassen sind nach [BEM](https://cssguidelin.es/#bem-like-naming) benannt.
-* Elemente sind durch zwei Unterstrichen (`__`) abgetrennt
-* Modifikatoren sind durch zwei Bindestriche (`--`) abgetrennt
+### [Styleguide](#styleguide)
+  - [Font](#font)
+  - [Colors](#colors)
+  - [Grid-system](#grid-system)
+
+### [Functions](#functions)
+
+### [Responsive behaviour](#responsive-behaviour)
+
+#### [Desktop](#desktop)
+  - [Contacts desktop](#contacts-desktop)
+  - [Chat desktop](#chat-desktop)
+  - [Header desktop](#header-desktop)
+
+#### [Mobile](#mobile)
+  - [Contacts mobile](#contacts-mobile)
+  - [Chat mobile](#chat-mobile)
+  - [Header mobile](#header-mobile)
+
+### [Texting](#texting)
+
+### [Notifications](#notifications)
 
 
-## Update 10. Mai 2019
-* Neue Messages werden gemeldet
-* Header in Chat-Detail
+### [Optical feedback](#optical-feedback)
+
+### Styleguide
+
+#### Font
+#### Colors
+#### Grid system
+
+
+
+
+
+
 
 
 ## Lizenz
