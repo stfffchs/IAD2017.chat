@@ -1,27 +1,31 @@
 /* Import Font «Inter» https://rsms.me/inter/ */
 
-@import url('https://rsms.me/inter/inter.css');
-    html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
 @supports (font-variation-settings: normal) {
-    html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 *:focus {
-    outline-color: #28978A;
+  outline-color: #28978a;
 }
 
 html,
 body,
 #root {
   height: 100%;
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-weight: 400;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 button,
@@ -38,6 +42,6 @@ input[type="reset"] {
 
 @media (min-width: 1400px) {
   body {
-      height: calc(100% - 1rem);
+    height: calc(100% - 1rem);
   }
 }
