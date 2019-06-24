@@ -24,15 +24,33 @@
 .Conversation__Placeholder {
   flex: 1 1 auto;
   background-color: none;
-  text-align: left;
+  text-align: center;
   background-image: url(favoriten.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: 2rem 380px;
+  background-size: 70%;
+  background-position: center 340px;
 
 }
 
+textarea::-webkit-input-placeholder {
+   padding-top: 4px;
+   padding-left: 4px;
+}
 
+textarea::-moz-input-placeholder {
+   padding-top: 4px;
+   padding-left: 4px;
+}
+
+textarea:-moz-input-placeholder {
+   padding-top: 4px;
+   padding-left: 4px;
+}
+
+textarea:-ms-input-placeholder {
+   padding-top: 4px;
+   padding-left: 4px;
+}
 /*.Conversation__Placeholder:before {
   content: '';
   flex: none;
@@ -75,7 +93,8 @@
   font-size: 20px;
   text-align: left;
   color: #5377FF;
-  margin-top: 280px;
+  margin-left: 15%;
+  margin-top: 240px;
   position: static;
   display: block;
 }
@@ -212,7 +231,7 @@ textarea {
     margin-left: 1em;
   }
 
-  .Conversation__WriteTextarea placeholder {
+  .Conversation__WriteTextarea :placeholder {
     padding: 2px;
   }
 }
