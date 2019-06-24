@@ -1,5 +1,6 @@
 .PostItem {
   padding: 2rem;/*vorher 4rem besser?*/
+  padding-left: 4rem;
 }
 
 .PostItem__Post {
