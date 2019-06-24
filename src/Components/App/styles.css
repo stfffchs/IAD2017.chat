@@ -18,10 +18,25 @@
 
 .App--MenuOpen .App__Conversation {
   width: 0%;
+  /* Hier eintragen */
 }
 
 .App--MenuClosed .App__Conversation {
   width: 100%;
+}
+
+.App__ConversationList::before {
+  display: block;
+  content: "Chats";
+  padding-top: 1rem;
+  height: 1em;
+  width: 100%;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {

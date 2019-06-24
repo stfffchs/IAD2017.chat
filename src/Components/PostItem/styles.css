@@ -50,9 +50,23 @@
 
 }
 
-@media only screen and (min-width: 400px) and (max-width: 768px) {
-.PostItem__Post--me, .PostItem__Post--other {
+@media only screen and (min-width: 520px) and (max-width: 768px) {
+.PostItem__Post--me, .PostItem__Post--other, .DateItem {
   margin-left: 5%;
   margin-right: 5%;
 }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 520px) {
+.PostItem__Post--me, .PostItem__Post--other, .DateItem, .ConversationList {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.ConversationList {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
 }
