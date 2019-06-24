@@ -8,7 +8,8 @@ In the following the styles and the behavior of the Blubbe chat are explained an
   - [Font-selection](#font-selection)
   - [Type-system](#type-system)
   - [Colors](#colors)
-  - [Grid-system](#grid-system)
+  - [Grid-system-for-desktop](#grid-system-for-desktop)
+  - [Grid-system-for-mobile](#grid-system-for-mobile)
 
 ### [Functions](#functions)
 
@@ -64,9 +65,21 @@ There are four main colors.
 * E2E2E2 – the gray is used by p-small to display informations.
 * 0F0F0F – Font color.
 
-#### Grid system
+#### Grid system for desktop
 
+The desktop version is based on a 12-column grid. But not all 12 columns are used on the largest possible viewport. Everything over 1400 pixels will be limited. This ensures that the chat retains its functionality even on very large screens.
 
+![Grid desktop](https://imgur.com/xAk9A5m.png)
+
+As soon as the viewport drops below 1400 px, the chat takes up the entire width. As can be seen in the following example.
+
+![Grid under 1400px](https://imgur.com/DTLLWKq.png)
+
+#### Grid system for mobile
+
+On mobile, the grid is based on a 6-column system.
+
+![Mobile grid](https://imgur.com/b3c0JLy.png)
 
 
 
