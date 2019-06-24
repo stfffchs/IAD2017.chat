@@ -9,7 +9,17 @@
 }
 
 .App__Menu {
-  height:0%;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.Menu {
+  height: 0%;
+  width: 0%;
+}
+
+button, input {
+  color: white;
 }
 
 .App__Chat {
