@@ -212,6 +212,14 @@ textarea {
   right: 1em;
 }
 
+@media screen and (min-width: 851px) and (max-width:1035px) { 
+  .Conversation__WriteTextarea {
+    width: 90%;
+    border: none;
+    background-color: none;
+    margin-left: 1em;
+  }
+}
 
 
 @media (max-width: 850px) {
@@ -221,7 +229,7 @@ textarea {
   }
 
   .Conversation__Send {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .Conversation__WriteTextarea {
@@ -235,3 +243,17 @@ textarea {
     padding: 2px;
   }
 }
+
+@media (max-width: 750px) {
+.Conversation__WriteTextarea {
+    width: 95%;
+    border: none;
+    background-color: none;
+    margin-left: 1em;
+  }
+ .Conversation__SendInput {
+  position: absolute;
+  margin-right: 0.5em;
+  margin-left: 1em;
+} 
+}  
