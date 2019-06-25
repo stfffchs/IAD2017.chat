@@ -18,7 +18,7 @@
 
 
 .ConversationItem:hover {
-  background-color: #adb6d6;
+  background-color: #adb6d6; /*#E4EEFF;*/
   color: white;
 
 }
