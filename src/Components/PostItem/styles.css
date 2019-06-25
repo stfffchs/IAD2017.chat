@@ -4,7 +4,7 @@
 }
 
 .PostItem__Post {
-  margin-top: 2rem; 
+  margin-top: 2rem;
   padding: 0;
   font-size: 0.9em;
   letter-spacing: 0.02em;
@@ -61,7 +61,7 @@
   display: inline-block;
 }
 
-@media screen and (min-width: 751px) and (max-width:900px) { 
+@media screen and (min-width: 751px) and (max-width:900px) {
 .PostItem__Post--me {
   margin-left: 15%;
 }

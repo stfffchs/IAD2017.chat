@@ -18,8 +18,8 @@
 
 
 .ConversationItem:hover {
-  background-color: #adb6d6; /*#E4EEFF;*/
-  color: white;
+  background-color: #E4EEFF; /*#E4EEFF;*/
+  /*color: white;*/
 
 }
 
@@ -42,7 +42,7 @@
    left: 20px;
    right: 0px;
    top: 0px;
-   background: linear-gradient(to right, rgba(173,182,214,0) 40%, rgba(173,182,214,1) 90%);
+   background: linear-gradient(to right, rgba(228, 238, 255,0) 40%, rgba(228, 238, 255,1) 90%);
    z-index: 100;
    position: absolute;
 }
@@ -223,8 +223,8 @@ p {
   }
 
   .ConversationItem:hover {
-    background-color: #adb6d6;
-    color: white;
+    background-color: #E4EEFF;
+  /*  color: white;*/
   }
 
   .ConversationItem__Avatar {
@@ -257,7 +257,7 @@ p {
   	font-weight: 200;
   	letter-spacing: 0.02em;
   }
-  
+
   .ConversationItem__Time {
   	position: absolute;
   	text-align: right;
