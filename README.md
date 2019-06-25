@@ -11,9 +11,7 @@ In the following the styles and the behavior of the Blubbe chat are explained an
   - [Grid-system-for-desktop](#grid-system-for-desktop)
   - [Grid-system-for-mobile](#grid-system-for-mobile)
 
-### [Functions](#functions)
-
-### [Responsive behaviour](#responsive-behaviour)
+### [Functions and responsive behaviour](#functions-and-responsive-behaviour)
 
 #### [Desktop](#desktop)
   - [Contacts desktop](#contacts-desktop)
@@ -80,6 +78,21 @@ As soon as the viewport drops below 1400 px, the chat takes up the entire width.
 On mobile, the grid is based on a 6-column system.
 
 ![Mobile grid](https://imgur.com/b3c0JLy.png)
+
+### Functions and Responsive behaviour
+
+#### Desktop
+##### Contacts desktop
+![Contacts](https://imgur.com/wkJWdB3.png)
+
+1. Contact with unread messages and notification
+2. Hover on contact
+3. Active Chat highlighted with the markup color
+
+As can be seen in the example, the contacts column has a minimum width of 280px. This prevents unsightly smaller viewports. If the column threatens to fall below 280px, only the window with the current conversation shrinks. Until the chat finally changes to the mobile view.
+
+##### Chat desktop
+The chat bubbles have a maximum width, so even on large screens a good readability is achieved. At the same time, the chat has marched left and right, so the bubbles are never too far apart. Once the mobile view is reached, the bubbles take the whole width, so that this does not happen too suddenly, this change is supported by an animation.
 
 
 
