@@ -92,7 +92,10 @@ On mobile, the grid is based on a 6-column system.
 As can be seen in the example, the contacts column has a minimum width of 280px. This prevents unsightly smaller viewports. If the column threatens to fall below 280px, only the window with the current conversation shrinks. Until the chat finally changes to the mobile view.
 
 ##### Chat desktop
-The chat bubbles have a maximum width, so even on large screens a good readability is achieved. At the same time, the chat has marched left and right, so the bubbles are never too far apart. Once the mobile view is reached, the bubbles take the whole width, so that this does not happen too suddenly, this change is supported by an animation.
+The chat bubbles have a maximum width, so even on large screens a good readability is achieved. At the same time, the chat has marging left and right, so the bubbles are never too far apart. Once the mobile view is reached, the bubbles take the whole width, so that this does not happen too suddenly, this change is supported by an animation.
+
+##### Header desktop
+The chat on desktop has 2 options for the header. Option 1: If the viewport is very large (over 1400px) the chat must have a limited width. Option2: At 1400px the chat will be displayed on the whole viewport.
 
 
 
