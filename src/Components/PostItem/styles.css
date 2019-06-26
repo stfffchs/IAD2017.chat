@@ -13,7 +13,7 @@
 .PostItem__Post--me {
     display: inline-block;
     text-align: left;
-    margin-left: 4.5rem;
+    margin-left: 20%;
     margin-right: 4%;
     margin-bottom: 2rem;
     border-radius: 1rem 1rem 0 1rem;
@@ -25,7 +25,7 @@
 
 .PostItem__Post--other {
     margin-left: 4%;
-    margin-right: 4.5rem;
+    margin-right: 20%;
     margin-bottom: 2rem;
     background-color: #D8D8D8;
     color: #000000;
