@@ -26,6 +26,7 @@
 
 .ConversationItem__Name {
     text-align: left;
+    letter-spacing: 0.5px;
     margin-top: 1em
 }
 
@@ -50,12 +51,19 @@
     max-width: 300px;
     margin-top: -0.7em;
     text-align: left;
+
 }
+
+
 
 .ConversationItem--active {
     background-color: var(--darkest);
     border-color: var(--darkest);
 
+}
+
+.ConversationItem__Writing .ConversationItem__Preview p {
+ display: none !important;
 }
 
 .ConversationItem--online {
@@ -92,17 +100,33 @@
   }
 }
 
+@media screen and (max-width: 760px) {
+  .ConversationItem__Preview {
+    max-width: 190px;
+  }
+}
+
 
 
 /* loading dots */
 .ConversationItem__Writing::after {
     position: absolute;
     left: 75px;
-    top: 35px;
+    top: 48px;
     color: rgba(var(--highlight), 1);
     font-size: var(--l);
     content: '.';
     animation: dots 1s steps(5, end) infinite;
+    display: block;
+    height: 30px;
+    width: calc(100% - 134px);
+    text-align: left;
+    line-height: 15px;
+    background-color: var(--dark);
+}
+
+.ConversationItem--active .ConversationItem__Writing::after {
+  background-color: var(--darkest)
 }
 
 @keyframes dots {

@@ -6,6 +6,14 @@
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 15px;
+    margin-left: 0;
+    box-sizing: border-box;
+    max-width: 60%;
+    margin-left: 0;
+    box-sizing: border-box;
+    max-width: 60%;
+    display: inline-flex !important;
+    flex-wrap: wrap;
 }
 
 .PostItem__Post--me {
@@ -22,11 +30,18 @@
     width: fit-content;
     background-color: var(--light);
     border-radius: 0 10px 10px 0;
+    max-width: 80%;
 
+}
+
+.PostItem.PostItem--other {
+    text-align: left;
 }
 
 .PostItem__Text {
     max-width: 95%;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .PostItem__Time {
@@ -34,5 +49,7 @@
     text-align: right;
     margin-bottom: -10px;
     margin-right: -7px;
+    display: block;
+    width: 100%;
 
 }

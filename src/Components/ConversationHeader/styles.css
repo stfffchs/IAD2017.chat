@@ -5,6 +5,7 @@
     height: 100%;
     padding-left: 80px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 @media (min-width: 760px) {
@@ -30,6 +31,7 @@
 }
 
 .ConversationHeader__Name {
+  letter-spacing: 0.5px;
   font-size: var(--m);
 }
 
