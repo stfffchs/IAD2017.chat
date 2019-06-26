@@ -31,6 +31,7 @@
 
 .Conversation__PostItems {
     flex: 1 1 auto;
+    padding-bottom: 2em;
     overflow-y: auto;
     background-color: var(--darkest);
 }
@@ -76,17 +77,18 @@
 }
 
 .Conversation__Send {
-    color: white;
+    color: var(--hilight);
+    border-color: var(--hilight);
     right: 0px;
     position: absolute;
-    background-color: var(--hilight);
+    border: 2px;
     padding: 5px 10px 5px 10px;
     border-radius: 10px;
 
 }
 .Conversation__Send:hover {
-    color: var(--hilight);
-    background-color: white;
+    color: white;
+    background-color: var(--hilight);
 }
 
 .Conversation__SendInput {
@@ -102,6 +104,11 @@
     content: ' .';
     animation: dots 1s steps(5, end) infinite;
 }
+.Conversation__Writing {
+    margin-top: 1em;
+
+}
+
 
 @keyframes dots {
   0%, 20% {

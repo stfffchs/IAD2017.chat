@@ -32,7 +32,6 @@
 .ConversationItem__Name h3 {
     font-size: var(--s);
     font-weight: 600;
-    letter-spacing: var(--letter-spacing);
 }
 
 .ConversationItem__Time {
@@ -44,9 +43,11 @@
 
 .ConversationItem__Preview p {
     white-space: nowrap;
+    font-size: var(--s);
+    color: var(--light);
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 220px;
+    max-width: 300px;
     margin-top: -0.7em;
     text-align: left;
 }
@@ -73,17 +74,25 @@
     line-height: 25px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .ConversationItem__Preview {
-    max-width: 400px;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .ConversationItem__Preview {
+    max-width: 150px;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .ConversationItem__Preview {
-    display: none;
+    max-width: 100px;
   }
 }
+
+
 
 /* loading dots */
 .ConversationItem__Writing::after {
