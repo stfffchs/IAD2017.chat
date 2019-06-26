@@ -109,3 +109,9 @@ textarea {
     transform: translateY(10px);
     padding-left: 1em;
 }
+
+@media (min-width: 1200px) {
+    .Conversation__Form {
+        width: 65%;
+    }
+}
