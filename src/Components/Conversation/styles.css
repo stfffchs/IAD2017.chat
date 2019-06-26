@@ -51,6 +51,7 @@ input.Conversation__WriteTextarea:focus {
 
 .Conversation__WriteTextarea {
     border-radius: 3.125rem;
+    font-size: 1rem;
     width: 75%;
     margin-left: 7%;
     height: 2rem;

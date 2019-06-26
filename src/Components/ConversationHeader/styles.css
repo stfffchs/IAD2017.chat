@@ -1,8 +1,6 @@
-.ConversationHeader{
+.Conversation__Header{
     background-color: #D8D8D8;
-    height: 7rem;
-    border-bottom-color: #979797;
-    border-bottom-width: 1px;
+    height: 10rem;
     width: 92%;
     margin-left: 4%;
     border-radius: 0 0 10px 10px;
@@ -10,15 +8,6 @@
 }
 
 .Conversation__Header{
-    border-bottom-color: #979797;
-    border-bottom-width: 1px;
-}
-
-img{
-
-}
-
-.ConversationHeader{
     border-bottom-color: #979797;
     border-bottom-width: 1px;
     z-index: 100;
