@@ -52,8 +52,8 @@ input.Conversation__WriteTextarea:focus {
 .Conversation__WriteTextarea {
     border-radius: 3.125rem;
     font-size: 1rem;
-    width: 75%;
-    margin-left: 7%;
+    width: 92%;
+    margin-left: 4%;
     height: 2rem;
     padding-top: 0.2rem;
     background-color: #ffffff;
@@ -61,14 +61,13 @@ input.Conversation__WriteTextarea:focus {
 }
 
 .Conversation__Send {
-    margin-left: 60.6rem;
+    margin-left: 81%;
     margin-top: -2.485rem;
 }
 
 input.Conversation__SendInput {
     text-align: center;
-    color: #ffffff;
-    background-color: #226CE0;
+    color: #226CE0;
     border-radius: 1rem;
     font-weight: bold;
     padding: 0.5rem;
