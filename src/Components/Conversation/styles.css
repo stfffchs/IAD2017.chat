@@ -120,23 +120,3 @@ textarea::placeholder {
   padding-top: 0.4375rem;
   padding-left: 1rem;
 }
-
-
-.ConversationItem--me .ConversationItem__Preview > p::before {
-  content: "You: ";
-  color: #226CE0;
-}
-
-.DateItem{
-text-align: center;
-  margin-top: 3rem;
-}
-
-.Conversation__PostItem--other{
-  margin-left: -3rem;
-  min-width: 5rem;
-}
-
-.PostItem--me{
-  margin-right: 8.5rem;
-}
