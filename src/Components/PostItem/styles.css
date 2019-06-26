@@ -4,7 +4,7 @@
 
 .PostItem__Post {
     color: #000000;
-    font-family: "SF Pro Display";
+    font-family: "SF Pro Display", Helvetica;
     margin-top: 2rem;
     padding: 0.8rem;
     border-radius: 1rem 1rem 1rem 0;
@@ -14,7 +14,7 @@
     display: inline-block;
     text-align: left;
     margin-left: 4.5rem;
-    margin-right: 1.5rem;
+    margin-right: 4%;
     margin-bottom: 2rem;
     border-radius: 1rem 1rem 0 1rem;
     width: fit-content;
@@ -24,7 +24,7 @@
 
 
 .PostItem__Post--other {
-    margin-left: 1.5rem;
+    margin-left: 4%;
     margin-right: 4.5rem;
     margin-bottom: 2rem;
     background-color: #D8D8D8;
