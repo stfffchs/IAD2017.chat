@@ -1,122 +1,105 @@
 .Conversation {
-  background-color: #ffffff;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-}
-
-.Conversation__PostItems{
-  z-index: 0;
-  height: 100%;
-}
-
-.Conversation__Placeholder {
-  flex: 1 1 auto;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,2989d8+50,207cca+51,7db9e8+100 */
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,ffffff+100,ffffff+100,207cca+100 */
-  background: #076585; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #226CE0 0%, #ffffff 100%, #ffffff 100%, #207cca 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #226CE0 0%,#ffffff 100%,#ffffff 100%,#207cca 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #226CE0 0%,#ffffff 100%,#ffffff 100%,#207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#076585', endColorstr='#207cca',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-.Conversation__PlaceholderText{
-  font-family: "SF Pro Display";
-  text-align: center;
-  margin-left: auto;
-  margin-top: 10rem;
-  color: #ffffff;
-  font-size: 3rem;
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
 .Conversation__PostItems {
-  flex: 1 1 auto;
-  overflow-y: auto;
+    z-index: 0;
+    height: 100%;
+}
+
+.Conversation__Placeholder {
+    flex: 1 1 auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,2989d8+50,207cca+51,7db9e8+100 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#076585+0,ffffff+100,ffffff+100,207cca+100 */
+    background: #076585; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #226CE0 0%, #ffffff 100%, #ffffff 100%, #207cca 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #226CE0 0%, #ffffff 100%, #ffffff 100%, #207cca 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #226CE0 0%, #ffffff 100%, #ffffff 100%, #207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#076585', endColorstr='#207cca', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.Conversation__PlaceholderText {
+    font-family: "SF Pro Display";
+    text-align: center;
+    margin-left: auto;
+    margin-top: 10rem;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.Conversation__PostItems {
+    flex: 1 1 auto;
+    overflow-y: auto;
 }
 
 .Conversation__Form {
-  height: 5rem;
-  background-color: #4d4c50;
+    height: 9rem;
+    background-color: #D8D8D8;
 }
 
-.Conversation__Writing {
-  width: 3rem;
-  height: 3rem;
-  background-color: #4d4c50;
+.Conversation__Write {
+    margin-top: 2rem;
 }
 
-.Conversation__Write{
-  background-color: #EBEBEB;
-
+input.Conversation__WriteTextarea:focus {
+    background-color: #D8D8D8;
 }
 
-input.Conversation__WriteTextarea:focus{
-  background-color: #ffffff;
+.Conversation__WriteTextarea {
+    border-radius: 3.125rem;
+    width: 75%;
+    margin-left: 7%;
+    height: 2rem;
+    padding-top: 0.2rem;
+    background-color: #ffffff;
+    border: none;
 }
 
-.Conversation__WriteTextarea{
-  border-radius: 3.125rem;
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 1.5rem;
-  height: 2rem;
-  padding-top: 0.2rem;
-  background-color: #EBEBEB;
-
+.Conversation__Send {
+    margin-left: 60.6rem;
+    margin-top: -2.485rem;
 }
 
-.Conversation__Send{
-  background-color: none;
-  margin-left: 55rem;
-  margin-top: -2.9rem;
-  color: #226CE0;
-}
-
-input.Conversation__SendInput{
-  text-align: center;
+input.Conversation__SendInput {
+    text-align: center;
+    color: #ffffff;
+    background-color: #226CE0;
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    height: 2.2rem;
 }
 
 input:focus {
-  outline: none !important;
-  border-color: #226CE0;
-  border-radius: 50px;
-}
-
-.Conversation__SendInput{
-  color: #226CE0;
-  font-weight: bold;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-}
-
-.button{
-  color: #226CE0;
-  text-align: center;
+    outline: none !important;
+    border-color: #226CE0;
 }
 
 textarea::-webkit-input-placeholder {
-  padding-top:  0.4375rem;
-  padding-left: 1rem;
+    padding-top: 0.4375rem;
+    padding-left: 1rem;
 }
 
 textarea:-moz-placeholder { /* Firefox 18- */
-  padding-top:  0.4375rem;
-  padding-left: 1rem;
+    padding-top: 0.4375rem;
+    padding-left: 1rem;
 }
 
-textarea::-moz-placeholder {  /* Firefox 19+ */
-  padding-top: 0.4375rem;
-  padding-left: 1rem;
+textarea::-moz-placeholder { /* Firefox 19+ */
+    padding-top: 0.4375rem;
+    padding-left: 1rem;
 }
 
 textarea:-ms-input-placeholder {
-  padding-top: 0.4375rem;
-  padding-left: 1rem;
+    padding-top: 0.4375rem;
+    padding-left: 1rem;
 }
 
 textarea::placeholder {
-  padding-top: 0.4375rem;
-  padding-left: 1rem;
+    padding-top: 0.4375rem;
+    padding-left: 1rem;
 }
