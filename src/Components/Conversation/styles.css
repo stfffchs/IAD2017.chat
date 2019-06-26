@@ -12,6 +12,7 @@
     height: 100px;
     flex: 0 0 auto;
     background-color: var(--light);
+    border-bottom: 2px solid var(--dark);
   }
 
 .Conversation__Placeholder {
@@ -34,6 +35,7 @@
     padding-bottom: 2em;
     overflow-y: auto;
     background-color: var(--darkest);
+    border-bottom: 2px solid var(--dark);
 }
 
 .Conversation__Form {
