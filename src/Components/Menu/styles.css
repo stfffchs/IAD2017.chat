@@ -1,27 +1,27 @@
 .Menu {
-  width: 3rem;
-  height: 3rem;
-  position: fixed;
-  top: 5rem;
-  right: 0.8rem;
-  background-image: url("edit-78.svg") ;
-  background-color: #226CE0;
-  border-radius: 50%;
-  padding: 2rem;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  box-shadow: 0 7px 12px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  z-index: 101;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 5rem;
+    right: 0.8rem;
+    background-image: url("edit-78.svg");
+    background-color: #226CE0;
+    border-radius: 50%;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    z-index: 101;
 }
 
 .Menu--Open {
-  background-color: ;
-  background-image: url("ic_close_36px.svg") ;
+    background-color: ;
+    background-image: url("ic_close_36px.svg");
 }
 
 @media (min-width: 768px) {
-  .Menu {
-    display: none;
-  }
+    .Menu {
+        display: none;
+    }
 }
