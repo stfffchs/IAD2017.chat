@@ -13,7 +13,7 @@ h3 {
 }
 
 .ConversationItem:hover {
-  background-color: #fceee9;
+  background-color: #edebe6;
 }
 
 .ConversationItem__Preview {
@@ -154,4 +154,11 @@ border-left-style: none;
   top: 1rem;
   left: 1rem;
   position: absolute;
+}
+
+
+@media only screen and (min-width: 520px) and (max-width: 768px) {
+.ConversationItem__Preview p {
+  max-width: 12rem;
+}
 }

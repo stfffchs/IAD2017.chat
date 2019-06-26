@@ -57,7 +57,7 @@
 }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 520px) {
+@media only screen and (min-width: 300px) and (max-width: 520px) {
 .PostItem__Post--me, .PostItem__Post--other, .DateItem, .ConversationList {
   margin-left: 15%;
   margin-right: 15%;

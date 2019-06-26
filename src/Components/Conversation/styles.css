@@ -19,9 +19,9 @@
 
 .Conversation__PlaceholderText {
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 900;
   color: #2e2e2e;
-  margin: 2rem;
+  margin: 1rem;
 
 }
 
@@ -117,17 +117,14 @@
       }
   }
 
-@media only screen and (min-width: 400px) and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
 .Conversation__Write, .Conversation__Send, .Conversation__Writing {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.Conversation__SendInput {
-  display: none;
-}
-
 .Conversation__Send {
+  color: transparent;
   width: 3rem;
   background-color: transparent;
   background-image: url(../image/Chat_Send.svg);
@@ -137,6 +134,7 @@
   align-items: right;
   right: 1px;
   top: 1rem;
+  cursor: pointer;
 }
 
 .Conversation__Send:hover {
