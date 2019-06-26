@@ -42,6 +42,7 @@
 
     .App--MenuOpen .App__Conversation,
     .App--MenuClosed .App__Conversation {
+        width: calc(100% - 375px);
     }
 }
 
