@@ -1,4 +1,4 @@
-.Conversation__Header{
+.Conversation__Header {
     background-color: #D8D8D8;
     height: 10rem;
     width: 92%;
@@ -7,7 +7,7 @@
     z-index: 100;
 }
 
-.Conversation__Header{
+.Conversation__Header {
     border-bottom-color: #979797;
     border-bottom-width: 1px;
     z-index: 100;
@@ -18,7 +18,7 @@
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.ConversationHeader__AvatarImage{
+.ConversationHeader__AvatarImage {
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -26,15 +26,15 @@
     margin-top: 2rem;
 }
 
-
-.ConversationHeader__Infos{
+.ConversationHeader__Infos {
     margin-top: -4.3rem;
     margin-left: 6rem;
 }
 
-.ConversationHeader__Status{
+.ConversationHeader__Status {
     margin-top: -0.8rem;
 }
-.Name{
+
+.Name {
     margin-left: 5rem;
 }
