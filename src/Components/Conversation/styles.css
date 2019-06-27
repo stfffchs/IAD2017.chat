@@ -180,7 +180,7 @@ textarea {
   right: 1em;
 }
 
-@media screen and (min-width: 851px) and (max-width:1035px) { 
+@media screen and (min-width: 851px) and (max-width:1000px) { 
   .Conversation__WriteTextarea {
     width: 90%;
     border: none;
