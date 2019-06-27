@@ -18,6 +18,7 @@
 
 .App--MenuOpen .App__Conversation {
   width: 0%;
+  display: none;
 }
 
 .App--MenuClosed .App__Conversation {
