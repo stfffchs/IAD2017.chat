@@ -44,13 +44,14 @@
 
     .App--MenuOpen .App__ConversationList,
     .App--MenuClosed .App__ConversationList {
-        width: 40%;
+        width: 35%;
+        min-width: 25rem;
         overflow: auto;
     }
 
     .App--MenuOpen .App__Conversation,
     .App--MenuClosed .App__Conversation {
-        width: 70%;
+        width: 65%;
     }
 
 }
