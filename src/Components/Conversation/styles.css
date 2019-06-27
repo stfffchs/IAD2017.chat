@@ -66,7 +66,7 @@ h1 {
 
 .Conversation__Form {
     height: 9rem;
-    background-color: #D8D8D8;
+    background-color: #646464;
 }
 
 .Conversation__Write {
@@ -83,7 +83,8 @@ input.Conversation__WriteTextarea:focus {
     width: 72%;
     margin-left: 4%;
     height: 2rem;
-    padding-top: 0.2rem;
+    padding-top: 0.8rem;
+    padding-left: 2rem;
     background-color: #ffffff;
     border: none;
     cursor: text;
@@ -91,17 +92,18 @@ input.Conversation__WriteTextarea:focus {
 }
 
 .Conversation__Send {
-    margin-left: 79%;
-    margin-top: -2.485rem;
-    background-color: #226CE0;
+    margin-left: 82%;
+    margin-top: -3.2rem;
+    padding-top: 0.4rem;
     width: 5.5rem;
+    height: 2.5rem;
     text-align: center;
     border-radius: 2rem;
 }
 
 input.Conversation__SendInput {
     text-align: center;
-    color: #ffffff;
+    color: #226CE0;
     border-radius: 1rem;
     font-weight: bold;
     padding: 0.5rem;
@@ -113,38 +115,20 @@ input:focus {
     border-color: #226CE0;
 }
 
-textarea{
-    padding-left: 2rem;
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; /*remove the resize handle on the bottom right*/
 }
 
-textarea:focus {
-    border-radius: 3.125rem;
+textarea:focus{
+
 }
 
-textarea::-webkit-input-placeholder {
-    padding-top: 0.4375rem;
-    padding-left: 2rem;
-}
-
-textarea:-moz-placeholder { /* Firefox 18- */
-    padding-top: 0.4375rem;
-    padding-left: 2rem;
-}
-
-textarea::-moz-placeholder { /* Firefox 19+ */
-    padding-top: 0.4375rem;
-    padding-left: 2rem;
-}
-
-textarea:-ms-input-placeholder {
-    padding-top: 0.4375rem;
-    padding-left: 2rem;
-}
-
-textarea::placeholder {
-    padding-top: 0.4375rem;
-    padding-left: 2rem;
-}
 
 .Conversation__Writing {
     margin-left: 4%;
