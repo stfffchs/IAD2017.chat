@@ -19,4 +19,6 @@ CSS-Klassen sind nach [BEM](https://cssguidelin.es/#bem-like-naming) benannt.
 
 
 ## Lizenz
-Code unter MIT, Assets unter CC BY-SA 4.0 
+Code unter MIT, Assets unter CC BY-SA 4.0
+
+Loading icon powered by [loading.io](https://loading.io/)

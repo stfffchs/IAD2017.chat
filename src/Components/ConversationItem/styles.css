@@ -86,14 +86,10 @@
     margin-left: 1rem;
     /*white-space: nowrap;*/
     max-width: 28ch;
-    max-height: 1.1rem;
+    max-height: 1.2rem;
     overflow: hidden;
 }
 
-.ConversationItem__Preview::after {
-    content: "... ";
-    color: #5DBDE6;
-}
 
 .ConversationItem--inactive .ConversationItem__Time {
     color: #9CA7B4;
