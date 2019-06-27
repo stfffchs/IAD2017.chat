@@ -11,11 +11,11 @@
 .ConversationItem--online::after {
     display: block;
     content: "";
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border-radius: 50%;
-    background-color: green;
-    top: 3rem;
+    background-color: #2DCF2D;
+    top: 3.1rem;
     left: 2.8rem;
     position: absolute;
     border-bottom: 0.06rem solid #9CA7B4;
@@ -85,9 +85,14 @@
     font-size: 0.8rem;
     margin-left: 1rem;
     /*white-space: nowrap;*/
-    max-width: 27ch;
+    max-width: 28ch;
     max-height: 1.1rem;
     overflow: hidden;
+}
+
+.ConversationItem__Preview::after {
+    content: "... ";
+    color: #5DBDE6;
 }
 
 .ConversationItem--inactive .ConversationItem__Time {

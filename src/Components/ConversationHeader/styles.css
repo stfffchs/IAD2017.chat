@@ -43,8 +43,5 @@
 
 .ConversationItem--me .ConversationItem__Preview > p::before {
     content: "Ich: ";
-    color: #5DBDE6;
+    color: white;
 }
-
-
-
