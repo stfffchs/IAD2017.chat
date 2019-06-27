@@ -34,6 +34,7 @@
   .App--MenuOpen .App__Conversation,
   .App--MenuClosed .App__Conversation {
     width: 60%;
+    display: inline;
   }
 
 
