@@ -18,13 +18,10 @@
 
 
 .ConversationItem:hover {
-  background-color: #E4EEFF; /*#E4EEFF;*/
-  /*color: white;*/
-
+  background-color: #E4EEFF; 
 }
 
 .ConversationItem:after {
-   /*border-bottom: 1px solid #F3F3F3;*/
    content: ' ';
    bottom: 0px;
    left: 20px;
@@ -36,7 +33,6 @@
 }
 
 .ConversationItem:hover:after {
-   /*border-bottom: 1px solid #F3F3F3;*/
    content: ' ';
    bottom: 0px;
    left: 20px;
@@ -224,7 +220,6 @@ p {
 
   .ConversationItem:hover {
     background-color: #E4EEFF;
-  /*  color: white;*/
   }
 
   .ConversationItem__Avatar {
@@ -296,7 +291,6 @@ p {
 }
 
 .ConversationItem--active:after {
- /* border-bottom: 1px solid #F3F3F3;*/
   content: ' ';
   bottom: 0px;
   left: 20px;
@@ -311,8 +305,5 @@ p {
 .ConversationItem--active h3 {
   color: white;
 }
-
-
-
 
 }

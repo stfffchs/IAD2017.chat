@@ -36,10 +36,6 @@
     width: 60%;
   }
 
-  /*.App__Conversation .Conversation__Placeholder .App--MenuOpen ,
-   .App__Conversation .Conversation__Placeholder .App--MenuClosed{
-    display: none;
-  }*/
 
   .App__Menu {
     position: relative;

@@ -51,35 +51,7 @@ textarea:-ms-input-placeholder {
    padding-top: 4px;
    padding-left: 4px;
 }
-/*.Conversation__Placeholder:before {
-  content: '';
-  flex: none;
-  background-color: none;
-  background-image: url(bestfriend.jpg);
-  background-repeat: no-repeat;
-  background-size: 39%;
-  position: absolute;
-  top: 380px;
-  left: 693px;
-  width: 400px;
-  height: 400px;
 
-}
-
-.Conversation__Placeholder:after {
-  content: '';
-  flex: none;
-  background-color: none;
-  background-image: url(mom.jpg);
-  background-repeat: no-repeat;
-  background-size: 39%;
-  position: absolute;
-  top: 380px;
-  left: 530px;
-  width: 400px;
-  height: 400px;
-
-}*/
 
 .Conversation__PlaceholderText {
   font-size: 30px;
