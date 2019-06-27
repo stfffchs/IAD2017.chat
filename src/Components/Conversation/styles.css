@@ -107,3 +107,51 @@ textarea::placeholder {
     padding-top: 0.4375rem;
     padding-left: 1rem;
 }
+
+.Conversation__Writing{
+
+}
+
+.Conversation__Writing {
+    margin-left: 4%;
+    margin-top: 2.3rem;
+    margin-bottom: 1rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #226CE0;
+    box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+    animation: Conversation__Writing 1.3s infinite;
+}
+
+.Conversation__Writing:hover {
+    animation: none;
+}
+
+@-webkit-keyframes Conversation__Writing {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+@keyframes Conversation__Writing {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
