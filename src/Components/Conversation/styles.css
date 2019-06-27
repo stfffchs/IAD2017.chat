@@ -80,7 +80,7 @@ input.Conversation__WriteTextarea:focus {
 .Conversation__WriteTextarea {
     border-radius: 3.125rem;
     font-size: 1rem;
-    width: 72%;
+    width: 65%;
     margin-left: 4%;
     height: 2rem;
     padding-top: 0.8rem;
@@ -92,10 +92,11 @@ input.Conversation__WriteTextarea:focus {
 }
 
 .Conversation__Send {
-    margin-left: 82%;
+    margin-left: 79%;
     margin-top: -3.2rem;
     padding-top: 0.4rem;
-    width: 5.5rem;
+    background-color: #ffffff;
+    width: 5rem;
     height: 2.5rem;
     text-align: center;
     border-radius: 2rem;
@@ -106,8 +107,8 @@ input.Conversation__SendInput {
     color: #226CE0;
     border-radius: 1rem;
     font-weight: bold;
-    padding: 0.5rem;
     height: 2.2rem;
+    font-size: 0.8rem;
 }
 
 input:focus {
