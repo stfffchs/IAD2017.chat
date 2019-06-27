@@ -25,10 +25,6 @@ In the following the styles and the behavior of the Blubbe chat are explained an
 
 ### [Texting](#texting)
 
-### [Notifications](#notifications)
-
-
-### [Optical feedback](#optical-feedback)
 
 ---
 
@@ -97,10 +93,23 @@ The chat bubbles have a maximum width, so even on large screens a good readabili
 ##### Header desktop
 The chat on desktop has 2 options for the header. Option 1: If the viewport is very large (over 1400px) the chat must have a limited width. Option2: At 1400px the chat will be displayed on the whole viewport.
 
+#### Mobile
+##### Contacts mobile
+![Mobile View](https://imgur.com/X0dcSaw.png)
+
+In the mobile view, the chat takes the entire viewport. This view is a common view on mobile and offers the best comfort for the user. We consciously decided against a combination of contacts and chat in a viewport.
+
+##### Chat mobile
+The conversation takes the entire viewport. The chat bubbles are limited in width so there is a clear difference between the user is possible. In addition, the color also makes a difference possible.
+
+##### Header mobile
+The chat on Mobile has 2 functions for the header. Option 1: Header for the contacts. Option 2: Chat header with all relevant information.
 
 
+#### Texting
+![Textfield](https://imgur.com/fMZJz5D.png)
 
-
+On mobile and desktop, we decided to show the send button only when text is displayed. On the one hand this saves space and on the other hand a function that is not needed at this moment is hidden. This makes the interface tidier and easier.
 
 ## Lizenz
 Code unter MIT, Assets unter CC BY-SA 4.0 
