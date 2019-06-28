@@ -16,8 +16,7 @@
 }
 
 .Menu--Open {
-    background-color: ;
-    background-image: url("ic_close_36px.svg");
+display: none;
 }
 
 @media (min-width: 768px) {
